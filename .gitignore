@@ -2,6 +2,12 @@
 /_site/
 /.quarto/
 
+# NOTE: _generated/ is deliberately NOT ignored. Quarto expands
+# {{< include >}} while building the project context, which happens *before*
+# pre-render scripts run — so the file has to exist in a clean checkout or the
+# build fails. Committing it also means the last good publication list still
+# publishes if the generator ever errors. It is refreshed on every render.
+
 # Do commit /_freeze/ : it caches R chunk results so CI doesn't need R
 
 # macOS
@@ -11,3 +17,5 @@
 .Rhistory
 .RData
 .Rproj.user/
+
+**/*.quarto_ipynb

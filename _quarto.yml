@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: _site
+  # Rebuilds the publications list from publications.bib before every render.
+  # Runs in GitHub Actions too, so pushing an updated .bib is enough.
+  pre-render:
+    - _scripts/build_publications.py
 
 # Frozen computations: if you ever add {r} chunks, Quarto renders them locally
 # and CI reuses the cached results. Keeps GitHub Actions fast and R-free.
@@ -13,6 +17,11 @@ website:
   description: "Personal academic website"
   # EDIT: replace USERNAME (and swap for your custom domain if you buy one)
   site-url: "https://USERNAME.github.io"
+
+  # Off deliberately: the search widget bundles Algolia's autocomplete, which
+  # carries a cdn.jsdelivr.net loader for its optional analytics module.
+  # Inert unless insights are enabled, but not worth the risk on a 5-page site.
+  search: false
 
   navbar:
     left:

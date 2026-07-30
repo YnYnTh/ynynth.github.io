@@ -2,96 +2,12 @@
 title: "Publications"
 ---
 
-::: {.note}
-**EDIT:** Replace the placeholder entries below. The pattern for each one is:
-authors (your name bolded), year, title, journal in italics, then a row of
-links. Delete any link you don't have — an empty `[PDF]` button is worse than
-no button.
+This list is generated from my Zotero library, so it can't drift out of sync
+with what I actually cite. Formatting is APA 7, applied by the same citation
+style Zotero uses.
 
-Deliberately hand-maintained: no Google Scholar citation badge, because Scholar
-is blocked in mainland China and the badge would hang for every visitor there.
-:::
+My name is in **bold**. PDFs, data, and code are linked where I'm able to post
+them; everything hosted here rather than on a file-sharing service, so the
+links work from mainland China.
 
-Underline / bold marks my name. `*` denotes shared first authorship.\
-Preprints and accepted manuscripts are posted where the publisher permits it.
-
-## Journal articles
-
-::: {.year}
-2026
-:::
-
-::: {.entry}
-**Tang, Y.**, & Coauthor, A. (2026). [EDIT: Title of the article in sentence
-case]. *[EDIT: Journal Name]*, *[vol]*([issue]), [pages].
-
-::: {.entry-links}
-[PDF](files/tang-2026.pdf) [DOI](https://doi.org/XX.XXXX/XXXXX)
-[Data & code](https://osf.io/XXXX) [Supplement](files/tang-2026-supplement.pdf)
-:::
-:::
-
-::: {.entry}
-Coauthor, B., **Tang, Y.**, & Coauthor, C. (2026). [EDIT: Title].
-*[EDIT: Journal Name]*. Advance online publication.
-
-::: {.entry-links}
-[DOI](https://doi.org/XX.XXXX/XXXXX) [Preprint](https://psyarxiv.com/XXXX)
-:::
-:::
-
-::: {.year}
-2025
-:::
-
-::: {.entry}
-**Tang, Y.**, Coauthor, D., & Coauthor, E. (2025). [EDIT: Title].
-*[EDIT: Journal Name]*, *[vol]*, [pages].
-
-::: {.entry-links}
-[PDF](files/tang-2025.pdf) [DOI](https://doi.org/XX.XXXX/XXXXX)
-:::
-:::
-
-## Manuscripts under review
-
-::: {.entry}
-**Tang, Y.**, & Coauthor, F. [EDIT: Title]. *Manuscript under review.*
-
-::: {.entry-links}
-[Preprint](https://psyarxiv.com/XXXX)
-:::
-:::
-
-## Conference presentations
-
-::: {.entry}
-**Tang, Y.** (2026, [Month]). *[EDIT: Talk title]*. Paper presented at
-[EDIT: Conference], [City, Country].
-
-::: {.entry-links}
-[Slides](files/talk-2026.pdf)
-:::
-:::
-
-::: {.entry}
-**Tang, Y.**, & Coauthor, G. (2025, [Month]). *[EDIT: Poster title]*. Poster
-presented at [EDIT: Conference], [City, Country].
-
-::: {.entry-links}
-[Poster](files/poster-2025.pdf)
-:::
-:::
-
-## Theses
-
-::: {.entry}
-**Tang, Y.** (2026). *[EDIT: Dissertation title]* [Doctoral dissertation,
-Beijing Normal University].
-:::
-
----
-
-Put PDFs in the `files/` folder of this repo and link them as
-`files/name.pdf`. Self-hosting them means they load in China and keep working
-if a journal reorganises its site.
+{{< include _generated/publications.md >}}
