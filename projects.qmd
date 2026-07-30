@@ -347,37 +347,56 @@ and both with emotion regulation (−.31 ≤ r ≤ −.13).
 
 ### Developmental trajectory of social skills
 
-[Course project, longitudinal analysis. Both hypotheses rejected]{.status}
+[Course project, longitudinal analysis. Physiology null]{.status}
 
 ::: {.field}
 [Idea]{.k}
 
-I predicted social skills would follow a nonlinear trajectory, growth from early
-to middle childhood then a plateau or decline in adolescence, and that
-physiological regulation would predict the rate of growth both between children,
-so that those with higher average resting RSA improved faster, and within them,
-so that years of larger RSA increase were years of larger gains.
+Whether social skills follow a nonlinear trajectory from early childhood into
+adolescence, and whether physiological regulation predicts the rate of growth
+both between children, so that those with higher average resting RSA improve
+faster, and within them, so that years of larger RSA increase are years of
+larger gains. A third question asked the same of maternal supportive and
+non-supportive emotion socialization.
 :::
 
 ::: {.field}
 [Participants]{.k}
 
-The same three-cohort longitudinal study of social and emotional development
-from age 2 to young adulthood as the peer paper above (N = 447), recruited
-through day care centres, a county health department, and a WIC programme, and
-screened at age 2 to oversample children at risk for externalizing problems.
+The same three-cohort longitudinal study as the peer paper above. The RSA models
+used 330 children across 1,111 person-wave observations; 56% female, 65% White,
+30% African American, 3% multiracial, 2% other, with mean socioeconomic status
+of 43.4 (SD = 10.2) at age 5.
+:::
+
+::: {.field}
+[Measures]{.k}
+
+Social skills and resting RSA at ages 5, 10, and 15, with maternal supportive
+and non-supportive emotion socialization measured at baseline. Fitted as
+multilevel growth models.
 :::
 
 ::: {.field}
 [Results]{.k}
 
-Both predictions failed. Growth was linear and positive (b = 0.014, SE = 0.001,
-p &lt; .001) and the quadratic term was not significant (b = −0.001, SE = 0.0004,
-p = .067), so social skills kept improving into adolescence rather than
-levelling off. The interaction between physiological regulation and time was
-also null (b = −0.012, SE = 0.015, p = .395). Most of the variance was
-between-person rather than within (ICC = .66), meaning children differed far
-more in where they started than in how they changed.
+The trajectory question worked and the physiology question did not. Social
+skills rose modestly overall, from 1.33 (SD = 0.26) at age 5 to 1.43
+(SD = 0.28) at 15, and the shape was quadratic as predicted: a significant
+linear increase (b = 0.020, SE = 0.004, p &lt; .001) with a significant negative
+quadratic term (b = −0.0098, SE = 0.0004, p = .008), meaning growth slowed
+towards adolescence. Most of the variance was between children rather than
+within (ICC = .64), and there were no meaningful individual differences in the
+quadratic term.
+
+Resting RSA predicted nothing. Neither average RSA by time (b = 0.0001,
+SE = 0.002, p = .963) nor within-person RSA fluctuation by time (b = −0.002,
+SE = 0.002, p = .306) was associated with growth, despite RSA itself changing
+substantially with age (6.08 at 5, 7.30 at 10, 6.67 at 15). Maternal
+socialization did slightly better: non-supportive socialization was null
+(b = 0.002, p = .520) while supportive socialization was marginal (b = 0.004,
+p = .082), with social skills growing in both groups (low support b = 0.016;
+high support b = 0.022, both p &lt; .001).
 :::
 
 ::: {.topic}
