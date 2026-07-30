@@ -13,10 +13,10 @@ about:
       href: mailto:yingyingtang@utexas.edu
     - icon: mortarboard
       text: Google Scholar
-      href: https://scholar.google.com/citations?user=XXXX
+      href: https://scholar.google.com/citations?user=FKmNCvwAAAAJ
     - icon: journal-text
       text: ResearchGate
-      href: https://www.researchgate.net/profile/XXXX
+      href: https://www.researchgate.net/profile/Yingying-Tang-3
 ---
 
 I study **how emotion regulation is constructed**: assembled within the child
