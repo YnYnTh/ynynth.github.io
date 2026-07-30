@@ -1,0 +1,315 @@
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# HDFS 2025 R Workshop - Data wrangling and data cleaning
+
+::: {align="center"}
+January 16, 2025
+
+Yingying Tang
+
+[yingyingtang\@utexas.edu](mailto:yingyingtang@utexas.edu){.email}
+:::
+
+# Introduction
+
+-   **Purpose**: Explain the importance of data cleaning and handling missing data.
+-   **Tools**: Briefly introduce the packages used: `tidyverse`, `sjmisc`, `mice`, `bruceR`.
+-   **Dataset**: The workshop uses data from the MIDUS (Midlife in the United States) study, which investigates how behavioral, psychological, and biological factors influence health and aging. We focus on MIDUS 2 survey (M2) and biomarker (M2bio) data, covering self-reported and biological measures to examine well-being.
+
+------------------------------------------------------------------------
+
+```{r install packages}
+packages <- c("naniar", "dplyr", "ggplot2", "mice", "sjmisc", "bruceR")  # Add any other packages you want to install
+
+# Loop through each package
+for (pkg in packages) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg)
+  }
+}
+```
+
+
+# Part 1: Importing and Exploring Data
+
+## Importing Data
+
+The import() function from the bruceR package in R is used to load data into R from various file formats, such as .dta (Stata files), .sav (SPSS files), .csv, .txt, and other common formats. It is a convenient way to import data without having to deal with specific file format functions (e.g., haven::read_dta for Stata files).
+
+```{r}
+library(tidyverse)
+library(bruceR)
+
+# my personal preference is to set the working directory to the folder that contains my code and data
+set.wd()
+
+# Import data
+m2df_raw <- import("Fitzgerald 2020 stats workshop.sav")
+```
+
+## Getting to Know the Data and Selecting a subset
+
+-   `head()`: Displays the first few rows of the dataset, allowing for a quick preview of the data.
+-   `names()`: Lists the column names of the dataset, providing an overview of the variables present.
+-   `str()`: Shows the structure of the dataset, including the variable types and basic information.
+-   `summary()`: Provides a summary of the statistical properties (e.g., min, max, mean, quartiles) for the dataset.
+
+```{r}
+# Basic exploration
+head(m2df_raw)
+names(m2df_raw)
+str(m2df_raw[, 1:5])
+summary(m2df_raw[, 6:10])
+
+# Selecting a subset
+m2df_items <- m2df_raw %>% 
+  select(-SAMPLMAJ, -M2ID, -MRID)
+```
+
+## Introducing `%>%` and `|>`
+
+The `%>%` (pipe operator) and `|>` (native pipe operator) in R are both used to streamline code by passing the result of one operation as the input to the next. The `%>%` operator is provided by the `magrittr` package and has been widely used in R for a long time. In contrast, the `|>` operator, introduced in R 4.1.0, serves the same purpose but is a base R feature, eliminating the need for external packages.
+
+-   `%>%` allows the use of the left-hand side value as the first argument of the function by default, but this can be customized using the `.` placeholder.
+-   `|>` always passes the left-hand side value as the first argument of the function and does not support custom placement like `%>%`.
+
+```{r}
+# Old version: %>%
+m2df_test <- m2df_raw %>% 
+  select(B1PRAGE_2019)
+
+# New version: |>
+m2df_test <- m2df_raw |> 
+  mutate(B1PRAGE_2019)
+```
+
+------------------------------------------------------------------------
+
+# Part 2: Recoding and Calculating Variables
+
+## Renaming variables
+The `rename()` function from the `dplyr` package in R is used to rename one or more columns in a data frame.
+
+```{r, eval=FALSE}
+rename(data_frame, new_name = old_name, ...)
+```
+
+```{r}
+# Rename variables
+m2df_items <- m2df_items %>% 
+  rename(
+    Sex = B1PRSEX,
+    Depressive_Symptoms = B4QCESD,
+    Social_Anxiety = B4QSA_SA,
+    Self_Control = B4QSC_SC,
+    Perceived_Stress = B4QPS_PS,
+    Lived_with_Alcoholic = B1PA58,
+    Parental_Divorce = B1SE11L,
+    Occupational_Status = B1PBWORK,
+    Age = B1PRAGE_2019,
+    Education = B1PB1
+  )
+```
+
+## Recode variables
+
+We also want to transform some numeric variables into categorical factors with meaningful labels.
+
+*DO NOT run it twice*
+
+```{r}
+# Sex
+str(m2df_items$Sex)
+m2df_items$Sex <- factor(m2df_items$Sex, levels = c(1, 2), labels = c("Male", "Female"))
+# factor() converts the Sex variable to a categorical factor with levels "Male" and "Female".
+
+# Parental Divorce
+str(m2df_items$Parental_Divorce)
+m2df_items$Parental_Divorce <- factor(m2df_items$Parental_Divorce, 
+                                levels = c(1, 2), labels = c("Yes", "No"))
+
+# Lived with Alcoholic
+str(m2df_items$Lived_with_Alcoholic)
+m2df_items$Lived_with_Alcoholic <- factor(m2df_items$Lived_with_Alcoholic, 
+                                    levels = c(1, 2), labels = c("Yes", "No"))
+# factor() converts the Lived_with_Alcoholic variable to a categorical factor with levels "Yes" and "No".
+```
+
+An alternative (this is my personal preference) is to recode it into 0 and 1 (and don't turn it into factors). *WARNING: IT IS NOT A STANDARD WAY* I prefer this in my data cleaning process because I usually run and revise codes multiple times. In that case, it is very common for me to try to convert variables to factors when they are already factors.
+
+```{r, eval=FALSE}
+# Install sjmisc package if it's not installed
+if (!requireNamespace("sjmisc", quietly = TRUE)) {
+  install.packages("sjmisc")
+}
+
+# Load the sjmisc package
+library(sjmisc)
+
+# Recoding the variable using rec() from sjmisc
+m2df_items$Sex <- rec(m2df_items$Sex, 
+                      rec = "1=0; 2=1; else=copy")
+
+```
+
+The `mutate()` function from the `dplyr` package is used to add new variables or modify existing ones in a data frame. It is often used in data wrangling to create or transform variables by applying functions to existing columns.
+
+-   `m2df_items %>%`: The pipe operator (`%>%`) passes the `m2df_items` data frame to the next function.
+-   `mutate()`: Adds or modifies the `Childhood_Maltreatment` variable in the data frame.
+-   `rowSums()`: Computes the sum of values for each row across the selected columns.
+-   `select(., starts_with("B4QCT"))`: Selects all columns whose names begin with `"B4QCT"`. The `.` refers to the current data frame.
+-   `na.rm = TRUE`: Tells `rowSums()` to ignore `NA` values during summation. It will sum up all the available values.
+-   `Childhood_Maltreatment`: The new variable created, representing the sum of the selected columns for each row.
+
+```{r}
+m2df_items <- m2df_items %>% 
+  mutate(Childhood_Maltreatment = 
+           rowSums(select(.,starts_with("B4QCT"))))
+```
+
+Exercise:
+
+Try to calculate a variable called Emotional_Support_Spouse using the the average score of B4QSUGS, B4QSTGS (need to be reverse coded). Range: 1-4
+
+```{r}
+str(m2df_items$B4QSUGS)
+
+str(m2df_items$B4QSTGS)
+```
+
+To calculate the new variable, you'll use the `mutate()` function, which adds or modifies columns in the data frame.
+
+```{r}
+m2df_items <-  m2df_items %>% 
+  mutate(Emotional_Support_Spouse = ((5 - B4QSUGS) + B4QSTGS) / 2)
+```
+
+## Subset
+
+What if I want my data exclusively containing people with High School or lower?
+
+```{r}
+sjmisc::frq(m2df_items$Education)
+
+m2df_hs <- m2df_items %>% 
+  filter(Education <= 5)
+```
+
+Now we can create a dataset with all the variables we want to use.
+
+In R, the function `c()` stands for **combine** or **concatenate**. It is used to create vectors by combining multiple elements into a single object. The elements inside the `c()` function can be of various types, such as numbers, characters, or logical values, and they will all be combined into one vector.
+
+```{r}
+use_variables <- c("MIDUSID", "Sex", "Depressive_Symptoms", "Social_Anxiety", "Self_Control", 
+  "Perceived_Stress", "Lived_with_Alcoholic", "Parental_Divorce", 
+  "Occupational_Status", "Age", "Education", "Emotional_Support_Spouse", 
+  "Childhood_Maltreatment")
+
+m2df_use <- m2df_items %>% 
+  select(all_of(use_variables))
+
+```
+
+------------------------------------------------------------------------
+
+# Part 3: Describing Data
+
+-   `frq()` from the `sjmisc` package is used to generate a frequency table for a given variable. It supports labels!
+
+-   `Freq()` from the `bruceR` package is also used to generate a frequency table for a given variable.
+
+-   `descr()` from the `sjmisc` package provides a summary of the data, including *the label*, the number of observations, means, standard deviations, and other statistics.
+
+-   `Describe()` from the `bruceR` package provides an apa format table (can also be saved into .doc file using `file =`)
+
+```{r}
+library(sjmisc)
+
+# Frequency table
+frq(m2df_use$Education)
+Freq(m2df_use$Education)
+
+# Descriptive statistics
+descr(m2df_use)
+Describe(m2df_use)
+```
+
+------------------------------------------------------------------------
+
+# Part 4: Handling Missing Data
+
+## Inspecting Missing Data
+
+```{r}
+# Visualize missing data
+library(naniar)
+vis_miss(m2df_use)
+
+# Summarize missing data
+miss_var_summary(m2df_use)
+
+```
+
+## Multiple Imputation
+
+Multiple imputation (MI) is a statistical technique used to handle missing data by creating several different plausible imputations for the missing values. It allows us to account for the uncertainty of missing data in statistical analyses. The process involves: 1. **Imputation**: Missing data is filled in using an appropriate imputation method. 2. **Analysis**: The analysis is performed on each imputed dataset. 3. **Pooling**: The results from all imputed datasets are combined to give a final result.
+
+The `mice()` function from the **mice** package is a popular tool for conducting multiple imputation in R. The function creates multiple imputations of missing values, which can then be analyzed using standard statistical methods.
+
+### Common Methods Used in `mice()`
+
+-   **`pmm` (Predictive Mean Matching)**:
+    -   The most commonly used method for imputing continuous variables. It replaces missing values with the nearest observed value based on predicted values from a regression model.
+-   **`norm` (Bayesian Normal)**:
+    -   A method for imputing continuous variables assuming a normal distribution of missing values. It uses a Bayesian approach for imputation.
+-   **`logreg` (Logistic Regression)**:
+    -   Used for imputing binary categorical variables (0/1). It employs logistic regression to predict the missing data.
+-   **`cart` (Classification and Regression Trees)**:
+    -   A decision tree method for imputing both categorical and continuous variables. It builds a tree model to predict missing values based on observed data.
+-   **`rf` (Random Forest)**:
+    -   A random forest method used for imputing missing values, leveraging the relationships between variables to predict missing data.
+
+```{r}
+library(mice)
+
+# Impute missing data
+m2df_use_no_id <- m2df_use %>% 
+  select(-MIDUSID)
+
+m2df_items_clean <- m2df_use_no_id %>%
+  mutate(across(where(~inherits(., "haven_labelled")), ~as_factor(.)))
+
+m2df_imputed <- mice(m2df_items_clean, m = 5, method = "pmm", maxit = 5, seed = 123)
+
+c3 <- complete(m2df_imputed, 3) 
+head(c3)
+
+```
+
+Part 5: Save data
+
+The `export()` function from the `bruceR` package allows you to export your dataset to the SPSS `.sav` file format (or other formats). 
+
+The `saveRDS()` function allows you to save an R object to a file, which can be loaded back into R with the `readRDS()` function. This is particularly useful for saving R-specific objects like imputed data or complex models.
+
+
+```{r}
+export(m2df_use, file = "m2df_use.sav")
+
+saveRDS(m2df_imputed, "m2df_imputed.rds")
+```
+
+
+------------------------------------------------------------------------
+
+# Wrap-Up and Q&A
+
+-   Additional resources:
+    -   [Data Wrangling with R](https://wrangle-r.rsquaredacademy.com/)
+    -   [Data analysis using R for Psychology and Social Science](https://alexander-pastukhov.github.io/data-analysis-using-r-for-psychology/)
+    -   [Winnipeg workshop: Handling missing data in R with mice](https://amices.org/Winnipeg/)
+
+------------------------------------------------------------------------
