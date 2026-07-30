@@ -13,10 +13,10 @@ Each page is a `.qmd` file — Markdown, the same syntax as RMarkdown:
 | `research.qmd`    | Research interests and spotlights        |
 | `publications.qmd`| Intro text only — the list is generated  |
 | `publications.bib`| **Source of the publication list**       |
-| `outreach.qmd`    | Workshops, teaching materials, guides    |
-| `projects.qmd`    | Projects and dead ends                   |
+| `teaching.qmd`    | Courses, workshops, evaluation reflection|
+| `projects.qmd`    | Dead ends                                |
 | `_quarto.yml`     | Site title, navbar, URL                  |
-| `styles.scss`     | Fonts, colours, spacing                  |
+| `styles.scss`     | Palette, fonts, spacing, diagram styles  |
 
 Put PDFs and datasets in `files/`, images in `images/`, then link them as
 `files/name.pdf` or `![](images/name.jpg)`.

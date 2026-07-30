@@ -1,53 +1,74 @@
 ---
 title: "Yingying Tang"
-subtitle: "PhD Candidate · Beijing Normal University"
+subtitle: "Doctoral Candidate · Human Development and Family Sciences · The University of Texas at Austin"
 about:
   template: trestles
-  # Add a photo at images/profile.jpg, then uncomment the next line.
+  # PHOTO: save a square headshot as images/profile.jpg, then uncomment the
+  # two lines below. Around 600×600 px is plenty; keep it under ~200 KB so it
+  # loads quickly on slow connections.
   # image: images/profile.jpg
   # image-shape: rounded
   links:
     - icon: envelope
       text: Email
-      href: mailto:yingyingtang.bnu@gmail.com
-    - icon: github
-      text: GitHub
-      href: https://github.com/USERNAME
+      href: mailto:yingyingtang@utexas.edu
     - icon: mortarboard
       text: Google Scholar
       href: https://scholar.google.com/citations?user=XXXX
+    - icon: journal-text
+      text: ResearchGate
+      href: https://www.researchgate.net/profile/XXXX
+    - icon: github
+      text: GitHub
+      href: https://github.com/USERNAME
     - icon: file-earmark-text
       text: CV
       href: files/cv.pdf
 ---
 
-I study **[EDIT: your topic in one line — e.g. how daily emotional dynamics
-unfold within families, using intensive longitudinal designs]**. My work
-combines diary and experience-sampling data with latent-variable and
-multilevel models.
+I study how children and adolescents regulate emotion within family and peer
+systems, and how moment-to-moment regulatory dynamics become longer-term
+patterns of adaptation and physiological health.
 
-Methodologically I spend most of my time in structural equation modelling,
-multilevel and dynamic SEM, and the practical business of fitting these models
-to messy real data — missingness, convergence, and the gap between a model that
-runs and a model that means something.
+My work pairs physiological measurement — respiratory sinus arrhythmia, dyadic
+synchrony, ambulatory heart-rate variability — with intensive longitudinal
+designs such as 14-day diaries and experience sampling. Methodologically I work
+in within-person dynamics, person-centred models, and network approaches, mostly
+in **R** and **Mplus**.
 
-I also care about making these methods learnable. I write and teach
-[statistics workshop material](outreach.qmd), and I keep a public record of the
-[projects that did not work out](projects.qmd), because the published record is
-a poor guide to how research actually goes.
+I work with [Aprile Benner](https://liberalarts.utexas.edu/hdfs/) at UT Austin.
+Before this I earned an M.A. in Human Development and Family Sciences at UT
+Austin, and an M.A. in Developmental Psychology and a B.S. in Psychology at
+Beijing Normal University.
 
-::: {.note}
-**EDIT:** Replace the two paragraphs above, drop the third if you'd rather not
-open with the dead-ends page, and update the links in the YAML header.
+I also teach statistics — a [research methods course as instructor of
+record](teaching.qmd), graduate SEM and statistics as a TA, and an annual R
+workshop series for graduate students in my department.
+
+## Recent highlights
+
+::: {.highlights}
+- [Jul 2026]{.when} Awarded the **Outstanding Graduate Research Fellowship**, UT Austin Graduate School ($53,000, 2026–2027)
+- [Jun 2026]{.when} Poster at the **ISSBD Biennial Meeting** in Incheon, South Korea — cumulative and immediate academic adversity and adolescent internalizing symptoms
+- [Jun 2026]{.when} *Context matters: Multi-informant assessment of preschoolers' emotion regulation strategies* published in **Early Childhood Research Quarterly**
+- [Apr 2026]{.when} Poster at the **SRA Biennial Meeting** in Toronto — racial/ethnic discrimination and adolescents' emotional dynamics
+- [Spring 2026]{.when} Teaching assistant for **Structural Equation Modeling** (HDF 380K.4), our department's advanced graduate methods course
+- [Jan 2026]{.when} Led the departmental statistics workshop on **AI-assisted data analysis: vibe coding with Positron**
+- [2026]{.when} *Emotion polyregulation in preschoolers: Links to negative affect and child adjustment* accepted at **Child Development**
+- [Fall 2025]{.when} **Instructor of record** for HDF 315L, Research Methods in Human Development and Family Sciences
+- [Aug 2025]{.when} Completed my **M.A.** at UT Austin — *Emotion polyregulation in preschoolers: Evidence from frustration tasks*
+- [Summer 2025]{.when} Awarded the **Margaret Dunlap Thompson Endowed Presidential Graduate Fellowship**
 :::
 
-## Currently
-
-- **[EDIT]** Dissertation work on [topic]
-- **[EDIT]** Workshop series on [topic] for [audience]
-- **[EDIT]** Looking for postdoc positions starting [term] — get in touch
+::: {.note}
+**EDIT:** Add your Google Scholar and ResearchGate IDs and your GitHub username
+in the header above, drop `files/cv.pdf` into the repo, and add
+`images/profile.jpg` for the photo. Trim this highlights list whenever it grows
+past about ten items — the point is recency, not completeness.
+:::
 
 ## Contact
 
-[yingyingtang.bnu@gmail.com](mailto:yingyingtang.bnu@gmail.com)\
-[EDIT: Department, Beijing Normal University, Beijing, China]
+[yingyingtang@utexas.edu](mailto:yingyingtang@utexas.edu)\
+Department of Human Development and Family Sciences\
+The University of Texas at Austin, Austin, TX

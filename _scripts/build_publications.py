@@ -39,15 +39,21 @@ OUT = ROOT / "_generated" / "publications.md"
 # name, transliteration differences).
 MY_NAMES = ["Tang, Y.", "Tang, Yingying"]
 
-# Section headings, in the order they appear on the page, keyed by CSL type.
+# Surname used to detect first authorship, for ordering within a section.
+MY_SURNAME = "Tang"
+
+# Section headings, in page order, keyed by CSL type. A section with an empty
+# type tuple is reachable only via a `section:` override in the note field —
+# that's how "Co-authored work" is kept at the bottom regardless of item type.
 SECTIONS: list[tuple[str, tuple[str, ...]]] = [
-    ("Journal articles", ("article-journal",)),
-    ("Preprints & manuscripts under review", ("article", "manuscript", "unpublished")),
-    ("Book chapters", ("chapter",)),
-    ("Books", ("book",)),
+    ("First-author journal articles", ("article-journal",)),
+    ("Manuscripts under review", ("article", "manuscript", "unpublished")),
+    ("Manuscripts in preparation", ()),
     ("Conference presentations", ("paper-conference", "speech")),
-    ("Data & software", ("dataset", "software")),
+    ("Book chapters", ("chapter",)),
+    ("Translation", ("book",)),
     ("Theses", ("thesis",)),
+    ("Co-authored work", ()),
 ]
 OTHER_HEADING = "Other"
 
@@ -69,7 +75,7 @@ LINK_ORDER = list(LINK_LABELS)
 # `section: Conference presentations` in Zotero's Extra field forces an entry
 # into a given section, overriding the CSL-type mapping below. Worth having:
 # Zotero item types map onto CSL types in ways that are not always obvious.
-NOTE_KEYS = LINK_ORDER + ["section"]
+NOTE_KEYS = LINK_ORDER + ["section", "cofirst"]
 _KEY_ALT = "|".join(NOTE_KEYS)
 
 # Pandoc folds multi-line bib fields onto one line, so pairs cannot be found
@@ -187,11 +193,12 @@ def emphasise_name(body: str) -> str:
     return re.sub(r"(?:</strong>)+", "</strong>", body)
 
 
-def parse_note(note: str) -> tuple[list[tuple[str, str]], str | None]:
+def parse_note(note: str) -> tuple[list[tuple[str, str]], dict[str, str]]:
     """Pull `key: value` pairs out of a Zotero Extra / bib note field.
 
-    Returns the link buttons in display order, plus any section override.
-    Prose in the field that isn't a recognised key is ignored.
+    Returns the link buttons in display order, plus the raw key/value map
+    (for `section:` and `cofirst:`). Prose that isn't a recognised key is
+    ignored, so notes to yourself in Zotero are harmless.
     """
     found: dict[str, str] = {}
     for match in NOTE_PAIR_RE.finditer(note):
@@ -200,7 +207,15 @@ def parse_note(note: str) -> tuple[list[tuple[str, str]], str | None]:
             found[match.group(1).lower()] = value
 
     links = [(LINK_LABELS[k], found[k]) for k in LINK_ORDER if k in found]
-    return links, found.get("section")
+    return links, found
+
+
+def is_first_author(item: dict) -> bool:
+    """True when the lead author is me — used to order within a section."""
+    authors = item.get("author") or []
+    if not authors:
+        return False
+    return authors[0].get("family", "").strip() == MY_SURNAME
 
 
 def year_of(item: dict) -> int:
@@ -222,7 +237,7 @@ def section_for(csl_type: str) -> str:
 
 
 def render(items: list[dict], formatted: dict[str, str]) -> str:
-    grouped: dict[str, list[tuple[int, str, str]]] = {}
+    grouped: dict[str, list[tuple[int, int, str, str]]] = {}
 
     for item in items:
         key = item.get("id")
@@ -234,8 +249,12 @@ def render(items: list[dict], formatted: dict[str, str]) -> str:
             )
             continue
 
-        links, section_override = parse_note(item.get("note", "") or "")
-        block = ['<div class="entry">', emphasise_name(body)]
+        links, note_keys = parse_note(item.get("note", "") or "")
+        entry_html = emphasise_name(body)
+        if note_keys.get("cofirst", "").lower() in ("yes", "true", "1"):
+            entry_html += ' <span class="cofirst">(co-first author)</span>'
+
+        block = ['<div class="entry">', entry_html]
         if links:
             anchors = " ".join(
                 f'<a href="{html.escape(url, quote=True)}">{label}</a>'
@@ -244,9 +263,9 @@ def render(items: list[dict], formatted: dict[str, str]) -> str:
             block.append(f'<div class="entry-links">{anchors}</div>')
         block.append("</div>")
 
-        heading = section_override or section_for(item.get("type", ""))
+        heading = note_keys.get("section") or section_for(item.get("type", ""))
         grouped.setdefault(heading, []).append(
-            (year_of(item), body, "\n".join(block))
+            (0 if is_first_author(item) else 1, year_of(item), body, "\n".join(block))
         )
 
     # Known sections keep their fixed order; any section introduced by a
@@ -259,10 +278,11 @@ def render(items: list[dict], formatted: dict[str, str]) -> str:
         entries = grouped.get(heading)
         if not entries:
             continue
-        # Year descending; the CSL style has already alphabetised within year.
-        entries.sort(key=lambda e: (-e[0], e[1]))
+        # Lead-authored first, then year descending. The CSL style has already
+        # alphabetised within year, which breaks remaining ties stably.
+        entries.sort(key=lambda e: (e[0], -e[1], e[2]))
         out.append(f"## {heading}\n")
-        out.extend(entry for _, _, entry in entries)
+        out.extend(entry for *_, entry in entries)
         out.append("")
 
     if not out:

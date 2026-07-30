@@ -1,92 +1,165 @@
 ---
-title: "Projects & Dead Ends"
+title: "Dead Ends"
 ---
 
-A record of work that didn't reach publication: studies that failed, ideas that
-didn't survive contact with data, and analyses I abandoned. I keep this page
-because the published literature makes research look far tidier than it is, and
-because the specific ways a design fails are often more instructive than the
-ways it succeeds.
+Work that didn't reach publication: studies I abandoned, analyses that went
+nowhere, and tools I built and stopped using. I keep this page because the
+published record makes research look far tidier than it is, and because *how* a
+design fails is usually more instructive than how one succeeds.
 
-Nothing here is a confession. Most of it is ordinary.
+For each entry I report the idea, what I actually did, who the participants
+were, and what was measured — enough that someone could judge whether their own
+version would work. **No data is shared here**, and none of these datasets are
+mine to distribute.
 
-::: {.note}
-**EDIT:** Replace the entries below with your own. The format that works is:
-what you expected, what happened, and what you'd do differently — three or four
-sentences each. Two cautions worth keeping in mind: don't write anything about
-unpublished data a collaborator hasn't agreed to make public, and be careful
-naming other people's work as the thing that failed. Describe your own
-decisions.
+Nothing on this page is a confession. Most of it is ordinary.
 
-If this page ever feels like it's undercutting you, retitle it "Works in
-Progress" and keep only the entries with a clean lesson. You can also delete
-the page and its navbar entry in `_quarto.yml`.
-:::
+## Abandoned analyses
 
-## Abandoned studies
+### Predicting bottom-out behaviour from tutoring logs {#bottom-out}
 
-### [EDIT: Short descriptive title] {#dead-end-1}
+*Summer 2025 · shelved after modelling*
 
-*[EDIT: 2024–2025 · abandoned at data collection]*
+**The idea.** In an intelligent tutoring system, students can request hints
+repeatedly until the system simply gives the answer — "bottoming out." It looks
+like help-seeking but often functions as answer-seeking. I wanted to know
+whether the *sequence* of a student's interactions predicted bottoming out
+before it happened, using recurrent architectures that treat the log as a time
+series rather than a bag of counts.
 
-**What I expected.** One or two sentences on the hypothesis and why it seemed
-reasonable at the time.
+**What I did.** Built the pipeline in R, calling Python through `reticulate`.
+Reshaped interaction logs into three-dimensional tensors (student × lag ×
+feature) and fitted recurrent neural networks, including LSTMs. Ran
+hyperparameter tuning, per-student model fitting on random subsamples of 30 and
+100 students, and permutation-based feature-importance analyses to see which
+log features carried the signal.
 
-**What happened.** The concrete failure. Recruitment fell short; the
-manipulation didn't move the manipulation check; the measure had a floor
-effect; the effect was there but the confidence interval spanned everything of
-interest. Be specific — "it didn't work" teaches nobody anything.
+**Participants.** Students represented in an intelligent-tutoring log dataset,
+analysed at the level of anonymous learner IDs. **[EDIT: add the grade range,
+subject, and N of the full dataset — I could confirm the modelling subsamples
+from your scripts but not the sample's demographic composition.]**
 
-**What I'd do differently.** The part readers come for. Often this is a design
-decision, not an analysis one.
+**Measures.** Interaction-level log features only — hint requests, attempt
+counts, response timing, and item-level correctness — with no self-report or
+demographic predictors.
 
-### [EDIT: Second entry] {#dead-end-2}
+**Why it stopped.** Two reasons, and only one of them is technical. The models
+ran, but per-student fitting on a few dozen learners could not distinguish a
+genuine sequential signal from overfitting to individual quirks, and I never
+resolved how to pool across students without losing the sequence structure that
+was the whole point. The other reason is that my role in the project was never
+settled, and I stopped before deciding whether it was mine to finish.
 
-*[EDIT: dates · stage at which it stopped]*
+**What I'd do differently.** Fix the estimand before the architecture. I chose
+the model class first — recurrent networks, because the data were sequential —
+and only then asked what quantity I wanted to recover. Reversed, I'd have
+noticed earlier that a well-specified multilevel survival model answers the
+"when does someone bottom out" question with far less machinery, and would have
+been the honest baseline to beat.
 
-**What I expected.**
+### Emotion-dynamics indices without the power to support them
 
-**What happened.**
+*Paused · analysis-stage dead end*
 
-**What I'd do differently.**
+**The idea.** Test whether within-person emotion dynamics — inertia, variability,
+reactivity — carry the mechanism linking a daily stressor to longer-term
+adjustment, rather than mean affect doing all the work.
 
-## Analyses that went nowhere
+**What I did.** Fitted the dynamic models, derived the person-level dynamic
+indices, and carried them into the mechanism models as mediators and moderators.
 
-### [EDIT: e.g. A model that fit beautifully and meant nothing]
+**Participants and measures.** **[EDIT: fill in N, age range, composition, and
+the daily-diary instruments — I deliberately left these blank rather than infer
+them from your project notes, since several diary studies in your folder have
+different samples and I did not want to publish the wrong numbers.]**
 
-*[EDIT: dates]*
+**Why it stopped.** The dynamic indices were too imprecisely estimated at the
+person level to support the mechanism test. With around two weeks of daily
+reports, an individual's inertia or variability is estimated with enough
+uncertainty that treating it as a predictor propagates that noise into every
+downstream coefficient. The confidence intervals were consistent with almost
+anything of interest. This is a power problem in a specific and underappreciated
+sense: not too few people, but too few observations *per* person to treat a
+derived dynamic feature as if it were measured.
 
-Shorter entries are fine here. Analysis dead ends are often the most reusable
-content on a page like this, because the next person is about to make the same
-choice. Convergence problems you eventually understood, a model that was
-unidentified for a reason that took weeks to see, a correction that changed the
-conclusion — all worth writing down.
-
-### [EDIT: e.g. Why I stopped trusting one derived variable]
-
-*[EDIT: dates]*
-
-Same shape.
+**What I'd do differently.** Treat the dynamic index as latent rather than
+computed — estimate it and its uncertainty inside one model instead of
+extracting a point estimate and passing it along. And run the reliability
+calculation for person-level dynamic parameters *at design stage*, which would
+have told me how many days I needed before any data were collected.
 
 ## Tools I built and stopped using
 
-### [EDIT: Tool or package name]
+### An automated literature-review pipeline {#auto-lr}
 
-*[EDIT: dates] · [EDIT: archived / superseded by X]*
+*Version 1.0 · unmaintained*
 
-What it did, why you built it, and why you stopped. If the code is still up,
-link it and say plainly whether it's maintained — an honest "unmaintained,
-kept for reference" saves the next person an afternoon.
+**The idea.** Screening for a systematic review is mechanical, tedious, and
+error-prone in a way that seemed automatable: take exported search results,
+fill in the metadata gaps, and triage abstracts against inclusion criteria so a
+human only adjudicates the genuinely ambiguous ones.
 
-::: {.entry-links}
-[Code (archived)](https://github.com/USERNAME/REPO)
-:::
+**What I built.** An R pipeline that ingested CSV exports from LitSift, combined
+them across searches, and recovered missing abstracts from the CrossRef API by
+DOI, with per-record error handling so one bad response couldn't kill a run. It
+worked — abstract coverage improved substantially over the raw exports.
+
+**Participants and measures.** None; the units were published records.
+
+**Why it stopped.** It never got past the easy half. Abstract *retrieval* is a
+solved problem; abstract *screening* is the part that matters, and I stalled
+exactly there. What I had was a metadata-completion tool wearing the name of a
+literature-review tool. It also never had a validation step — I could not have
+told you its false-negative rate against my own manual screening, which for a
+systematic review is the only number that would justify using it.
+
+**What I'd do differently.** Build the evaluation set first: hand-screen a few
+hundred abstracts, then treat any automated screener as something that has to
+reproduce those decisions before it is allowed near a real review. That reframes
+the project from "write a pipeline" to "measure agreement," which is both more
+tractable and more publishable.
+
+### An R package for emotion-regulation dynamics {#er-package}
+
+*Never started*
+
+**The idea.** Package the measures I keep recomputing — dynamic indices,
+polyregulation summaries, synchrony estimates — so that I and others could stop
+rewriting them per project.
+
+**What I did.** Created the folder in September 2025 and never put anything in
+it.
+
+**Why it stopped.** I'm including this because the empty folder is the honest
+artifact. The work it was meant to hold does exist, scattered across analysis
+scripts in individual projects. What was missing was not time but a decision
+about scope: a package needs a settled definition of each measure, and my
+definitions were still moving between papers. Packaging a moving target
+produces a bad package.
+
+**What I'd do differently.** Wait for the second paper that needs the same
+function, then extract it from working code rather than designing it in advance.
 
 ## Still open
 
-Ideas I haven't given up on but haven't managed to run. If any of these overlap
-with your own work, I'd genuinely like to hear from you.
+Not abandoned, just not yet done. If any of these overlaps with your work, I'd
+be glad to hear from you.
 
-- **[EDIT: idea]** — what's missing is [data / a collaborator / a method that works]
-- **[EDIT: idea]** — stalled on [the specific obstacle]
-- **[EDIT: idea]**
+- **Change-to-change models of stress and resilience**, ideally as a
+  meta-analysis. Waiting on the collaborators to do it properly.
+- **Digital and technological context** as a developmental environment, beyond
+  screen-time-as-dose.
+- **Socioeconomic context** and the measurement problem underneath it — what we
+  actually capture when we say "SES."
+- **Concept-level AI literacy for researchers**, the workshop described on the
+  [teaching page](teaching.qmd).
+
+::: {.note}
+**EDIT — read before publishing.** Two things I left out on purpose, both your
+call. (1) One of your first-author papers was rejected at a journal and is being
+revised for another; that's ordinary, but naming it publicly while it's still in
+play can be read badly by search committees, so it isn't here. (2) I removed all
+authorship and timeline detail from your project-tracking notes. I'd also
+suggest checking with collaborators before the two analysis entries above go
+live, since both involve shared data.
+:::
