@@ -145,6 +145,17 @@ inertia across tasks and correlated it with the other early childhood measures
 available.
 :::
 
+::: {.field}
+[Results]{.k}
+
+Nothing held together. Across 748 correlations between the two inertia estimates
+(N = 53 children) and every available parent-report, teacher-report, and
+observed regulation measure, 31 reached p &lt; .05, against 37 expected by chance
+alone. The median absolute correlation was .09 and the largest was .45. The
+handful that cleared the threshold were scattered single questionnaire items
+rather than any coherent construct.
+:::
+
 
 
 ### Profiles of RSA reactivity across emotion-eliciting contexts
@@ -343,7 +354,18 @@ and both with emotion regulation (−.31 ≤ r ≤ −.13).
 
 I predicted social skills would follow a nonlinear trajectory, growth from early
 to middle childhood then a plateau or decline in adolescence, and that
-physiological regulation would predict the rate of growth.
+physiological regulation would predict the rate of growth both between children,
+so that those with higher average resting RSA improved faster, and within them,
+so that years of larger RSA increase were years of larger gains.
+:::
+
+::: {.field}
+[Participants]{.k}
+
+The same three-cohort longitudinal study of social and emotional development
+from age 2 to young adulthood as the peer paper above (N = 447), recruited
+through day care centres, a county health department, and a WIC programme, and
+screened at age 2 to oversample children at risk for externalizing problems.
 :::
 
 ::: {.field}
