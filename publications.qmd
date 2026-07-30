@@ -24,7 +24,6 @@ Preprints and accepted manuscripts are posted where the publisher permits it.
 ::: {.entry}
 **Tang, Y.**, & Coauthor, A. (2026). [EDIT: Title of the article in sentence
 case]. *[EDIT: Journal Name]*, *[vol]*([issue]), [pages].
-[.venue]{.venue}
 
 ::: {.entry-links}
 [PDF](files/tang-2026.pdf) [DOI](https://doi.org/XX.XXXX/XXXXX)

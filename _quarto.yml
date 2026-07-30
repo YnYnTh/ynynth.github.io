@@ -36,10 +36,11 @@ website:
 
 format:
   html:
-    # 'default' is plain Bootstrap, which loads no external fonts.
-    # Bootswatch themes (cosmo, flatly, ...) @import Google Fonts, which are
-    # blocked in mainland China — styles.scss also nulls $web-font-path as insurance.
-    theme: [default, styles.scss]
+    # A bare .scss layers on plain Bootstrap, which loads no external fonts.
+    # Do NOT switch to a Bootswatch theme (cosmo, flatly, ...) without care:
+    # they @import Google Fonts, blocked in mainland China. styles.scss nulls
+    # $web-font-path as insurance if you ever do.
+    theme: styles.scss
     toc: false
     anchor-sections: true
     link-external-newwindow: true
