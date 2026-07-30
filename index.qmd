@@ -23,9 +23,9 @@ I study **how emotion regulation is constructed**: not as a skill that sits
 inside a child, but as something assembled across biology, relationships, and
 context, and across timescales from seconds to years.
 
-My work pairs **physiological measures of regulation** with **daily diary and
-other intensive longitudinal designs**, and I use methods that describe change
-and pattern within a person rather than only differences between people.
+My work spans **laboratory measures of physiological regulation and observed
+behaviour**, **multi-informant surveys**, and **daily diary and other intensive
+longitudinal designs**. I work in **R**, **Mplus**, **SPSS**, and **Stata**.
 
 I work with [Aprile Benner](https://liberalarts.utexas.edu/hdfs/) at UT Austin.
 Before this I earned an M.A. in Human Development and Family Sciences at UT

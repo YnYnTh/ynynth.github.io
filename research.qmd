@@ -249,14 +249,13 @@ coupling is the mechanism through which regulation transfers.
 
   <path d="M86 84 L128 130"  stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a4)"/>
   <path d="M212 84 L170 130" stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a4)"/>
-  <text x="72"  y="122" font-size="9.5" fill="#4338ca" text-anchor="end">attachment</text>
-  <text x="228" y="122" font-size="9.5" fill="#4338ca">attachment</text>
+  <text x="60"  y="112" font-size="9.5" fill="#4338ca" text-anchor="end">attachment</text>
+  <text x="238" y="112" font-size="9.5" fill="#4338ca" text-anchor="start">attachment</text>
 
-  <!-- attachment quality feeds the strength of synchrony -->
-  <path d="M196 140 C 250 140, 258 116, 296 108"
+  <!-- attachment quality feeds the strength of synchrony; routed below the labels -->
+  <path d="M149 194 C 210 220, 268 206, 300 176"
         fill="none" stroke="#4338ca" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#a4)"/>
-  <text x="252" y="160" font-size="9.5" font-weight="600" fill="#4338ca" text-anchor="middle">attachment quality</text>
-  <text x="252" y="172" font-size="9.5" font-weight="600" fill="#4338ca" text-anchor="middle">shapes coupling</text>
+  <text x="224" y="232" font-size="9.5" font-weight="600" fill="#4338ca" text-anchor="middle">attachment quality shapes coupling</text>
 
   <g fill="none" stroke="#0891b2" stroke-width="1.8">
     <path d="M312 60 C 330 44, 346 76, 364 56 S 398 38, 416 64 S 452 72, 470 50"/>
@@ -278,7 +277,7 @@ coupling is the mechanism through which regulation transfers.
     <text x="394" y="215" font-size="9.5" fill="#59606b">what the child can do alone</text>
   </g>
   <path d="M392 158 L392 174" stroke="#0891b2" stroke-width="1.8" marker-end="url(#a4c)"/>
-  <path d="M181 176 C 230 208, 262 206, 296 204" fill="none" stroke="#8fd0de" stroke-width="1.4" marker-end="url(#a4c)"/>
+  <path d="M181 152 C 232 146, 262 172, 296 190" fill="none" stroke="#8fd0de" stroke-width="1.4" marker-end="url(#a4c)"/>
 </svg>
 ```
 :::
@@ -297,7 +296,7 @@ similarly amplify or buffer each other, and whether it is similarity in the
 
 ::: {.diagram}
 ```{=html}
-<svg viewBox="0 0 640 236" role="img" aria-labelledby="d3t">
+<svg viewBox="0 0 640 250" role="img" aria-labelledby="d3t">
   <title id="d3t">Two dissertation studies: friendship network structure and coping similarity predicting health</title>
   <defs>
     <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
@@ -333,25 +332,25 @@ similarly amplify or buffer each other, and whether it is similarity in the
   <text x="262" y="196" font-size="9.5" fill="#5b6472" text-anchor="middle">clique B</text>
 
   <g text-anchor="middle">
-    <rect x="368" y="26" width="264" height="52" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1.6"/>
-    <text x="500" y="45" font-size="10" font-weight="700" fill="#4338ca">STUDY 1</text>
-    <text x="500" y="60" font-size="11" font-weight="600" fill="#312e81">Friendship structure</text>
-    <text x="500" y="73" font-size="9.5" fill="#59606b">clique diversity, stability, bridging</text>
+    <rect x="366" y="28" width="264" height="52" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1.6"/>
+    <text x="500" y="47" font-size="10" font-weight="700" fill="#4338ca">STUDY 1</text>
+    <text x="500" y="62" font-size="11" font-weight="600" fill="#312e81">Friendship structure</text>
+    <text x="500" y="75" font-size="9.5" fill="#59606b">clique diversity, stability, bridging</text>
 
-    <rect x="368" y="94" width="264" height="52" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1.6"/>
-    <text x="500" y="113" font-size="10" font-weight="700" fill="#4338ca">STUDY 2</text>
-    <text x="500" y="128" font-size="11" font-weight="600" fill="#312e81">Coping similarity among friends</text>
-    <text x="500" y="141" font-size="9.5" fill="#59606b">similarity in form vs. in function</text>
+    <rect x="366" y="96" width="264" height="52" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1.6"/>
+    <text x="500" y="115" font-size="10" font-weight="700" fill="#4338ca">STUDY 2</text>
+    <text x="500" y="130" font-size="11" font-weight="600" fill="#312e81">Coping similarity among friends</text>
+    <text x="500" y="143" font-size="9.5" fill="#59606b">similarity in form vs. in function</text>
 
-    <rect x="368" y="162" width="264" height="52" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
-    <text x="500" y="183" font-size="11" font-weight="600" fill="#075985">Physiological wear-and-tear</text>
-    <text x="500" y="199" font-size="9.5" fill="#59606b">and mental health</text>
+    <rect x="366" y="164" width="264" height="52" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
+    <text x="500" y="185" font-size="11" font-weight="600" fill="#075985">Physiological wear-and-tear</text>
+    <text x="500" y="201" font-size="9.5" fill="#59606b">and mental health</text>
   </g>
 
-  <path d="M160 84 L362 52"  stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a3)"/>
-  <path d="M160 96 L362 118" stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a3)"/>
-  <line x1="500" y1="78"  x2="500" y2="88"  stroke="#0891b2" stroke-width="1.8" marker-end="url(#a3c)"/>
-  <line x1="500" y1="146" x2="500" y2="156" stroke="#0891b2" stroke-width="1.8" marker-end="url(#a3c)"/>
+  <path d="M338 74 L362 60"  stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a3)"/>
+  <path d="M338 122 L362 122" stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a3)"/>
+  <line x1="500" y1="80"  x2="500" y2="92"  stroke="#0891b2" stroke-width="1.8" marker-end="url(#a3c)"/>
+  <line x1="500" y1="148" x2="500" y2="160" stroke="#0891b2" stroke-width="1.8" marker-end="url(#a3c)"/>
 </svg>
 ```
 :::
