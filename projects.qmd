@@ -253,12 +253,14 @@ Model Estimation.
 ::: {.field}
 [Results]{.k}
 
-GIMME works by finding paths that hold for most of the sample and then adding
-individual paths, so it needs a group structure to exist in the first place.
-Here there was too little of one: the paths that replicated across dyads were
-few, and most of what the models recovered was individual-specific. A method
-built to handle heterogeneity can still be defeated by it, and that is what
-happened.
+A third of the sample could not be modelled at all. Of 68 children with usable
+time series, only 44 produced a fitted model. The reason is that GIMME needs
+every variable in a person's model to vary, and many children simply never
+displayed a given behaviour during the observation: self and object distraction
+was constant for 14 children, venting for 5, and social engagement for 4. A
+child who never vents has no variance to estimate a path from, so the model
+cannot be fitted for that child and they drop out. The behaviours that are
+rarest are exactly the ones that would have been most interesting.
 :::
 
 ::: {.topic}

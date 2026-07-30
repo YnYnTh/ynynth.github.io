@@ -19,9 +19,10 @@ about:
       href: https://www.researchgate.net/profile/XXXX
 ---
 
-I study **how emotion regulation is constructed**: not as a skill that sits
-inside a child, but as something assembled across biology, relationships, and
-context, and across timescales from seconds to years.
+I study **how emotion regulation is constructed**: assembled within the child
+from physiology, strategy, and goals; between people, with caregivers, peers,
+and teachers; and within a wider social context, across timescales from seconds
+to years.
 
 My work spans **laboratory measures of physiological regulation and observed
 behaviour**, **multi-informant surveys**, and **daily diary and other intensive

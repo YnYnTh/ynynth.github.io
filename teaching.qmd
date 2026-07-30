@@ -314,38 +314,31 @@ only understands once they have attempted it and got something back.
 ```
 :::
 
-What students wanted turned out to depend more on the size of the room than on
-anything I changed about myself. In a lecture hall of two hundred they wanted a
-teaching assistant who was visibly there and easy to find. In a graduate seminar
-of six they wanted worked examples and more depth. The same behaviour reads as
-attentive in one room and invisible in the other, and I did not understand that
-early on.
+What students wanted depended more on the size of the room than on anything I
+changed about myself. In a lecture hall of two hundred they wanted a teaching
+assistant who was visibly there and easy to find. In a seminar of six they
+wanted worked examples and more depth. The same behaviour reads as attentive in
+one room and invisible in the other, and I did not see that early on.
 
-What stayed constant is the part I care most about. In every appointment, from
-the largest lecture to the smallest seminar, students singled out the written
-feedback on their assignments and how quickly and patiently I answered
-questions. In the graduate statistics sections that was close to unanimous:
-students described the support as the most useful they had had, praised the
-depth of the R and statistics help, and most had no changes to suggest at all.
+What stayed constant is the part I care most about. In every appointment,
+students singled out the written feedback on their assignments and how quickly
+and patiently I answered questions. In the graduate statistics sections that was
+close to unanimous, and most respondents had no changes to suggest at all.
 
-Grading took me longer to calibrate, and I now think the reason was structural
-rather than personal. I did my own undergraduate degree outside the United
-States, and I was applying a standard I had learned in a different system to
-American undergraduates in a lab course. Graduate statistics assignments and
-undergraduate observation coding are not the same object: one is work you mark
-against a defined answer, the other is a first attempt at a skill where the
-mark is mostly a teaching signal. Learning where each course sits on that scale,
-and how much of it is local convention rather than a universal standard, is
-something I could only do by teaching in enough different settings to see the
-contrast.
+Grading took longer to calibrate, and the reason was structural rather than
+personal. I did my own undergraduate degree outside the United States, and I was
+applying a standard learned in one system to undergraduates in another. Graduate
+statistics assignments and undergraduate observation coding are also not the
+same object: one is marked against a defined answer, the other is a first
+attempt at a skill where the mark is mostly a teaching signal. Learning where a
+course sits on that scale, and how much of it is local convention, took teaching
+in enough different settings to see the contrast.
 
-The open question I find most interesting is about reach. In every class there
-are students who never come to office hours and never email, and I would like to
-know what would bring them in, or whether they simply need less from a teaching
-assistant than others do. It is a good problem to have: the students who do come
-tell me the support is worth seeking out, so the question is not whether the
-help is useful but how to widen the door. That is what I want the next few years
-of teaching to answer.
+The open question I find most interesting is reach. In every class some students
+never come to office hours and never email, and I would like to know what would
+bring them in, or whether they simply need less than others do. It is a good
+problem to have: the students who do come say the support is worth seeking out,
+so the question is not whether the help is useful but how to widen the door.
 
 ## Invited talks
 
