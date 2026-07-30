@@ -45,9 +45,17 @@ h3 {
   font-size: 1.12rem;
 }
 
-// Publication / project entries
+// Publication / project entries. Hanging indent per APA reference-list style.
 .entry {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
+  padding-left: 1.6rem;
+  text-indent: -1.6rem;
+  line-height: 1.5;
+}
+
+// The links row is a child of .entry, so undo the hanging indent inside it
+.entry .entry-links {
+  text-indent: 0;
 }
 
 .entry .venue {

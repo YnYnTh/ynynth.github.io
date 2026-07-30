@@ -11,7 +11,8 @@ Each page is a `.qmd` file — Markdown, the same syntax as RMarkdown:
 | ----------------- | ---------------------------------------- |
 | `index.qmd`       | Home / about                             |
 | `research.qmd`    | Research interests and spotlights        |
-| `publications.qmd`| Publications, talks, theses              |
+| `publications.qmd`| Intro text only — the list is generated  |
+| `publications.bib`| **Source of the publication list**       |
 | `outreach.qmd`    | Workshops, teaching materials, guides    |
 | `projects.qmd`    | Projects and dead ends                   |
 | `_quarto.yml`     | Site title, navbar, URL                  |
@@ -25,6 +26,80 @@ Preview locally with live reload:
 ```bash
 quarto preview
 ```
+
+## The publications pipeline
+
+You don't edit the publications list. `_scripts/build_publications.py` runs
+before every render (wired up as `pre-render` in `_quarto.yml`) and rebuilds it
+from `publications.bib`:
+
+```
+publications.bib ──► pandoc + apa.csl ──► _generated/publications.md
+                                              │
+                              publications.qmd includes it
+```
+
+APA 7 formatting is done by Pandoc's citation processor using `apa.csl` — the
+same style file Zotero uses, copied from `~/Zotero/styles/apa.csl`. The script
+only adds section grouping, reverse-chronological ordering, bolding of your
+name, and the link buttons. **Nothing about the APA output is hand-written**,
+which is the point: it can't drift from the standard.
+
+It runs in GitHub Actions too, so pushing an updated `.bib` is enough — no need
+to render locally first.
+
+`_generated/publications.md` **is committed**, even though it's generated.
+Quarto expands `{{< include >}}` while building the project context, which
+happens before pre-render scripts run, so the file has to already exist or a
+clean checkout fails to build. Committing it also means the last good list
+still publishes if the generator ever errors. Expect it to show up as modified
+after a local render; that's normal, commit it along with the `.bib`.
+
+### Connect it to Zotero (do this once)
+
+1. In Zotero, put the papers you want listed into one collection
+   (e.g. *My publications*)
+2. Right-click the collection → **Export Collection**
+3. Format **Better BibTeX**, tick **Keep updated**
+4. Save as `~/academic-website/publications.bib`, replacing the placeholder file
+
+Better BibTeX now rewrites that file whenever the collection changes. Adding a
+paper to your website becomes: add it to Zotero, then `git push`.
+
+### Link buttons come from Zotero's "Extra" field
+
+Better BibTeX exports Zotero's **Extra** field into the bib `note` field, and
+the script reads `key: value` pairs out of it. In a Zotero item's Extra box:
+
+```
+pdf: files/tang-2026.pdf
+data: https://osf.io/abcde
+code: https://github.com/USERNAME/project
+```
+
+Recognised keys: `pdf`, `preprint`, `data`, `code`, `materials`, `supplement`,
+`slides`, `poster`, `osf`. Anything else in Extra is ignored, so notes to
+yourself are harmless.
+
+DOIs are *not* a button — APA 7 requires the DOI inside the reference itself,
+so the citation processor already renders it as a link.
+
+One extra key, `section:`, forces an entry into a named section — useful
+because Zotero item types don't always map onto CSL types the way you'd guess:
+
+```
+section: Conference presentations
+```
+
+Section names and order live in `SECTIONS` at the top of the script. Your name
+variants for bolding live in `MY_NAMES` just above it — **edit that if you
+publish under any other form of your name.**
+
+### A note on `(2026a)` / `(2026b)`
+
+APA disambiguates same-author, same-year works with letter suffixes, so the
+citation processor adds them. That's correct APA and matches what Zotero
+produces. With real data they only appear on genuine collisions.
 
 Publish:
 
@@ -64,11 +139,25 @@ Analytics, Google Scholar badges, Dropbox, Google Drive, and `cdn.jsdelivr.net`
 are blocked or unreliable there, and each one stalls page load for every visitor
 in China. This site is set up to avoid all of them:
 
-- `theme: [default, ...]` — plain Bootstrap, no Bootswatch Google Fonts import
+- `theme: styles.scss` — plain Bootstrap, no Bootswatch Google Fonts import
 - `$web-font-path: ""` in `styles.scss` — belt and braces on the same issue
 - `html-math-method: plain` — no MathJax/KaTeX CDN fetch
+- `search: false` — Quarto's search widget bundles Algolia autocomplete, which
+  carries a `cdn.jsdelivr.net` loader for its optional analytics module. Inert
+  unless insights are enabled, but it was the only CDN string in the build, so
+  it's gone. **Turning search back on reintroduces it.**
+- `apa.csl` committed locally rather than fetched from the CSL repo
 - system font stack, including CJK faces
 - no analytics, no Scholar badge, no CDN libraries
+
+Verified: loading the built site and watching the network panel shows requests
+to the local host and inline `data:` URIs only — no external hosts.
+
+Two things in the *content* still point at blocked services: the Google Scholar
+link on the home page, and any Zotero `note:` links to Dropbox or Google Drive.
+Those are links a visitor clicks, not assets the page loads, so they don't
+break the site — but a reader in China can't follow them. Host files in
+`files/` instead.
 
 **Rule of thumb: if you paste in an embed or `<script src="https://...">`,
 assume it breaks the site in China until you've verified otherwise.**
