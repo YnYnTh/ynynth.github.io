@@ -1,0 +1,64 @@
+---
+title: "Research"
+---
+
+::: {.note}
+**EDIT:** This page has two halves — a short statement of what you work on and
+why, then two or three "spotlights" that each tell the story of one finding in
+plain language. Spotlights are what non-specialists, search committees, and
+journalists actually read. Two good ones beat six thin ones.
+:::
+
+## Interests
+
+My research asks **[EDIT: your driving question, one sentence]**. Three threads
+run through it:
+
+**[EDIT: Thread one — e.g. Daily processes in close relationships.]** Two or
+three sentences on the substantive question, why it matters, and what kind of
+data you bring to it.
+
+**[EDIT: Thread two — e.g. Measurement of within-person change.]** What is
+unresolved, and what your angle is.
+
+**[EDIT: Thread three — e.g. Methods for intensive longitudinal data.]** Keep
+each thread short enough that someone can read all three in under a minute.
+
+## Spotlights
+
+### [EDIT: A plain-language title, not the paper title]
+
+*[EDIT: One-line takeaway — the thing you'd want remembered.]*
+
+Two or three short paragraphs. Start with the puzzle, not the method. What did
+people believe before, what did you do, and what changed? Name the method
+once, in passing, and keep the jargon out — the interested reader who wants
+detail will click through to the paper.
+
+Close with the limitation you find most honest, or the question it opened up.
+A spotlight that admits what it does not settle reads as more credible, not less.
+
+::: {.entry-links}
+[Paper](publications.qmd) [Data & code](https://github.com/USERNAME/REPO)
+:::
+
+### [EDIT: Second spotlight title]
+
+*[EDIT: One-line takeaway.]*
+
+Same shape as above.
+
+::: {.entry-links}
+[Paper](publications.qmd) [Preprint](https://osf.io/XXXX)
+:::
+
+## Methods I work with
+
+Structural equation modelling · multilevel and dynamic SEM · intensive
+longitudinal and diary designs · mediation and moderation · missing-data
+diagnostics. Mostly in **R** and **Mplus**.
+
+Where a project involves analysis choices that others might reasonably make
+differently, I try to put the code and the sensitivity checks somewhere public.
+Anything available lives on [my GitHub](https://github.com/USERNAME) or is
+linked from the [publications](publications.qmd) page.

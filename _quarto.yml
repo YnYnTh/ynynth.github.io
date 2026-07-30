@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: _site
+
+# Frozen computations: if you ever add {r} chunks, Quarto renders them locally
+# and CI reuses the cached results. Keeps GitHub Actions fast and R-free.
+execute:
+  freeze: auto
+
+website:
+  # EDIT: your name as you publish it
+  title: "Yingying Tang"
+  description: "Personal academic website"
+  # EDIT: replace USERNAME (and swap for your custom domain if you buy one)
+  site-url: "https://USERNAME.github.io"
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: outreach.qmd
+        text: Outreach
+      - href: projects.qmd
+        text: Dead Ends
+    right:
+      - icon: github
+        href: https://github.com/USERNAME
+        aria-label: GitHub
+
+  page-footer:
+    center: "© 2026 Yingying Tang · Built with Quarto"
+
+format:
+  html:
+    # 'default' is plain Bootstrap, which loads no external fonts.
+    # Bootswatch themes (cosmo, flatly, ...) @import Google Fonts, which are
+    # blocked in mainland China — styles.scss also nulls $web-font-path as insurance.
+    theme: [default, styles.scss]
+    toc: false
+    anchor-sections: true
+    link-external-newwindow: true
+    # 'plain' avoids pulling MathJax/KaTeX from a CDN. If you need real
+    # equations, switch to katex and verify it loads from a China test point.
+    html-math-method: plain

@@ -1,0 +1,92 @@
+---
+title: "Projects & Dead Ends"
+---
+
+A record of work that didn't reach publication: studies that failed, ideas that
+didn't survive contact with data, and analyses I abandoned. I keep this page
+because the published literature makes research look far tidier than it is, and
+because the specific ways a design fails are often more instructive than the
+ways it succeeds.
+
+Nothing here is a confession. Most of it is ordinary.
+
+::: {.note}
+**EDIT:** Replace the entries below with your own. The format that works is:
+what you expected, what happened, and what you'd do differently — three or four
+sentences each. Two cautions worth keeping in mind: don't write anything about
+unpublished data a collaborator hasn't agreed to make public, and be careful
+naming other people's work as the thing that failed. Describe your own
+decisions.
+
+If this page ever feels like it's undercutting you, retitle it "Works in
+Progress" and keep only the entries with a clean lesson. You can also delete
+the page and its navbar entry in `_quarto.yml`.
+:::
+
+## Abandoned studies
+
+### [EDIT: Short descriptive title] {#dead-end-1}
+
+*[EDIT: 2024–2025 · abandoned at data collection]*
+
+**What I expected.** One or two sentences on the hypothesis and why it seemed
+reasonable at the time.
+
+**What happened.** The concrete failure. Recruitment fell short; the
+manipulation didn't move the manipulation check; the measure had a floor
+effect; the effect was there but the confidence interval spanned everything of
+interest. Be specific — "it didn't work" teaches nobody anything.
+
+**What I'd do differently.** The part readers come for. Often this is a design
+decision, not an analysis one.
+
+### [EDIT: Second entry] {#dead-end-2}
+
+*[EDIT: dates · stage at which it stopped]*
+
+**What I expected.**
+
+**What happened.**
+
+**What I'd do differently.**
+
+## Analyses that went nowhere
+
+### [EDIT: e.g. A model that fit beautifully and meant nothing]
+
+*[EDIT: dates]*
+
+Shorter entries are fine here. Analysis dead ends are often the most reusable
+content on a page like this, because the next person is about to make the same
+choice. Convergence problems you eventually understood, a model that was
+unidentified for a reason that took weeks to see, a correction that changed the
+conclusion — all worth writing down.
+
+### [EDIT: e.g. Why I stopped trusting one derived variable]
+
+*[EDIT: dates]*
+
+Same shape.
+
+## Tools I built and stopped using
+
+### [EDIT: Tool or package name]
+
+*[EDIT: dates] · [EDIT: archived / superseded by X]*
+
+What it did, why you built it, and why you stopped. If the code is still up,
+link it and say plainly whether it's maintained — an honest "unmaintained,
+kept for reference" saves the next person an afternoon.
+
+::: {.entry-links}
+[Code (archived)](https://github.com/USERNAME/REPO)
+:::
+
+## Still open
+
+Ideas I haven't given up on but haven't managed to run. If any of these overlap
+with your own work, I'd genuinely like to hear from you.
+
+- **[EDIT: idea]** — what's missing is [data / a collaborator / a method that works]
+- **[EDIT: idea]** — stalled on [the specific obstacle]
+- **[EDIT: idea]**

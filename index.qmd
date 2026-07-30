@@ -1,0 +1,53 @@
+---
+title: "Yingying Tang"
+subtitle: "PhD Candidate · Beijing Normal University"
+about:
+  template: trestles
+  # Add a photo at images/profile.jpg, then uncomment the next line.
+  # image: images/profile.jpg
+  # image-shape: rounded
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:yingyingtang.bnu@gmail.com
+    - icon: github
+      text: GitHub
+      href: https://github.com/USERNAME
+    - icon: mortarboard
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=XXXX
+    - icon: file-earmark-text
+      text: CV
+      href: files/cv.pdf
+---
+
+I study **[EDIT: your topic in one line — e.g. how daily emotional dynamics
+unfold within families, using intensive longitudinal designs]**. My work
+combines diary and experience-sampling data with latent-variable and
+multilevel models.
+
+Methodologically I spend most of my time in structural equation modelling,
+multilevel and dynamic SEM, and the practical business of fitting these models
+to messy real data — missingness, convergence, and the gap between a model that
+runs and a model that means something.
+
+I also care about making these methods learnable. I write and teach
+[statistics workshop material](outreach.qmd), and I keep a public record of the
+[projects that did not work out](projects.qmd), because the published record is
+a poor guide to how research actually goes.
+
+::: {.note}
+**EDIT:** Replace the two paragraphs above, drop the third if you'd rather not
+open with the dead-ends page, and update the links in the YAML header.
+:::
+
+## Currently
+
+- **[EDIT]** Dissertation work on [topic]
+- **[EDIT]** Workshop series on [topic] for [audience]
+- **[EDIT]** Looking for postdoc positions starting [term] — get in touch
+
+## Contact
+
+[yingyingtang.bnu@gmail.com](mailto:yingyingtang.bnu@gmail.com)\
+[EDIT: Department, Beijing Normal University, Beijing, China]

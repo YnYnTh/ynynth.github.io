@@ -1,0 +1,93 @@
+---
+title: "Outreach & Teaching"
+---
+
+Materials from statistics workshops and short courses I've taught. Everything
+here is free to reuse and adapt — slides, data, and code. If you teach from it,
+I'd be glad to hear how it went.
+
+::: {.note}
+**EDIT:** Replace the workshops below with your own. Two practical notes:
+host slides and data as files in this repo (`files/`) rather than linking to
+Google Drive or Dropbox, both of which are blocked in mainland China — this is
+the single biggest thing that determines whether your students there can
+actually get the materials.
+:::
+
+## Workshops
+
+### [EDIT: Introduction to Multilevel Models in R]
+
+*[EDIT: Where and when — e.g. Graduate methods series, Beijing Normal
+University, Spring 2026] · [EDIT: 3 sessions, ~6 hours]*
+
+One paragraph on who it's for and what someone will be able to do afterwards.
+Say the prerequisite plainly ("assumes you can fit a regression in R and
+nothing more") — the main reason people bounce off stats workshops is not
+knowing whether they're the intended audience.
+
+::: {.entry-links}
+[Slides](files/mlm-slides.pdf) [Exercises](files/mlm-exercises.zip)
+[Data](files/mlm-data.csv) [Code](https://github.com/USERNAME/REPO)
+:::
+
+### [EDIT: Structural Equation Modelling with Mplus]
+
+*[EDIT: Venue, term] · [EDIT: duration]*
+
+Description as above.
+
+::: {.entry-links}
+[Slides](files/sem-slides.pdf) [Mplus input files](files/sem-inputs.zip)
+[Data](files/sem-data.dat)
+:::
+
+### [EDIT: A short, self-contained topic — e.g. Handling Missing Data]
+
+*[EDIT: Venue, term] · [EDIT: 90-minute session]*
+
+Short single-session workshops are worth listing separately; they're the ones
+other instructors are most likely to lift wholesale.
+
+::: {.entry-links}
+[Slides](files/missing-data-slides.pdf) [Code](files/missing-data-code.R)
+:::
+
+## Guides & notes
+
+Shorter written pieces — the answers to questions I get asked more than twice.
+
+::: {.entry}
+**[EDIT: e.g. Reading Mplus output without panicking]** — a short annotated
+walkthrough of one model's output, section by section.
+
+::: {.entry-links}
+[Read](files/mplus-output-guide.pdf)
+:::
+:::
+
+::: {.entry}
+**[EDIT: e.g. What to check before you trust a converged model]** — a checklist.
+
+::: {.entry-links}
+[Read](files/convergence-checklist.pdf)
+:::
+:::
+
+## Teaching
+
+- **[EDIT: Course name]** — [EDIT: role, e.g. Teaching assistant],
+  [EDIT: institution], [EDIT: terms]
+- **[EDIT: Course name]** — [EDIT: role], [EDIT: institution], [EDIT: terms]
+
+## Mentoring & service
+
+- **[EDIT]** Reviewer for [EDIT: journal names]
+- **[EDIT]** Supervised [n] undergraduate theses on [topics]
+- **[EDIT]** Organised [reading group / methods clinic / seminar series]
+
+---
+
+Reuse note: unless a file says otherwise, these materials are released under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — use them freely
+with attribution.
