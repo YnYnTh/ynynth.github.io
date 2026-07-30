@@ -201,7 +201,7 @@ happened.
 :::
 
 ::: {.topic}
-## Teacher and child physiological synchrony
+## Relationships and social development
 :::
 
 ### Synchrony and teacher communication
@@ -221,10 +221,6 @@ a property of the dyad alone.
 
 Dyadic models estimated with a Bayesian estimator, controlling for child age,
 gender, and race.
-:::
-
-::: {.topic}
-## Peer relationships and social development
 :::
 
 ### Bidirectional relations between peer relationships and emotion regulation
