@@ -364,6 +364,13 @@ h2::after {
   margin: 0;
 }
 
+// A field body can run to several paragraphs; keep every one of them in the
+// content column instead of letting the grid wrap them under the label.
+.page-small .field > p:nth-child(n + 2) {
+  grid-column: 2;
+  margin-top: 0.55rem;
+}
+
 .page-small .field .k {
   color: $indigo;
   font-family: $font-family-monospace;

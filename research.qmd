@@ -2,14 +2,15 @@
 title: "Research"
 ---
 
-I study **how emotion regulation is constructed**: not as a skill that sits
-inside a child, but as something assembled across biology, relationships, and
-context, and across timescales from seconds to years.
+I study **how emotion regulation is constructed**: assembled within the child
+from physiology, strategy, and goals; between people, with caregivers, peers,
+and teachers; and within a wider social context, across timescales from seconds
+to years.
 
-Three things follow, and they organise the work below. Regulation is
-**coordinated**, using many strategies across many domains rather than one
-strategy in one domain. It is **co-regulated**, happening between people and not
-only inside the child. And **context is foreground**, not background.
+Regulation is **coordinated**, using many strategies across many domains rather
+than one strategy in one domain. It is **co-regulated**, happening between
+people and not only inside the child. And **context is foreground**, not
+background. Those three claims organise the four areas below.
 
 ## Biopsychosocial self-regulation
 
@@ -343,8 +344,9 @@ similarly amplify or buffer each other, and whether it is similarity in the
     <text x="500" y="143" font-size="9.5" fill="#59606b">similarity in form vs. in function</text>
 
     <rect x="366" y="164" width="264" height="52" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
-    <text x="500" y="185" font-size="11" font-weight="600" fill="#075985">Physiological wear-and-tear</text>
-    <text x="500" y="201" font-size="9.5" fill="#59606b">and mental health</text>
+    <text x="500" y="183" font-size="10.5" font-weight="700" fill="#075985">Physiological wear-and-tear,</text>
+    <text x="500" y="197" font-size="10.5" font-weight="700" fill="#075985">health behaviours,</text>
+    <text x="500" y="211" font-size="10.5" font-weight="700" fill="#075985">and mental health</text>
   </g>
 
   <path d="M338 74 L362 60"  stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a3)"/>
