@@ -10,10 +10,6 @@ research look far tidier than it is.
 
 ::: {.topic}
 ## Physiological and behavioural regulation in early childhood
-
-Secondary analyses of two existing longitudinal studies of young children,
-asking whether physiological and behavioural regulation can be described
-together rather than as separate predictors.
 :::
 
 ### Profiles of regulation strategies and physiological reactivity
@@ -180,10 +176,6 @@ measurement.
 
 ::: {.topic}
 ## Teacher and child physiological synchrony
-
-Analyses from a classroom observation study of preschoolers and their teachers.
-I am no longer an author on the parent project; these entries record the
-analyses I ran.
 :::
 
 ### Synchrony and teacher communication
