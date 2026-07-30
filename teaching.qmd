@@ -59,8 +59,6 @@ an annual R workshop series for graduate students.
     <text x="158" y="161">Undergraduate methods</text>
     <text x="158" y="205">Undergraduate lecture</text>
   </g>
-  <polyline points="176,208 250,164 324,164 398,208 472,120 546,32 620,76"
-            fill="none" stroke="#c7d2fe" stroke-width="2.5"/>
   <g fill="#4338ca">
     <circle cx="176" cy="208" r="5.5"/>
     <circle cx="250" cy="208" r="5.5"/><circle cx="250" cy="164" r="5.5"/>
@@ -221,7 +219,7 @@ the instructor-facing items are the highest.</figcaption>
 
 Three things I would do differently if I taught this course again.
 
-**Know the program setting.** HDF 315L is a lower-division course, so I designed
+**Understand the program setting better.** HDF 315L is a lower-division course, so I designed
 it for lower-division students. Almost everyone who enrolled was a junior or
 senior, with one exception. That mismatch drove the pacing and the amount of
 scaffolding.
@@ -231,121 +229,103 @@ worked in the large child development lectures I assisted, where a group of four
 is a way of making a hall of two hundred feel small. In a room of nine
 upper-level students the same activity does the opposite: there is nothing to
 break down, and asking students to turn to a group they are already sitting with
-produced polite agreement rather than argument. What the graduate statistics
-sections taught me is that small rooms run on individual commitment first, so I
-am moving to written-first protocols where everyone answers before anyone
-speaks, then pairs, then the whole room.
+produced polite agreement rather than argument. What I have not settled is what replaces it: whether a
+small room runs better on individual written commitment before discussion, on
+pairs rather than groups, or on something else entirely.
 
-**Set expectations at the start, not along the way.** My clearest evaluations
-have always been about feedback and responsiveness, which are things I do after
-a student is already confused. What I did not do was tell students at the outset
-what the course would ask of them, how the assignments connected, and what
-counts as a good answer. A first-week overview of the arc of the course, and a
-short written brief for each assignment, moves that work forward to where it
-prevents confusion instead of repairing it.
+**Set expectations at the start, not along the way.** Most of what students
+praise about my teaching happens after they are already confused. I am still
+working out how much of that can be moved earlier: how much of an assignment's
+expectations can usefully be written down in advance, and how much a student
+only understands once they have attempted it and got something back.
 
 ## An overview of TA experiences
 
-Across four years and six appointments, from a 220-student lecture to a
-six-student graduate seminar, two things students praised stayed constant and
-two criticisms faded.
-
 ::: {.diagram}
 ```{=html}
-<svg viewBox="0 0 640 268" role="img" aria-labelledby="qlt">
-  <title id="qlt">How often three themes appeared in written student comments, from Fall 2022 to Spring 2026</title>
-  <defs>
-    <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
-      <circle cx="5" cy="5" r="4" fill="#4338ca"/>
-    </marker>
-  </defs>
+<svg viewBox="0 0 640 262" role="img" aria-labelledby="qlt">
+  <title id="qlt">Class size across six teaching assistant appointments and what students asked for in each</title>
 
-  <g stroke="#eef0f4" stroke-width="1">
-    <line x1="96" y1="40"  x2="470" y2="40"/>
-    <line x1="96" y1="94"  x2="470" y2="94"/>
-    <line x1="96" y1="148" x2="470" y2="148"/>
-    <line x1="96" y1="202" x2="470" y2="202"/>
+  <g font-size="10.5" fill="#0d1117" text-anchor="end">
+    <text x="112" y="46">Fall 2022</text>
+    <text x="112" y="80">Spring 2024</text>
+    <text x="112" y="114">Fall 2024</text>
+    <text x="112" y="148">Spring 2025</text>
+    <text x="112" y="182">Spring 2026</text>
   </g>
-  <g font-size="9.5" fill="#8a93a0" text-anchor="end">
-    <text x="88" y="43">often</text>
-    <text x="88" y="97">common</text>
-    <text x="88" y="151">occasional</text>
-    <text x="88" y="205">not raised</text>
+  <g font-size="9" fill="#a0a7b2" text-anchor="end">
+    <text x="112" y="57">HDF 313</text>
+    <text x="112" y="91">313 and 315L</text>
+    <text x="112" y="125">HDF 313</text>
+    <text x="112" y="159">HDF 380K.2</text>
+    <text x="112" y="193">380K.2 and .4</text>
   </g>
 
-  <!-- praised: feedback and responsiveness -->
-  <polyline points="120,94 208,94 296,40 384,40 460,40"
-            fill="none" stroke="#4338ca" stroke-width="2.6"/>
   <g fill="#4338ca">
-    <circle cx="120" cy="94" r="4.5"/><circle cx="208" cy="94" r="4.5"/>
-    <circle cx="296" cy="40" r="4.5"/><circle cx="384" cy="40" r="4.5"/>
-    <circle cx="460" cy="40" r="4.5"/>
+    <rect x="124" y="34" width="216" height="16" rx="2"/>
+    <rect x="124" y="68" width="190" height="16" rx="2"/>
+    <rect x="124" y="102" width="186" height="16" rx="2"/>
+    <rect x="124" y="136" width="66"  height="16" rx="2"/>
+    <rect x="124" y="170" width="102" height="16" rx="2"/>
   </g>
-  <text x="474" y="36" font-size="10.5" font-weight="600" fill="#4338ca">Helpful feedback</text>
-  <text x="474" y="49" font-size="10.5" font-weight="600" fill="#4338ca">and quick replies</text>
+  <g font-size="10" fill="#312e81" font-weight="600">
+    <text x="348" y="47">220 students</text>
+    <text x="322" y="81">120</text>
+    <text x="318" y="115">111</text>
+    <text x="198" y="149">8</text>
+    <text x="234" y="183">6 and 14</text>
+  </g>
 
-  <!-- wanted more presence -->
-  <polyline points="120,40 208,94 296,148 384,202 460,148"
-            fill="none" stroke="#0891b2" stroke-width="2.6"/>
-  <g fill="#0891b2">
-    <circle cx="120" cy="40" r="4.5"/><circle cx="208" cy="94" r="4.5"/>
-    <circle cx="296" cy="148" r="4.5"/><circle cx="384" cy="202" r="4.5"/>
-    <circle cx="460" cy="148" r="4.5"/>
+  <line x1="430" y1="26" x2="430" y2="196" stroke="#e4e7ec" stroke-width="1"/>
+  <text x="440" y="20" font-size="9.5" font-weight="600" fill="#59606b">WHAT STUDENTS ASKED FOR</text>
+  <g font-size="9.5" fill="#3f464c">
+    <text x="440" y="47">a more visible presence in the hall</text>
+    <text x="440" y="81">clearer grading expectations</text>
+    <text x="440" y="115">a more visible presence in the hall</text>
+    <text x="440" y="149">no changes suggested</text>
+    <text x="440" y="183">more worked examples</text>
+    <text x="440" y="196" font-size="9" fill="#8a93a0">no changes suggested by most respondents</text>
   </g>
-  <text x="474" y="152" font-size="10.5" font-weight="600" fill="#0891b2">"I did not know</text>
-  <text x="474" y="165" font-size="10.5" font-weight="600" fill="#0891b2">we had a TA"</text>
 
-  <!-- grading concerns -->
-  <polyline points="120,148 208,94 296,202 384,202 460,148"
-            fill="none" stroke="#8a93a0" stroke-width="2.2" stroke-dasharray="6 4"/>
-  <g fill="#8a93a0">
-    <circle cx="120" cy="148" r="4"/><circle cx="208" cy="94" r="4"/>
-    <circle cx="296" cy="202" r="4"/><circle cx="384" cy="202" r="4"/>
-    <circle cx="460" cy="148" r="4"/>
-  </g>
-  <text x="474" y="206" font-size="10.5" font-weight="600" fill="#6b7480">Grading felt harsh</text>
-
-  <line x1="96" y1="226" x2="470" y2="226" stroke="#9aa2ad" stroke-width="1"/>
-  <g font-size="9.5" fill="#59606b" text-anchor="middle">
-    <text x="120" y="242">Fall 22</text>
-    <text x="208" y="242">Spr 24</text>
-    <text x="296" y="242">Fall 24</text>
-    <text x="384" y="242">Spr 25</text>
-    <text x="460" y="242">Spr 26</text>
-  </g>
-  <g font-size="9" fill="#a0a7b2" text-anchor="middle">
-    <text x="120" y="255">220 students</text>
-    <text x="208" y="255">96</text>
-    <text x="296" y="255">111</text>
-    <text x="384" y="255">8</text>
-    <text x="460" y="255">6 and 14</text>
-  </g>
+  <line x1="124" y1="214" x2="632" y2="214" stroke="#e4e7ec" stroke-width="1"/>
+  <text x="124" y="232" font-size="10" fill="#4338ca" font-weight="600">Praised in every appointment:</text>
+  <text x="124" y="248" font-size="10" fill="#59606b">detailed written feedback, depth in R and statistics, and quick, patient replies</text>
 </svg>
 ```
 :::
 
-In my first large lecture, the most common thing students wrote was that they
-had not realised the course had a teaching assistant at all. Being noticeable in
-a room of two hundred is a skill, and I did not have it. I learned to arrive
-before class, introduce myself out loud in the first week, say when my office
-hours were rather than only posting them, and stay behind afterwards. By Fall
-2024 almost nobody said they had not noticed me, and being easy to reach had
-become the thing students mentioned most.
+What students wanted turned out to depend more on the size of the room than on
+anything I changed about myself. In a lecture hall of two hundred they wanted a
+teaching assistant who was visibly there and easy to find. In a graduate seminar
+of six they wanted worked examples and more depth. The same behaviour reads as
+attentive in one room and invisible in the other, and I did not understand that
+early on.
 
-Grading changed the same way. Early on, students said my marking was too harsh
-and did not match the instructor's. The fix was not to mark more gently. It was
-to agree the standard with the instructor before the first assignment, mark
-against a written rubric, and say in the comment what each deduction was for.
-Students still sometimes call me strict, which I am fine with now that it is
-predictable and explained.
+What stayed constant is the part I care most about. In every appointment, from
+the largest lecture to the smallest seminar, students singled out the written
+feedback on their assignments and how quickly and patiently I answered
+questions. In the graduate statistics sections that was close to unanimous:
+students described the support as the most useful they had had, praised the
+depth of the R and statistics help, and most had no changes to suggest at all.
 
-One problem is not solved. In every class, a few students say they got almost
-nothing from me while others in the same room say I was the most useful support
-they had. Those students never came to office hours and never emailed. Being
-available did not reach them, because the students who most need help are the
-least likely to ask for it. Waiting to be asked is itself a decision, and I need
-to go to them instead: a short check-in message to anyone who has not been in
-touch, and one required brief meeting early in the semester.
+Grading took me longer to calibrate, and I now think the reason was structural
+rather than personal. I did my own undergraduate degree outside the United
+States, and I was applying a standard I had learned in a different system to
+American undergraduates in a lab course. Graduate statistics assignments and
+undergraduate observation coding are not the same object: one is work you mark
+against a defined answer, the other is a first attempt at a skill where the
+mark is mostly a teaching signal. Learning where each course sits on that scale,
+and how much of it is local convention rather than a universal standard, is
+something I could only do by teaching in enough different settings to see the
+contrast.
+
+The open question I find most interesting is about reach. In every class there
+are students who never come to office hours and never email, and I would like to
+know what would bring them in, or whether they simply need less from a teaching
+assistant than others do. It is a good problem to have: the students who do come
+tell me the support is worth seeking out, so the question is not whether the
+help is useful but how to widen the door. That is what I want the next few years
+of teaching to answer.
 
 ## Invited talks
 
