@@ -2,13 +2,14 @@
 title: "Research"
 ---
 
-**I study how children and adolescents regulate emotion within family and peer
-systems, and how moment-to-moment regulatory dynamics become longer-term
-patterns of adaptation and physiological health.**
+I study **how emotion regulation is constructed**: not as a skill that sits
+inside a child, but as something assembled across biology, relationships, and
+context, and across timescales from seconds to years.
 
-Four areas organise the work. They are not separate projects so much as four
-views of one question: regulation is dynamic, it is physiological, it is
-learned in relationships, and it accumulates into health.
+Three things follow, and they organise the work below. Regulation is
+**coordinated**, using many strategies across many domains rather than one
+strategy in one domain. It is **co-regulated**, happening between people and not
+only inside the child. And **context is foreground**, not background.
 
 ## Biopsychosocial self-regulation
 
@@ -18,243 +19,342 @@ help, then venting, while their parasympathetic activity shifts underneath.
 Measuring regulation *statically*, as a questionnaire score or a single observed
 strategy, has held the field back.
 
-My work measures it as it unfolds: **polyregulation** (how strategies combine),
-**temporal variation in respiratory sinus arrhythmia** across an episode, and
-the correspondence between the two.
+My work measures it as it unfolds: **polyregulation**, how strategies combine,
+and **temporal variation in respiratory sinus arrhythmia** across an episode. I
+follow the same question across **preschool, middle childhood, and
+adolescence**, because what counts as skilled regulation changes with age even
+when the underlying process does not.
 
 ::: {.diagram}
 ```{=html}
-<svg viewBox="0 0 640 216" role="img" aria-labelledby="d1t">
-  <title id="d1t">Within-episode regulation measured at three levels: context, behaviour, and physiology</title>
-  <rect x="96" y="8"   width="528" height="52" fill="#f2f7fb"/>
-  <rect x="96" y="68"  width="528" height="60" fill="#e8f1f8"/>
-  <rect x="96" y="136" width="528" height="52" fill="#f2f7fb"/>
-  <text x="88" y="38"  text-anchor="end" font-size="12" font-weight="600" fill="#0072B2">Context</text>
-  <text x="88" y="102" text-anchor="end" font-size="12" font-weight="600" fill="#0072B2">Behaviour</text>
-  <text x="88" y="166" text-anchor="end" font-size="12" font-weight="600" fill="#0072B2">Physiology</text>
-  <g font-size="11" fill="#0d1117" text-anchor="middle">
-    <rect x="112" y="20" width="150" height="28" rx="3" fill="#fff" stroke="#0072B2" stroke-width="1"/>
-    <text x="187" y="38">Home</text>
-    <rect x="272" y="20" width="150" height="28" rx="3" fill="#fff" stroke="#0072B2" stroke-width="1"/>
-    <text x="347" y="38">School</text>
-    <rect x="432" y="20" width="176" height="28" rx="3" fill="#fff" stroke="#0072B2" stroke-width="1"/>
-    <text x="520" y="38">Laboratory</text>
+<svg viewBox="0 0 640 252" role="img" aria-labelledby="d1t">
+  <title id="d1t">Within-episode regulation measured as context, behaviour, and physiology, studied across three developmental periods</title>
+
+  <!-- developmental periods -->
+  <g text-anchor="middle">
+    <rect x="112" y="6" width="160" height="24" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1"/>
+    <text x="192" y="22" font-size="10.5" font-weight="600" fill="#312e81">Preschool</text>
+    <rect x="280" y="6" width="160" height="24" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1"/>
+    <text x="360" y="22" font-size="10.5" font-weight="600" fill="#312e81">Middle childhood</text>
+    <rect x="448" y="6" width="160" height="24" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1"/>
+    <text x="528" y="22" font-size="10.5" font-weight="600" fill="#312e81">Adolescence</text>
   </g>
-  <line x1="112" y1="112" x2="608" y2="112" stroke="#9fb8c9" stroke-width="1"/>
-  <g fill="#0072B2">
-    <circle cx="168" cy="112" r="5"/><circle cx="266" cy="112" r="5"/>
-    <circle cx="352" cy="112" r="5"/><circle cx="468" cy="112" r="5"/>
-    <circle cx="556" cy="112" r="5"/>
+  <text x="104" y="22" text-anchor="end" font-size="10" fill="#59606b">studied in</text>
+
+  <rect x="96" y="44"  width="512" height="48" fill="#f4f7fc"/>
+  <rect x="96" y="100" width="512" height="56" fill="#e9eefb"/>
+  <rect x="96" y="164" width="512" height="48" fill="#f4f7fc"/>
+  <text x="88" y="72"  text-anchor="end" font-size="11.5" font-weight="600" fill="#4338ca">Context</text>
+  <text x="88" y="132" text-anchor="end" font-size="11.5" font-weight="600" fill="#4338ca">Behaviour</text>
+  <text x="88" y="192" text-anchor="end" font-size="11.5" font-weight="600" fill="#4338ca">Physiology</text>
+
+  <g font-size="11" fill="#0d1117" text-anchor="middle">
+    <rect x="112" y="54" width="152" height="28" rx="3" fill="#fff" stroke="#4338ca" stroke-width="1"/>
+    <text x="188" y="72">Home</text>
+    <rect x="276" y="54" width="152" height="28" rx="3" fill="#fff" stroke="#4338ca" stroke-width="1"/>
+    <text x="352" y="72">School</text>
+    <rect x="440" y="54" width="168" height="28" rx="3" fill="#fff" stroke="#4338ca" stroke-width="1"/>
+    <text x="524" y="72">Laboratory</text>
+  </g>
+
+  <line x1="112" y1="140" x2="604" y2="140" stroke="#a5b4e8" stroke-width="1"/>
+  <g fill="#4338ca">
+    <circle cx="168" cy="140" r="5"/><circle cx="264" cy="140" r="5"/>
+    <circle cx="350" cy="140" r="5"/><circle cx="466" cy="140" r="5"/>
+    <circle cx="554" cy="140" r="5"/>
   </g>
   <g font-size="10" fill="#3f464c" text-anchor="middle">
-    <text x="168" y="90">distract</text>
-    <text x="266" y="90">help-seek</text>
-    <text x="352" y="90">vent</text>
-    <text x="468" y="90">distract</text>
-    <text x="556" y="90">reappraise</text>
+    <text x="168" y="120">distract</text>
+    <text x="264" y="120">help-seek</text>
+    <text x="350" y="120">vent</text>
+    <text x="466" y="120">distract</text>
+    <text x="554" y="120">reappraise</text>
   </g>
-  <path d="M112 168 C 150 150, 178 184, 210 166 S 268 142, 300 170 S 360 186, 400 158 S 470 148, 508 174 S 570 180, 608 160"
-        fill="none" stroke="#0072B2" stroke-width="2.2"/>
-  <text x="616" y="150" font-size="10" fill="#0072B2">RSA</text>
-  <line x1="112" y1="200" x2="608" y2="200" stroke="#8a939b" stroke-width="1"/>
-  <polygon points="608,200 601,197 601,203" fill="#8a939b"/>
-  <text x="360" y="213" font-size="10" fill="#59606b" text-anchor="middle">seconds to minutes within an episode</text>
+
+  <path d="M112 194 C 150 176, 178 210, 210 192 S 268 168, 300 196 S 360 212, 400 184 S 470 174, 508 200 S 570 206, 604 186"
+        fill="none" stroke="#4338ca" stroke-width="2.2"/>
+  <text x="612" y="176" font-size="10" fill="#4338ca">RSA</text>
+
+  <line x1="112" y1="228" x2="604" y2="228" stroke="#8a939b" stroke-width="1"/>
+  <polygon points="604,228 597,225 597,231" fill="#8a939b"/>
+  <text x="358" y="243" font-size="10" fill="#59606b" text-anchor="middle">seconds to minutes within one episode</text>
 </svg>
 ```
-<figcaption>Regulation observed simultaneously as context, behaviour, and
-physiology within a single episode. Strategies arrive in sequence rather than
-one at a time, and parasympathetic activity shifts alongside them, which is
-invisible to a single summary score.</figcaption>
 :::
 
-Anchor papers: polyregulation in *Child Development* (2026); temporal variation
-in RSA in *Infant and Child Development* (2025).
+Papers: [polyregulation in *Child Development*](https://doi.org/10.1093/chidev/aacag052)
+and [temporal variation in RSA in *Infant and Child Development*](https://doi.org/10.1002/icd.70060).
 
 ## Stress, adaptation, and resilience
 
-Social stressors such as discrimination, socioeconomic risk, and academic
-adversity affect health through pathways that are visible in daily life before
-they are visible in disease. My work traces that route: from a stressor
-reported today, through the *shape* of a person's affect (how sticky it is, how
-variable), into physiological load, and eventually into health.
+Social stressors affect health through pathways that are visible in daily life
+before they are visible in disease. The stressors themselves sit at different
+levels: **chronic context** such as socioeconomic risk operates on a different
+timescale from **daily events** such as a discriminatory encounter or an exam.
 
-Resilience enters as a moderator rather than an outcome. The same stressor does
-not produce the same affective signature in everyone, and in high-adversity
-contexts some patterns we habitually call maladaptive appear to function
-protectively.
+Emotion regulation and physiological regulation are **parallel systems**, not a
+sequence. Affect dynamics and cardiac regulation are two readings of the same
+adaptive process, coupled to each other but neither reducible to the other.
+
+**Resilience appears twice.** It moderates how a stressor translates into a
+regulatory signature, and it is itself an outcome of that process, which is why
+it cannot be treated as a fixed trait.
 
 ::: {.diagram}
 ```{=html}
-<svg viewBox="0 0 640 208" role="img" aria-labelledby="d2t">
-  <title id="d2t">Pathway from daily stressors through affect dynamics and physiological load to health</title>
+<svg viewBox="0 0 640 320" role="img" aria-labelledby="d2t">
+  <title id="d2t">Stressors at two levels acting on parallel emotional and physiological regulation systems, with resilience as both moderator and outcome</title>
   <defs>
-    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#D55E00"/>
+    <marker id="aS" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4338ca"/>
     </marker>
-    <marker id="ar2g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#7d868d"/>
+    <marker id="aG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0891b2"/>
+    </marker>
+    <marker id="aB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8a93a0"/>
     </marker>
   </defs>
+
+  <g font-size="10" fill="#59606b" text-anchor="middle">
+    <text x="78" y="26">STRESSORS</text>
+    <text x="298" y="26">REGULATION</text>
+    <text x="540" y="26">OUTCOMES</text>
+  </g>
+
+  <!-- stressors, two distinct levels -->
   <g text-anchor="middle">
-    <rect x="8"   y="76" width="128" height="56" rx="3" fill="#fdf1ea" stroke="#D55E00" stroke-width="1.4"/>
-    <text x="72"  y="99"  font-size="11.5" font-weight="600" fill="#8f3d12">Daily stressor</text>
-    <text x="72"  y="115" font-size="10" fill="#59606b">discrimination,</text>
-    <text x="72"  y="127" font-size="10" fill="#59606b">adversity, risk</text>
-    <rect x="176" y="76" width="132" height="56" rx="3" fill="#fdf1ea" stroke="#D55E00" stroke-width="1.4"/>
-    <text x="242" y="99"  font-size="11.5" font-weight="600" fill="#8f3d12">Affect dynamics</text>
-    <text x="242" y="115" font-size="10" fill="#59606b">intensity, instability,</text>
-    <text x="242" y="127" font-size="10" fill="#59606b">inertia, differentiation</text>
-    <rect x="348" y="76" width="132" height="56" rx="3" fill="#fdf1ea" stroke="#D55E00" stroke-width="1.4"/>
-    <text x="414" y="99"  font-size="11.5" font-weight="600" fill="#8f3d12">Physiological load</text>
-    <text x="414" y="115" font-size="10" fill="#59606b">RSA, HRV,</text>
-    <text x="414" y="127" font-size="10" fill="#59606b">allostatic load</text>
-    <rect x="520" y="76" width="112" height="56" rx="3" fill="#f4efe6" stroke="#8f3d12" stroke-width="1.4"/>
-    <text x="576" y="99"  font-size="11.5" font-weight="600" fill="#8f3d12">Health</text>
-    <text x="576" y="115" font-size="10" fill="#59606b">internalizing,</text>
-    <text x="576" y="127" font-size="10" fill="#59606b">wear-and-tear</text>
+    <rect x="8" y="42" width="140" height="54" rx="3" fill="#f6f7fb" stroke="#8a93a0" stroke-width="1.4"/>
+    <text x="78" y="62" font-size="11" font-weight="600" fill="#1c2333">Chronic context</text>
+    <text x="78" y="78" font-size="9.5" fill="#59606b">socioeconomic risk,</text>
+    <text x="78" y="90" font-size="9.5" fill="#59606b">neighbourhood</text>
+
+    <rect x="8" y="118" width="140" height="54" rx="3" fill="#f6f7fb" stroke="#8a93a0" stroke-width="1.4"/>
+    <text x="78" y="138" font-size="11" font-weight="600" fill="#1c2333">Daily events</text>
+    <text x="78" y="154" font-size="9.5" fill="#59606b">discrimination,</text>
+    <text x="78" y="166" font-size="9.5" fill="#59606b">academic demands</text>
   </g>
-  <g stroke="#D55E00" stroke-width="2" marker-end="url(#ar2)">
-    <line x1="138" y1="104" x2="170" y2="104"/>
-    <line x1="310" y1="104" x2="342" y2="104"/>
-    <line x1="482" y1="104" x2="514" y2="104"/>
+
+  <!-- parallel regulation systems, identical geometry -->
+  <g text-anchor="middle">
+    <rect x="214" y="42" width="170" height="54" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1.6"/>
+    <text x="299" y="62" font-size="11" font-weight="600" fill="#312e81">Emotion regulation</text>
+    <text x="299" y="78" font-size="9.5" fill="#59606b">intensity, instability,</text>
+    <text x="299" y="90" font-size="9.5" fill="#59606b">inertia, differentiation</text>
+
+    <rect x="214" y="118" width="170" height="54" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1.6"/>
+    <text x="299" y="138" font-size="11" font-weight="600" fill="#312e81">Physiological regulation</text>
+    <text x="299" y="154" font-size="9.5" fill="#59606b">RSA, heart-rate</text>
+    <text x="299" y="166" font-size="9.5" fill="#59606b">variability</text>
   </g>
-  <rect x="196" y="8" width="260" height="30" rx="3" fill="#fff" stroke="#7d868d" stroke-width="1.2" stroke-dasharray="4 3"/>
-  <text x="326" y="28" font-size="11" font-weight="600" fill="#4b5257" text-anchor="middle">Resilience · coping flexibility</text>
-  <path d="M326 40 L326 62" stroke="#7d868d" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#ar2g)"/>
-  <line x1="8" y1="164" x2="632" y2="164" stroke="#d8d2c6" stroke-width="1"/>
-  <g font-size="10" fill="#59606b">
-    <text x="8"   y="182">moments</text>
-    <text x="200" y="182">days (diary, EMA)</text>
-    <text x="392" y="182">months</text>
-    <text x="540" y="182">years</text>
+  <!-- coupling between the two systems -->
+  <path d="M299 100 L299 112" stroke="#4338ca" stroke-width="1.6" marker-end="url(#aS)"/>
+  <path d="M291 112 L291 100" stroke="#4338ca" stroke-width="1.6" marker-end="url(#aS)"/>
+  <text x="316" y="110" font-size="9" fill="#4338ca">coupled</text>
+
+  <!-- outcomes -->
+  <g text-anchor="middle">
+    <rect x="450" y="42" width="182" height="54" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
+    <text x="541" y="62" font-size="11" font-weight="600" fill="#075985">Health</text>
+    <text x="541" y="78" font-size="9.5" fill="#59606b">internalizing symptoms,</text>
+    <text x="541" y="90" font-size="9.5" fill="#59606b">allostatic load</text>
+
+    <rect x="450" y="118" width="182" height="54" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
+    <text x="541" y="138" font-size="11" font-weight="600" fill="#075985">Resilience</text>
+    <text x="541" y="154" font-size="9.5" fill="#59606b">an outcome of the</text>
+    <text x="541" y="166" font-size="9.5" fill="#59606b">same process</text>
   </g>
-  <text x="8" y="200" font-size="10" fill="#8a7f6d">the same process, measured at four timescales</text>
+
+  <!-- stressor to regulation -->
+  <g stroke="#4338ca" stroke-width="1.8" marker-end="url(#aS)">
+    <line x1="150" y1="69"  x2="208" y2="69"/>
+    <line x1="150" y1="145" x2="208" y2="145"/>
+  </g>
+  <line x1="150" y1="80"  x2="208" y2="134" stroke="#a5b4e8" stroke-width="1.2" marker-end="url(#aS)"/>
+  <line x1="150" y1="134" x2="208" y2="80"  stroke="#a5b4e8" stroke-width="1.2" marker-end="url(#aS)"/>
+
+  <!-- regulation to outcomes -->
+  <g stroke="#0891b2" stroke-width="1.8" marker-end="url(#aG)">
+    <line x1="386" y1="69"  x2="444" y2="69"/>
+    <line x1="386" y1="145" x2="444" y2="145"/>
+  </g>
+  <line x1="386" y1="80"  x2="444" y2="134" stroke="#8fd0de" stroke-width="1.2" marker-end="url(#aG)"/>
+  <line x1="386" y1="134" x2="444" y2="80"  stroke="#8fd0de" stroke-width="1.2" marker-end="url(#aG)"/>
+
+  <!-- resilience as moderator: dashed feedback onto the stressor-to-regulation paths -->
+  <path d="M541 174 L541 208 L179 208 L179 158"
+        fill="none" stroke="#8a93a0" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#aB)"/>
+  <path d="M179 208 L179 84" fill="none" stroke="#8a93a0" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#aB)"/>
+  <text x="360" y="202" font-size="9.5" font-weight="600" fill="#5b6472" text-anchor="middle">resilience also moderates these paths</text>
+
+  <!-- timescales, on their own axis -->
+  <line x1="8" y1="252" x2="632" y2="252" stroke="#d5d9e0" stroke-width="1"/>
+  <text x="8" y="246" font-size="9.5" font-weight="600" fill="#59606b">TIMESCALE</text>
+  <line x1="8" y1="278" x2="632" y2="278" stroke="#9aa2ad" stroke-width="1"/>
+  <polygon points="632,278 625,275 625,281" fill="#9aa2ad"/>
+  <g fill="#4338ca">
+    <circle cx="60" cy="278" r="4"/><circle cx="230" cy="278" r="4"/>
+    <circle cx="410" cy="278" r="4"/><circle cx="570" cy="278" r="4"/>
+  </g>
+  <g font-size="9.5" fill="#59606b" text-anchor="middle">
+    <text x="60"  y="296">moments</text>
+    <text x="230" y="296">days</text>
+    <text x="410" y="296">months</text>
+    <text x="570" y="296">years</text>
+  </g>
+  <g font-size="9" fill="#8a93a0" text-anchor="middle">
+    <text x="60"  y="308">episode</text>
+    <text x="230" y="308">daily diary</text>
+    <text x="410" y="308">annual survey</text>
+    <text x="570" y="308">accumulation</text>
+  </g>
 </svg>
 ```
-<figcaption>Stressors do not act on health directly. They act on the shape of
-daily affect, which registers physiologically, which accumulates. Each arrow is
-measurable at a different timescale, which is why intensive longitudinal designs
-matter here.</figcaption>
 :::
 
 ## Family and intergenerational dynamics
 
-Regulation is learned somewhere. In Chinese three-generation households it is
-co-performed: grandmother, mother, and child regulate together, sometimes in
-physiological lockstep. I have shown grandmother and grandchild RSA synchrony in
-these families, and traced how congruence between a child's attachment to two
-different caregivers relates to what the child can do alone.
+**Regulation is learned from interactions.** In Chinese three-generation
+households it is co-performed: grandmother, mother, and child regulate together,
+sometimes in physiological lockstep. The relationship and the physiology are not
+separate stories. How securely a child is attached to each caregiver is part of
+what determines whether their bodies couple during a difficult moment, and that
+coupling is the mechanism through which regulation transfers.
 
 ::: {.diagram}
 ```{=html}
-<svg viewBox="0 0 640 214" role="img" aria-labelledby="d4t">
-  <title id="d4t">Three-generation co-regulation with physiological synchrony between grandmother and child</title>
+<svg viewBox="0 0 640 250" role="img" aria-labelledby="d4t">
+  <title id="d4t">Attachment to two caregivers shapes physiological synchrony, which transfers regulation to the child</title>
   <defs>
-    <marker id="ar4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#CC79A7"/>
+    <marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4338ca"/>
+    </marker>
+    <marker id="a4c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0891b2"/>
     </marker>
   </defs>
+
   <g text-anchor="middle">
-    <circle cx="86"  cy="62" r="34" fill="#fbeef4" stroke="#CC79A7" stroke-width="1.8"/>
-    <text x="86"  y="59" font-size="11" font-weight="600" fill="#8d4470">Grand-</text>
-    <text x="86"  y="73" font-size="11" font-weight="600" fill="#8d4470">mother</text>
-    <circle cx="264" cy="62" r="34" fill="#fbeef4" stroke="#CC79A7" stroke-width="1.8"/>
-    <text x="264" y="67" font-size="11" font-weight="600" fill="#8d4470">Mother</text>
-    <circle cx="175" cy="158" r="34" fill="#fbeef4" stroke="#CC79A7" stroke-width="1.8"/>
-    <text x="175" y="163" font-size="11" font-weight="600" fill="#8d4470">Child</text>
+    <circle cx="70"  cy="54" r="32" fill="#eef0fb" stroke="#4338ca" stroke-width="1.8"/>
+    <text x="70"  y="51" font-size="10.5" font-weight="600" fill="#312e81">Grand-</text>
+    <text x="70"  y="65" font-size="10.5" font-weight="600" fill="#312e81">mother</text>
+    <circle cx="228" cy="54" r="32" fill="#eef0fb" stroke="#4338ca" stroke-width="1.8"/>
+    <text x="228" y="59" font-size="10.5" font-weight="600" fill="#312e81">Mother</text>
+    <circle cx="149" cy="158" r="32" fill="#eef0fb" stroke="#4338ca" stroke-width="1.8"/>
+    <text x="149" y="163" font-size="10.5" font-weight="600" fill="#312e81">Child</text>
   </g>
-  <line x1="120" y1="62" x2="230" y2="62" stroke="#CC79A7" stroke-width="2"/>
-  <text x="175" y="52" font-size="10" fill="#8d4470" text-anchor="middle">coparenting</text>
-  <path d="M104 94 L156 128" stroke="#CC79A7" stroke-width="1.8" fill="none" marker-end="url(#ar4)"/>
-  <path d="M246 94 L194 128" stroke="#CC79A7" stroke-width="1.8" fill="none" marker-end="url(#ar4)"/>
-  <text x="96"  y="128" font-size="9.5" fill="#59606b" text-anchor="end">attachment</text>
-  <text x="256" y="128" font-size="9.5" fill="#59606b">attachment</text>
-  <g fill="none" stroke="#8d4470" stroke-width="1.8">
-    <path d="M330 66 C 348 50, 364 82, 382 62 S 416 44, 434 70 S 470 78, 488 56"/>
-    <path d="M330 122 C 348 108, 364 138, 382 118 S 416 100, 434 126 S 470 134, 488 112"/>
+
+  <line x1="104" y1="54" x2="194" y2="54" stroke="#4338ca" stroke-width="2"/>
+  <text x="149" y="44" font-size="9.5" fill="#312e81" text-anchor="middle">coparenting</text>
+
+  <path d="M86 84 L128 130"  stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a4)"/>
+  <path d="M212 84 L170 130" stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a4)"/>
+  <text x="72"  y="122" font-size="9.5" fill="#4338ca" text-anchor="end">attachment</text>
+  <text x="228" y="122" font-size="9.5" fill="#4338ca">attachment</text>
+
+  <!-- attachment quality feeds the strength of synchrony -->
+  <path d="M196 140 C 250 140, 258 116, 296 108"
+        fill="none" stroke="#4338ca" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#a4)"/>
+  <text x="252" y="160" font-size="9.5" font-weight="600" fill="#4338ca" text-anchor="middle">attachment quality</text>
+  <text x="252" y="172" font-size="9.5" font-weight="600" fill="#4338ca" text-anchor="middle">shapes coupling</text>
+
+  <g fill="none" stroke="#0891b2" stroke-width="1.8">
+    <path d="M312 60 C 330 44, 346 76, 364 56 S 398 38, 416 64 S 452 72, 470 50"/>
+    <path d="M312 116 C 330 102, 346 132, 364 112 S 398 94, 416 120 S 452 128, 470 106"/>
   </g>
-  <text x="496" y="70"  font-size="10" fill="#8d4470">grandmother RSA</text>
-  <text x="496" y="126" font-size="10" fill="#8d4470">child RSA</text>
-  <g stroke="#c9a3b9" stroke-width="1" stroke-dasharray="3 3">
-    <line x1="352" y1="62"  x2="352" y2="118"/>
-    <line x1="404" y1="54"  x2="404" y2="110"/>
-    <line x1="456" y1="70"  x2="456" y2="126"/>
+  <text x="478" y="64"  font-size="9.5" fill="#075985">grandmother RSA</text>
+  <text x="478" y="120" font-size="9.5" fill="#075985">child RSA</text>
+  <g stroke="#8fd0de" stroke-width="1" stroke-dasharray="3 3">
+    <line x1="334" y1="56"  x2="334" y2="112"/>
+    <line x1="386" y1="48"  x2="386" y2="104"/>
+    <line x1="438" y1="64"  x2="438" y2="120"/>
   </g>
-  <text x="410" y="160" font-size="10.5" font-weight="600" fill="#8d4470" text-anchor="middle">physiological synchrony</text>
-  <text x="410" y="176" font-size="10" fill="#59606b" text-anchor="middle">concurrent and lagged, varying by interaction context</text>
+  <text x="392" y="150" font-size="10.5" font-weight="600" fill="#075985" text-anchor="middle">physiological synchrony</text>
+
+  <!-- synchrony transfers regulation -->
+  <g text-anchor="middle">
+    <rect x="300" y="180" width="188" height="46" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
+    <text x="394" y="199" font-size="11" font-weight="600" fill="#075985">Child emotion regulation</text>
+    <text x="394" y="215" font-size="9.5" fill="#59606b">what the child can do alone</text>
+  </g>
+  <path d="M392 158 L392 174" stroke="#0891b2" stroke-width="1.8" marker-end="url(#a4c)"/>
+  <path d="M181 176 C 230 208, 262 206, 296 204" fill="none" stroke="#8fd0de" stroke-width="1.4" marker-end="url(#a4c)"/>
 </svg>
 ```
-<figcaption>Co-regulation in three-generation families. The dashed verticals mark
-the coupling between grandmother and child parasympathetic activity, the
-mechanism by which regulation is transmitted before the child can do it alone.</figcaption>
 :::
 
-Anchor papers: grandmother and grandchild synchrony in *Developmental
-Psychobiology* (2024); attachment congruence in *Psychological Development and
-Education* (2023).
+Papers: [grandmother and grandchild synchrony in *Developmental Psychobiology*](https://doi.org/10.1002/dev.22498)
+and attachment congruence in *Psychological Development and Education* (2023).
 
 ## Peer relations and friendship development
 
-My dissertation moves this question into the peer world. Adolescents sit in
-friendship structures that differ not just in *how many* friends they have but
-in how those friendships are organised, including how diverse their cliques are,
-how stable, and how overlapping. I ask whether that structure predicts
-physiological wear-and-tear, and whether friends who cope similarly amplify or
-buffer each other.
+My dissertation moves this question into the peer world, in two studies.
+**Study 1** asks whether the *structure* of an adolescent's friendships, how
+diverse their cliques are, how stable, how overlapping, predicts physiological
+wear-and-tear and mental health. **Study 2** asks whether friends who cope
+similarly amplify or buffer each other, and whether it is similarity in the
+*form* of coping or in its *function* that matters.
 
 ::: {.diagram}
 ```{=html}
-<svg viewBox="0 0 640 220" role="img" aria-labelledby="d3t">
-  <title id="d3t">Friendship network structure linked to coping similarity and physiological outcomes</title>
+<svg viewBox="0 0 640 236" role="img" aria-labelledby="d3t">
+  <title id="d3t">Two dissertation studies: friendship network structure and coping similarity predicting health</title>
   <defs>
-    <marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#009E73"/>
+    <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4338ca"/>
+    </marker>
+    <marker id="a3c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0891b2"/>
     </marker>
   </defs>
-  <ellipse cx="104" cy="86"  rx="72" ry="54" fill="#e6f6f0" stroke="#009E73" stroke-width="1" stroke-dasharray="4 3"/>
-  <ellipse cx="272" cy="140" rx="70" ry="50" fill="#e6f6f0" stroke="#009E73" stroke-width="1" stroke-dasharray="4 3"/>
-  <g stroke="#79b8a4" stroke-width="1.5">
-    <line x1="70"  y1="58"  x2="118" y2="46"/>
-    <line x1="118" y1="46"  x2="146" y2="94"/>
-    <line x1="146" y1="94"  x2="78"  y2="112"/>
-    <line x1="78"  y1="112" x2="70"  y2="58"/>
-    <line x1="70"  y1="58"  x2="146" y2="94"/>
-    <line x1="146" y1="94"  x2="232" y2="124"/>
-    <line x1="232" y1="124" x2="286" y2="106"/>
-    <line x1="286" y1="106" x2="316" y2="152"/>
-    <line x1="316" y1="152" x2="256" y2="176"/>
-    <line x1="256" y1="176" x2="232" y2="124"/>
-    <line x1="286" y1="106" x2="256" y2="176"/>
+
+  <ellipse cx="100" cy="82"  rx="70" ry="52" fill="#eef0fb" stroke="#4338ca" stroke-width="1" stroke-dasharray="4 3"/>
+  <ellipse cx="262" cy="136" rx="68" ry="48" fill="#eef0fb" stroke="#4338ca" stroke-width="1" stroke-dasharray="4 3"/>
+  <g stroke="#a5b4e8" stroke-width="1.5">
+    <line x1="66"  y1="56"  x2="114" y2="44"/>
+    <line x1="114" y1="44"  x2="142" y2="90"/>
+    <line x1="142" y1="90"  x2="74"  y2="108"/>
+    <line x1="74"  y1="108" x2="66"  y2="56"/>
+    <line x1="142" y1="90"  x2="222" y2="120"/>
+    <line x1="222" y1="120" x2="276" y2="102"/>
+    <line x1="276" y1="102" x2="306" y2="148"/>
+    <line x1="306" y1="148" x2="246" y2="172"/>
+    <line x1="246" y1="172" x2="222" y2="120"/>
   </g>
-  <g fill="#009E73">
-    <circle cx="70"  cy="58"  r="8"/><circle cx="118" cy="46"  r="8"/>
-    <circle cx="78"  cy="112" r="8"/><circle cx="232" cy="124" r="8"/>
-    <circle cx="286" cy="106" r="8"/><circle cx="316" cy="152" r="8"/>
-    <circle cx="256" cy="176" r="8"/>
+  <g fill="#4338ca">
+    <circle cx="66"  cy="56"  r="7"/><circle cx="114" cy="44"  r="7"/>
+    <circle cx="74"  cy="108" r="7"/><circle cx="222" cy="120" r="7"/>
+    <circle cx="276" cy="102" r="7"/><circle cx="306" cy="148" r="7"/>
+    <circle cx="246" cy="172" r="7"/>
   </g>
-  <circle cx="146" cy="94" r="12" fill="#fff" stroke="#006b4f" stroke-width="3"/>
-  <text x="146" y="72" font-size="10.5" font-weight="600" fill="#006b4f" text-anchor="middle">focal</text>
-  <text x="104" y="152" font-size="10" fill="#4b5257" text-anchor="middle">clique A</text>
-  <text x="272" y="200" font-size="10" fill="#4b5257" text-anchor="middle">clique B</text>
+  <circle cx="142" cy="90" r="11" fill="#fff" stroke="#312e81" stroke-width="3"/>
+  <text x="142" y="70" font-size="10" font-weight="600" fill="#312e81" text-anchor="middle">focal</text>
+  <text x="100" y="146" font-size="9.5" fill="#5b6472" text-anchor="middle">clique A</text>
+  <text x="262" y="196" font-size="9.5" fill="#5b6472" text-anchor="middle">clique B</text>
+
   <g text-anchor="middle">
-    <rect x="404" y="34" width="216" height="46" rx="3" fill="#fff" stroke="#009E73" stroke-width="1.4"/>
-    <text x="512" y="53" font-size="11.5" font-weight="600" fill="#006b4f">Structure</text>
-    <text x="512" y="70" font-size="10" fill="#59606b">clique diversity, stability, bridging</text>
-    <rect x="404" y="96" width="216" height="46" rx="3" fill="#fff" stroke="#009E73" stroke-width="1.4"/>
-    <text x="512" y="115" font-size="11.5" font-weight="600" fill="#006b4f">Coping similarity</text>
-    <text x="512" y="132" font-size="10" fill="#59606b">form vs. function among friends</text>
-    <rect x="404" y="158" width="216" height="46" rx="3" fill="#f4efe6" stroke="#8f3d12" stroke-width="1.4"/>
-    <text x="512" y="177" font-size="11.5" font-weight="600" fill="#8f3d12">Physiological wear-and-tear</text>
-    <text x="512" y="194" font-size="10" fill="#59606b">and mental health</text>
+    <rect x="368" y="26" width="264" height="52" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1.6"/>
+    <text x="500" y="45" font-size="10" font-weight="700" fill="#4338ca">STUDY 1</text>
+    <text x="500" y="60" font-size="11" font-weight="600" fill="#312e81">Friendship structure</text>
+    <text x="500" y="73" font-size="9.5" fill="#59606b">clique diversity, stability, bridging</text>
+
+    <rect x="368" y="94" width="264" height="52" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1.6"/>
+    <text x="500" y="113" font-size="10" font-weight="700" fill="#4338ca">STUDY 2</text>
+    <text x="500" y="128" font-size="11" font-weight="600" fill="#312e81">Coping similarity among friends</text>
+    <text x="500" y="141" font-size="9.5" fill="#59606b">similarity in form vs. in function</text>
+
+    <rect x="368" y="162" width="264" height="52" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
+    <text x="500" y="183" font-size="11" font-weight="600" fill="#075985">Physiological wear-and-tear</text>
+    <text x="500" y="199" font-size="9.5" fill="#59606b">and mental health</text>
   </g>
-  <path d="M166 90 L398 58" stroke="#009E73" stroke-width="1.8" fill="none" marker-end="url(#ar3)"/>
-  <path d="M166 100 L398 116" stroke="#009E73" stroke-width="1.8" fill="none" marker-end="url(#ar3)"/>
-  <line x1="512" y1="142" x2="512" y2="152" stroke="#009E73" stroke-width="1.8" marker-end="url(#ar3)"/>
+
+  <path d="M160 84 L362 52"  stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a3)"/>
+  <path d="M160 96 L362 118" stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a3)"/>
+  <line x1="500" y1="78"  x2="500" y2="88"  stroke="#0891b2" stroke-width="1.8" marker-end="url(#a3c)"/>
+  <line x1="500" y1="146" x2="500" y2="156" stroke="#0891b2" stroke-width="1.8" marker-end="url(#a3c)"/>
 </svg>
 ```
-<figcaption>Friendship networks described structurally rather than by count. The
-focal adolescent here bridges two cliques, a position with different
-implications from sitting inside one dense group, and one that a simple count of
-friends cannot distinguish.</figcaption>
 :::
 
+Related published work: [latent profiles of relationships with parents and siblings](https://doi.org/10.1007/s12144-022-03959-2)
+and [a network analysis of family factors](https://doi.org/10.1007/s10802-023-01074-9).

@@ -94,8 +94,6 @@ an annual R workshop series for graduate students.
   </g>
 </svg>
 ```
-<figcaption>Class sizes ran from about 2,000 students in the web-based
-nutrition course to six in the graduate statistics seminar.</figcaption>
 :::
 
 ## Statistics workshops for graduate students
@@ -122,7 +120,7 @@ research code.
 Reshaping, merging, and cleaning messy data.
 
 ::: {.entry-links}
-[Materials](files/workshops/2025/data-wrangling.Rmd)
+[Script](files/workshops/2025/data-wrangling.Rmd)
 :::
 :::
 
@@ -156,19 +154,6 @@ with no computing background.
 
 Datasets are not posted. The examples use participant data that is not mine to
 distribute, and I am rebuilding the exercises on synthetic data.
-
-## AI and computational methods
-
-I am an advanced user and teacher of computational methods rather than a methods
-developer. What I do is bring these tools into applied developmental research
-and teach other researchers to use them without losing rigour.
-
-- Recurrent neural network models of student learning trajectories, with
-  feature-importance analyses, compared against conventional growth models.
-- Teaching AI-assisted analysis, through the January 2026 workshop and the
-  concepts workshop in development.
-- Verification: a generated number is a hypothesis until it has been re-derived
-  from source output.
 
 ## Evaluations
 
@@ -234,165 +219,144 @@ record. 7 of 9 students responded, average attendance 86%.
 the instructor-facing items are the highest.</figcaption>
 :::
 
-Three things I would do differently, and will.
+Three things I would do differently if I taught this course again.
 
 **Know the program setting.** HDF 315L is a lower-division course, so I designed
 it for lower-division students. Almost everyone who enrolled was a junior or
-senior, with one exception. That mismatch drove the pacing and the level of
+senior, with one exception. That mismatch drove the pacing and the amount of
 scaffolding.
 
-**Replace the group activities.** They work in the large lecture sections I had
-assisted. In a room of nine upper-level students they produced quiet compliance
-rather than discussion. I am moving to structured pair work and written-first
-protocols, where everyone commits to an answer before anyone speaks.
+**Match the activity to the room.** I used group activities because they had
+worked in the large child development lectures I assisted, where a group of four
+is a way of making a hall of two hundred feel small. In a room of nine
+upper-level students the same activity does the opposite: there is nothing to
+break down, and asking students to turn to a group they are already sitting with
+produced polite agreement rather than argument. What the graduate statistics
+sections taught me is that small rooms run on individual commitment first, so I
+am moving to written-first protocols where everyone answers before anyone
+speaks, then pairs, then the whole room.
 
-**Talk to students earlier.** I waited for questions and read a quiet room as an
-understanding room. A start-of-semester survey on background and goals, plus
-short mid-unit check-ins, replaces that inference.
+**Set expectations at the start, not along the way.** My clearest evaluations
+have always been about feedback and responsiveness, which are things I do after
+a student is already confused. What I did not do was tell students at the outset
+what the course would ask of them, how the assignments connected, and what
+counts as a good answer. A first-week overview of the arc of the course, and a
+short written brief for each assignment, moves that work forward to where it
+prevents confusion instead of repairing it.
 
-### What four years of assistantship feedback show
+## An overview of TA experiences
 
-Coding the open responses across appointments, four themes recur. Two are stable
-strengths. Two were real weaknesses that have largely closed.
+Across four years and six appointments, from a 220-student lecture to a
+six-student graduate seminar, two things students praised stayed constant and
+two criticisms faded.
 
 ::: {.diagram}
 ```{=html}
-<svg viewBox="0 0 640 246" role="img" aria-labelledby="qlt">
-  <title id="qlt">Prevalence of four themes in written student comments across six teaching assistant appointments</title>
+<svg viewBox="0 0 640 268" role="img" aria-labelledby="qlt">
+  <title id="qlt">How often three themes appeared in written student comments, from Fall 2022 to Spring 2026</title>
+  <defs>
+    <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
+      <circle cx="5" cy="5" r="4" fill="#4338ca"/>
+    </marker>
+  </defs>
 
+  <g stroke="#eef0f4" stroke-width="1">
+    <line x1="96" y1="40"  x2="470" y2="40"/>
+    <line x1="96" y1="94"  x2="470" y2="94"/>
+    <line x1="96" y1="148" x2="470" y2="148"/>
+    <line x1="96" y1="202" x2="470" y2="202"/>
+  </g>
+  <g font-size="9.5" fill="#8a93a0" text-anchor="end">
+    <text x="88" y="43">often</text>
+    <text x="88" y="97">common</text>
+    <text x="88" y="151">occasional</text>
+    <text x="88" y="205">not raised</text>
+  </g>
+
+  <!-- praised: feedback and responsiveness -->
+  <polyline points="120,94 208,94 296,40 384,40 460,40"
+            fill="none" stroke="#4338ca" stroke-width="2.6"/>
+  <g fill="#4338ca">
+    <circle cx="120" cy="94" r="4.5"/><circle cx="208" cy="94" r="4.5"/>
+    <circle cx="296" cy="40" r="4.5"/><circle cx="384" cy="40" r="4.5"/>
+    <circle cx="460" cy="40" r="4.5"/>
+  </g>
+  <text x="474" y="36" font-size="10.5" font-weight="600" fill="#4338ca">Helpful feedback</text>
+  <text x="474" y="49" font-size="10.5" font-weight="600" fill="#4338ca">and quick replies</text>
+
+  <!-- wanted more presence -->
+  <polyline points="120,40 208,94 296,148 384,202 460,148"
+            fill="none" stroke="#0891b2" stroke-width="2.6"/>
+  <g fill="#0891b2">
+    <circle cx="120" cy="40" r="4.5"/><circle cx="208" cy="94" r="4.5"/>
+    <circle cx="296" cy="148" r="4.5"/><circle cx="384" cy="202" r="4.5"/>
+    <circle cx="460" cy="148" r="4.5"/>
+  </g>
+  <text x="474" y="152" font-size="10.5" font-weight="600" fill="#0891b2">"I did not know</text>
+  <text x="474" y="165" font-size="10.5" font-weight="600" fill="#0891b2">we had a TA"</text>
+
+  <!-- grading concerns -->
+  <polyline points="120,148 208,94 296,202 384,202 460,148"
+            fill="none" stroke="#8a93a0" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <g fill="#8a93a0">
+    <circle cx="120" cy="148" r="4"/><circle cx="208" cy="94" r="4"/>
+    <circle cx="296" cy="202" r="4"/><circle cx="384" cy="202" r="4"/>
+    <circle cx="460" cy="148" r="4"/>
+  </g>
+  <text x="474" y="206" font-size="10.5" font-weight="600" fill="#6b7480">Grading felt harsh</text>
+
+  <line x1="96" y1="226" x2="470" y2="226" stroke="#9aa2ad" stroke-width="1"/>
   <g font-size="9.5" fill="#59606b" text-anchor="middle">
-    <text x="244" y="22">Fall 22</text><text x="316" y="22">Spr 24</text>
-    <text x="388" y="22">Spr 24</text><text x="460" y="22">Fall 24</text>
-    <text x="532" y="22">Spr 25</text><text x="604" y="22">Spr 26</text>
+    <text x="120" y="242">Fall 22</text>
+    <text x="208" y="242">Spr 24</text>
+    <text x="296" y="242">Fall 24</text>
+    <text x="384" y="242">Spr 25</text>
+    <text x="460" y="242">Spr 26</text>
   </g>
-  <g font-size="9" fill="#8a93a0" text-anchor="middle">
-    <text x="244" y="34">313</text><text x="316" y="34">313</text>
-    <text x="388" y="34">315L</text><text x="460" y="34">313</text>
-    <text x="532" y="34">380K</text><text x="604" y="34">380K</text>
+  <g font-size="9" fill="#a0a7b2" text-anchor="middle">
+    <text x="120" y="255">220 students</text>
+    <text x="208" y="255">96</text>
+    <text x="296" y="255">111</text>
+    <text x="384" y="255">8</text>
+    <text x="460" y="255">6 and 14</text>
   </g>
-
-  <g font-size="10.5" fill="#0d1117" text-anchor="end">
-    <text x="200" y="63">Detailed written feedback</text>
-    <text x="200" y="99">Responsive and available</text>
-    <text x="200" y="135">Wanted more presence in class</text>
-    <text x="200" y="171">Grading felt harsh or uneven</text>
-  </g>
-
-  <!-- row 1: feedback -->
-  <g>
-    <rect x="210" y="44" width="68" height="26" rx="3" fill="#818cf8"/>
-    <rect x="282" y="44" width="68" height="26" rx="3" fill="#818cf8"/>
-    <rect x="354" y="44" width="68" height="26" rx="3" fill="#4338ca"/>
-    <rect x="426" y="44" width="68" height="26" rx="3" fill="#818cf8"/>
-    <rect x="498" y="44" width="68" height="26" rx="3" fill="#4338ca"/>
-    <rect x="570" y="44" width="68" height="26" rx="3" fill="#4338ca"/>
-  </g>
-  <g fill="#fff">
-    <circle cx="238" cy="57" r="3.4"/><circle cx="250" cy="57" r="3.4"/>
-    <circle cx="310" cy="57" r="3.4"/><circle cx="322" cy="57" r="3.4"/>
-    <circle cx="376" cy="57" r="3.4"/><circle cx="388" cy="57" r="3.4"/><circle cx="400" cy="57" r="3.4"/>
-    <circle cx="454" cy="57" r="3.4"/><circle cx="466" cy="57" r="3.4"/>
-    <circle cx="520" cy="57" r="3.4"/><circle cx="532" cy="57" r="3.4"/><circle cx="544" cy="57" r="3.4"/>
-    <circle cx="592" cy="57" r="3.4"/><circle cx="604" cy="57" r="3.4"/><circle cx="616" cy="57" r="3.4"/>
-  </g>
-
-  <!-- row 2: responsive -->
-  <g>
-    <rect x="210" y="80" width="68" height="26" rx="3" fill="#818cf8"/>
-    <rect x="282" y="80" width="68" height="26" rx="3" fill="#818cf8"/>
-    <rect x="354" y="80" width="68" height="26" rx="3" fill="#818cf8"/>
-    <rect x="426" y="80" width="68" height="26" rx="3" fill="#4338ca"/>
-    <rect x="498" y="80" width="68" height="26" rx="3" fill="#4338ca"/>
-    <rect x="570" y="80" width="68" height="26" rx="3" fill="#4338ca"/>
-  </g>
-  <g fill="#fff">
-    <circle cx="238" cy="93" r="3.4"/><circle cx="250" cy="93" r="3.4"/>
-    <circle cx="310" cy="93" r="3.4"/><circle cx="322" cy="93" r="3.4"/>
-    <circle cx="382" cy="93" r="3.4"/><circle cx="394" cy="93" r="3.4"/>
-    <circle cx="448" cy="93" r="3.4"/><circle cx="460" cy="93" r="3.4"/><circle cx="472" cy="93" r="3.4"/>
-    <circle cx="520" cy="93" r="3.4"/><circle cx="532" cy="93" r="3.4"/><circle cx="544" cy="93" r="3.4"/>
-    <circle cx="592" cy="93" r="3.4"/><circle cx="604" cy="93" r="3.4"/><circle cx="616" cy="93" r="3.4"/>
-  </g>
-
-  <!-- row 3: presence -->
-  <g>
-    <rect x="210" y="116" width="68" height="26" rx="3" fill="#4338ca"/>
-    <rect x="282" y="116" width="68" height="26" rx="3" fill="#818cf8"/>
-    <rect x="354" y="116" width="68" height="26" rx="3" fill="#818cf8"/>
-    <rect x="426" y="116" width="68" height="26" rx="3" fill="#e0e7ff"/>
-    <rect x="498" y="116" width="68" height="26" rx="3" fill="#f6f7fb" stroke="#e4e7ec"/>
-    <rect x="570" y="116" width="68" height="26" rx="3" fill="#e0e7ff"/>
-  </g>
-  <g fill="#fff">
-    <circle cx="232" cy="129" r="3.4"/><circle cx="244" cy="129" r="3.4"/><circle cx="256" cy="129" r="3.4"/>
-    <circle cx="310" cy="129" r="3.4"/><circle cx="322" cy="129" r="3.4"/>
-    <circle cx="382" cy="129" r="3.4"/><circle cx="394" cy="129" r="3.4"/>
-  </g>
-  <g fill="#4338ca">
-    <circle cx="460" cy="129" r="3.4"/>
-    <circle cx="604" cy="129" r="3.4"/>
-  </g>
-
-  <!-- row 4: grading -->
-  <g>
-    <rect x="210" y="152" width="68" height="26" rx="3" fill="#e0e7ff"/>
-    <rect x="282" y="152" width="68" height="26" rx="3" fill="#818cf8"/>
-    <rect x="354" y="152" width="68" height="26" rx="3" fill="#818cf8"/>
-    <rect x="426" y="152" width="68" height="26" rx="3" fill="#f6f7fb" stroke="#e4e7ec"/>
-    <rect x="498" y="152" width="68" height="26" rx="3" fill="#f6f7fb" stroke="#e4e7ec"/>
-    <rect x="570" y="152" width="68" height="26" rx="3" fill="#e0e7ff"/>
-  </g>
-  <g fill="#fff">
-    <circle cx="310" cy="165" r="3.4"/><circle cx="322" cy="165" r="3.4"/>
-    <circle cx="382" cy="165" r="3.4"/><circle cx="394" cy="165" r="3.4"/>
-  </g>
-  <g fill="#4338ca">
-    <circle cx="244" cy="165" r="3.4"/>
-    <circle cx="604" cy="165" r="3.4"/>
-  </g>
-
-  <!-- legend -->
-  <g font-size="9.5" fill="#59606b">
-    <rect x="210" y="200" width="20" height="13" rx="2" fill="#f6f7fb" stroke="#e4e7ec"/>
-    <text x="236" y="210">absent</text>
-    <rect x="288" y="200" width="20" height="13" rx="2" fill="#e0e7ff"/>
-    <text x="314" y="210">isolated</text>
-    <rect x="372" y="200" width="20" height="13" rx="2" fill="#818cf8"/>
-    <text x="398" y="210">recurring</text>
-    <rect x="462" y="200" width="20" height="13" rx="2" fill="#4338ca"/>
-    <text x="488" y="210">dominant</text>
-  </g>
-  <text x="210" y="234" font-size="9.5" fill="#8a93a0">themes coded from open-response comments across 305 respondents</text>
 </svg>
 ```
-<figcaption>The two weaknesses were specific and fixable. Presence was the
-larger one: in the first large lecture, the single most common comment was that
-students had not realised the course had a teaching assistant.</figcaption>
 :::
 
-Feedback quality and responsiveness held across every appointment, from a
-220-student lecture to a six-student seminar. The two criticisms were
-concentrated early. Being visible in a large room is a skill I did not have in
-2022 and had to build deliberately: arriving before class, introducing myself,
-announcing office hours rather than posting them, and staying afterwards. By
-Fall 2024 the complaint had nearly disappeared and availability had become the
-most praised thing about my teaching.
+In my first large lecture, the most common thing students wrote was that they
+had not realised the course had a teaching assistant at all. Being noticeable in
+a room of two hundred is a skill, and I did not have it. I learned to arrive
+before class, introduce myself out loud in the first week, say when my office
+hours were rather than only posting them, and stay behind afterwards. By Fall
+2024 almost nobody said they had not noticed me, and being easy to reach had
+become the thing students mentioned most.
 
-Grading followed the same pattern. Early comments described my marking as harsh
-and inconsistent with the instructor's. The fix was calibration rather than
-leniency: agreeing standards with the instructor in advance, marking against a
-rubric, and explaining what a deduction was for. Occasional comments still call
-me exacting, which I am comfortable with now that it is predictable.
+Grading changed the same way. Early on, students said my marking was too harsh
+and did not match the instructor's. The fix was not to mark more gently. It was
+to agree the standard with the instructor before the first assignment, mark
+against a written rubric, and say in the comment what each deduction was for.
+Students still sometimes call me strict, which I am fine with now that it is
+predictable and explained.
 
-The one thing still open is reach. In every cohort a few students report little
-contact, while others describe the same semester as the most support they have
-had. Availability is not outreach.
+One problem is not solved. In every class, a few students say they got almost
+nothing from me while others in the same room say I was the most useful support
+they had. Those students never came to office hours and never emailed. Being
+available did not reach them, because the students who most need help are the
+least likely to ask for it. Waiting to be asked is itself a decision, and I need
+to go to them instead: a short check-in message to anyone who has not been in
+touch, and one required brief meeting early in the semester.
 
 ## Invited talks
 
 ::: {.course}
 **Introduction to Group Iterative Multiple Model Estimation (GIMME)**\
 [Beijing Forestry University · May 2024]{.meta}
+
+::: {.entry-links}
+[Slides](files/talks/gimme/gimme-slides.pdf)
+[Code](files/talks/gimme/gimme-code.R)
+:::
 :::
 
 ## Community teaching
@@ -407,7 +371,11 @@ had. Availability is not outreach.
 
 ## Mentoring
 
-I have supervised undergraduate research projects in the Perry and Benner labs,
-and trained graduate and undergraduate assistants in physiological data
-collection and preprocessing: RSA acquisition with Mindware, behavioural coding
-with Mangold Interact, and the cleaning pipelines that follow.
+In the [BSEC Lab](https://hdfs.utexas.edu/directory/nicole-perry) I supervised
+an undergraduate through to a presentation at the university's undergraduate
+research forum. I also supervise undergraduates in the
+[MOSAIC Lab](https://sites.utexas.edu/mosaiclab/).
+
+I train graduate and undergraduate assistants in physiological data collection
+and preprocessing: RSA acquisition with Mindware, behavioural coding with
+Mangold Interact, and the cleaning pipelines that follow.

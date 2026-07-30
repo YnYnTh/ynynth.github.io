@@ -4,7 +4,7 @@
 <strong>Tang, Y.</strong>, Akinmola-Milone, T., Bryan, A., &amp; Perry, N. B. (2026). Emotion polyregulation in preschoolers: Links to negative affect and child adjustment. <em>Child Development</em>, <em>97</em>(4), 1399–1414. <a href="https://doi.org/10.1093/chidev/aacag052">https://doi.org/10.1093/chidev/aacag052</a>
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, Akinmola-Milone, T., Bryan, A., &amp; Perry, N. B. (2025a). Temporal variation in preschoolers’ respiratory sinus arrhythmia and the use of behavioural emotion regulation strategies. <em>Infant and Child Development</em>, <em>34</em>(5), e70060. <a href="https://doi.org/10.1002/icd.70060">https://doi.org/10.1002/icd.70060</a>
+<strong>Tang, Y.</strong>, Akinmola-Milone, T., Bryan, A., &amp; Perry, N. B. (2025). Temporal variation in preschoolers’ respiratory sinus arrhythmia and the use of behavioural emotion regulation strategies. <em>Infant and Child Development</em>, <em>34</em>(5), e70060. <a href="https://doi.org/10.1002/icd.70060">https://doi.org/10.1002/icd.70060</a>
 </div>
 <div class="entry">
 <strong>Tang, Y.</strong>, Perry, N. B., He, T., Wu, D., Zhou, N., &amp; Lin, X. (2024). Grandmother–grandchild physiological synchrony in <span>Chinese</span> three-generation families: Links with child emotion regulation. <em>Developmental Psychobiology</em>, <em>66</em>(5), e22498. <a href="https://doi.org/10.1002/dev.22498">https://doi.org/10.1002/dev.22498</a>
@@ -31,7 +31,7 @@ Chen, S., <strong>Tang, Y.</strong>, Lopez-Quintero, C., &amp; Elton, A. (2026).
 ## Manuscripts in preparation
 
 <div class="entry">
-<strong>Tang, Y.</strong>, Benner, A. D., Chen, S., &amp; Leon, A. J. (2026a). <em>Racial/ethnic discrimination, emotional dynamics, and the moderating role of psychological resilience</em> [Unpublished manuscript].
+<strong>Tang, Y.</strong>, Benner, A. D., Chen, S., &amp; Leon, A. J. (2026). <em>Racial/ethnic discrimination, emotional dynamics, and the moderating role of psychological resilience</em> [Unpublished manuscript].
 </div>
 <div class="entry">
 <strong>Tang, Y.</strong>, Benner, A. D., Leon, A. J., &amp; Li, C. (2026). <em>Coping variability and flexibility on daily affect in adolescents: The role of gender</em> [Unpublished manuscript].
@@ -64,10 +64,10 @@ Zhou, Z., <strong>Tang, Y.</strong>, Han, S., &amp; Fingerman, K. (2026). <em>Sl
 <strong>Tang, Y.</strong>, Benner, A. D., &amp; Chen, S. (2026, June). Cumulative and immediate academic adversity and adolescent internalizing symptoms: The role of emotion dynamics. <em>28th Biennial Meeting of the International Society for the Study of Behavioral Development</em>.
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, Benner, A. D., Chen, S., &amp; Leon, A. J. (2026b, April). The associations between racial/ethnic discrimination and adolescents’ emotional dynamics. <em>SRA 2026 Biennial Meeting</em>.
+<strong>Tang, Y.</strong>, Benner, A. D., Chen, S., &amp; Leon, A. J. (2026, April). The associations between racial/ethnic discrimination and adolescents’ emotional dynamics. <em>SRA 2026 Biennial Meeting</em>.
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, Akinmola-Milone, T., Bryan, A., &amp; Perry, N. B. (2025b, May). Emotion polyregulation in preschoolers: Evidence from a frustration task. <em>2025 SRCD Biennial Meeting</em>.
+<strong>Tang, Y.</strong>, Akinmola-Milone, T., Bryan, A., &amp; Perry, N. B. (2025, May). Emotion polyregulation in preschoolers: Evidence from a frustration task. <em>2025 SRCD Biennial Meeting</em>.
 </div>
 <div class="entry">
 <strong>Tang, Y.</strong>, Perry, N. B., &amp; Bryan, A. (2024, June). Teacher-child physiological synchrony: Associations with preschooler’s observed behavior inside and outside of the classroom. <em>2024 National Research Conference on Early Childhood</em>.
@@ -76,10 +76,10 @@ Zhou, Z., <strong>Tang, Y.</strong>, Han, S., &amp; Fingerman, K. (2026). <em>Sl
 <strong>Tang, Y.</strong>, He, T., Perry, N. B., Zhou, N., Zhou, Q., &amp; Lin, X. (2023, March). Concurrent and lagged grandmother–child physiological synchrony across interaction contexts: Links with child emotion regulation. <em>2023 SRCD Biennial Meeting</em>.
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, &amp; Lin, X. (2019a, June). Intergenerational transmission of mother’s and grandmother’s emotion regulation to child emotion regulation: A moderated mediation [in <span>Chinese</span>]. <em>The 15th Annual Academic Conference of the Developmental Psychology Committee of the <span>Chinese</span> Psychological Society</em>.
+<strong>Tang, Y.</strong>, &amp; Lin, X. (2019, June). Intergenerational transmission of mother’s and grandmother’s emotion regulation to child emotion regulation: A moderated mediation [in <span>Chinese</span>]. <em>The 15th Annual Academic Conference of the Developmental Psychology Committee of the <span>Chinese</span> Psychological Society</em>.
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, &amp; Lin, X. (2019b, October). Congruence and incongruence of mother-child attachment and grandmother-child attachment: Links with children’s depressive symptom and life satisfaction [in <span>Chinese</span>]. <em>The 22nd National Academic Congress of Psychology</em>.
+<strong>Tang, Y.</strong>, &amp; Lin, X. (2019, October). Congruence and incongruence of mother-child attachment and grandmother-child attachment: Links with children’s depressive symptom and life satisfaction [in <span>Chinese</span>]. <em>The 22nd National Academic Congress of Psychology</em>.
 </div>
 
 ## Translation
