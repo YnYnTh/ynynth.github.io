@@ -1,0 +1,106 @@
+/*-- scss:defaults --*/
+
+// Kill the Bootswatch web-font import. Nothing should be fetched from
+// fonts.googleapis.com — it is blocked in mainland China and stalls page load.
+$web-font-path: "";
+
+// System font stack. Renders well everywhere and includes CJK faces so
+// Chinese characters in names or affiliations don't fall back to something ugly.
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+  sans-serif !default;
+
+$body-color: #24292f;
+$link-color: #1a5fa8;
+$font-size-root: 17px;
+$headings-font-weight: 600;
+
+/*-- scss:rules --*/
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+// Comfortable reading measure
+main {
+  max-width: 46rem;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #e6e8eb;
+  font-size: 1.4rem;
+}
+
+h3 {
+  margin-top: 1.8rem;
+  font-size: 1.12rem;
+}
+
+// Publication / project entries
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry .venue {
+  color: #57606a;
+}
+
+// Small tag-style links after an entry: [PDF] [DOI] [Materials]
+.entry-links {
+  margin-top: 0.3rem;
+  font-size: 0.87rem;
+}
+
+.entry-links a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.entry-links a:hover {
+  background: #f2f5f8;
+}
+
+// Year headers in the publication list
+.year {
+  margin-top: 2rem;
+  color: #57606a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+// Muted framing note at the top of a page
+.note {
+  margin-bottom: 2rem;
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid #d0d7de;
+  background: #f7f9fb;
+  color: #444c56;
+  font-size: 0.95rem;
+}
+
+.note p:last-child {
+  margin-bottom: 0;
+}
+
+.navbar {
+  border-bottom: 1px solid #e6e8eb;
+}
+
+#quarto-content {
+  padding-top: 1rem;
+}
