@@ -33,7 +33,7 @@ website:
       - href: teaching.qmd
         text: Teaching
       - href: projects.qmd
-        text: Dead Ends
+        text: Dead Ends?
     right:
       - icon: github
         href: https://github.com/USERNAME
