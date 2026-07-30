@@ -74,7 +74,7 @@ the script reads `key: value` pairs out of it. In a Zotero item's Extra box:
 ```
 pdf: files/tang-2026.pdf
 data: https://osf.io/abcde
-code: https://github.com/tyy/project
+code: https://github.com/YnYnTh/project
 ```
 
 Recognised keys: `pdf`, `preprint`, `data`, `code`, `materials`, `supplement`,
@@ -106,11 +106,11 @@ The site rebuilds in about a minute. Watch progress on the repo's Actions tab.
 ## First-time setup
 
 1. Install Quarto: `brew install --cask quarto`
-2. Create a **public** GitHub repo named exactly `tyy.github.io`
-3. Username `tyy` is already set throughout
+2. Create a **public** GitHub repo named exactly `YnYnTh.github.io`
+3. Username `YnYnTh` is already set throughout
 4. Push this folder to the repo
 5. Repo **Settings → Pages → Source: GitHub Actions**
-6. Site goes live at `https://tyy.github.io`
+6. Site goes live at `https://ynynth.github.io`
 
 ## Adding a custom domain later
 
@@ -118,12 +118,12 @@ The site rebuilds in about a minute. Watch progress on the repo's Actions tab.
 2. DNS records at the registrar:
    - Four `A` records for the apex domain → `185.199.108.153`,
      `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - One `CNAME` for `www` → `tyy.github.io`
+   - One `CNAME` for `www` → `YnYnTh.github.io`
 3. Repo **Settings → Pages → Custom domain**, enter it, wait for the DNS check,
    then tick **Enforce HTTPS** once the certificate is issued (a few minutes)
 4. Update `site-url` in `_quarto.yml`
 
-GitHub then 301-redirects `tyy.github.io` to the new domain, so old links
+GitHub then 301-redirects `YnYnTh.github.io` to the new domain, so old links
 keep working. Certificates are free and auto-renewing.
 
 ## Keeping it accessible from mainland China
