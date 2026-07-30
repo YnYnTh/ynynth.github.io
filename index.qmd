@@ -51,12 +51,6 @@ assistant across our undergraduate and graduate sequences, and I run an
 - [Aug 2025]{.when} Finished my M.A. at UT Austin, on emotion polyregulation in preschoolers
 :::
 
-::: {.note}
-**EDIT:** Add your Google Scholar and ResearchGate IDs in the header above, and
-`images/profile.jpg` for the photo. Trim this list whenever it grows past about
-ten items; the point is recency, not completeness.
-:::
-
 ## Contact
 
 [yingyingtang@utexas.edu](mailto:yingyingtang@utexas.edu)\

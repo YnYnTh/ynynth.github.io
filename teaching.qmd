@@ -4,7 +4,7 @@ title: "Teaching"
 
 I teach research methods and statistics, as instructor of record, as a graduate
 teaching assistant across our undergraduate and graduate sequences, and through
-an annual R workshop series I run for graduate students.
+an annual R workshop series for graduate students.
 
 ## Courses
 
@@ -13,10 +13,6 @@ an annual R workshop series I run for graduate students.
 ::: {.course}
 **HDF 315L, Research Methods in Human Development and Family Sciences**\
 [The University of Texas at Austin · Fall 2025]{.meta}
-
-Full responsibility for design, instruction, and assessment. Students carried a
-single research idea across the semester, with weekly homework building toward
-it rather than sitting apart from it.
 :::
 
 ### As graduate teaching assistant
@@ -37,17 +33,12 @@ it rather than sitting apart from it.
 **Abnormal Psychology** [· undergraduate · Fall 2019]{.meta}
 :::
 
-## How the teaching has developed
-
-Four years of assistantships moved from large undergraduate lectures, through
-methods labs, into the graduate statistics sequence, and then to running my own
-course.
+## Trajectory
 
 ::: {.diagram}
 ```{=html}
 <svg viewBox="0 0 640 268" role="img" aria-labelledby="tat">
   <title id="tat">Teaching appointments by level and role from Fall 2022 to Spring 2026</title>
-
   <g stroke="#e4e7ec" stroke-width="1">
     <line x1="168" y1="32"  x2="632" y2="32"/>
     <line x1="168" y1="76"  x2="632" y2="76"/>
@@ -55,7 +46,6 @@ course.
     <line x1="168" y1="164" x2="632" y2="164"/>
     <line x1="168" y1="208" x2="632" y2="208"/>
   </g>
-
   <g font-size="10.5" fill="#1c2333" text-anchor="end">
     <text x="158" y="29">Instructor of record</text>
     <text x="158" y="73">Advanced graduate</text>
@@ -63,11 +53,8 @@ course.
     <text x="158" y="161">Undergraduate methods</text>
     <text x="158" y="205">Undergraduate lecture</text>
   </g>
-
-  <!-- highest level reached each semester -->
   <polyline points="176,208 250,164 324,164 398,208 472,120 546,32 620,76"
             fill="none" stroke="#c7d2fe" stroke-width="2.5"/>
-
   <g fill="#4338ca">
     <circle cx="176" cy="208" r="5.5"/>
     <circle cx="250" cy="208" r="5.5"/><circle cx="250" cy="164" r="5.5"/>
@@ -77,7 +64,6 @@ course.
     <circle cx="620" cy="120" r="5.5"/><circle cx="620" cy="76" r="5.5"/>
   </g>
   <circle cx="546" cy="32" r="8" fill="#fff" stroke="#4338ca" stroke-width="3.5"/>
-
   <g font-size="9" fill="#59606b" text-anchor="middle">
     <text x="176" y="224">HDF 313</text>
     <text x="250" y="224">HDF 313</text>
@@ -86,10 +72,9 @@ course.
     <text x="398" y="224">HDF 313</text>
     <text x="472" y="108">HDF 380K.2</text>
     <text x="620" y="108">380K.2</text>
-    <text x="620" y="64">380K.4 SEM</text>
+    <text x="620" y="64">380K.4</text>
   </g>
   <text x="546" y="18" font-size="9.5" font-weight="600" fill="#4338ca" text-anchor="middle">HDF 315L, my own course</text>
-
   <line x1="168" y1="238" x2="632" y2="238" stroke="#9aa2ad" stroke-width="1"/>
   <g font-size="9.5" fill="#59606b" text-anchor="middle">
     <text x="176" y="252">Fall 22</text>
@@ -100,59 +85,57 @@ course.
     <text x="546" y="252">Fall 25</text>
     <text x="620" y="252">Spr 26</text>
   </g>
-  <text x="400" y="266" font-size="9.5" fill="#8a93a0" text-anchor="middle">the line follows the highest level taught in each semester, which did not climb monotonically</text>
 </svg>
 ```
-<figcaption>Class sizes ran from roughly 220 students in the child development
-lecture down to six in the graduate statistics seminar, which turned out to
-demand almost opposite teaching skills.</figcaption>
+<figcaption>Class sizes ran from about 220 students in the child development
+lecture to six in the graduate statistics seminar.</figcaption>
 :::
 
 ## Statistics workshops for graduate students
 
-An annual workshop series for graduate students in Human Development and Family
-Sciences at UT Austin, run through the departmental statistics committee. Each
-runs in January, before the semester gets heavy. Scripts are posted below.
+Annual workshops for graduate students in Human Development and Family Sciences
+at UT Austin, run through the departmental statistics committee.
 
 ::: {.course}
 **AI-assisted data analysis: Vibe coding with Positron** [· January 2026]{.meta}
 
 Working with an AI assistant inside a real analysis project: what it is good
-at, where it silently fails, and the verification habits that make it safe to
-use on research code.
+at, where it fails silently, and the verification habits that make it safe on
+research code.
 
 ::: {.entry-links}
-[Pilot script](files/workshops/2026/pilot.R)
+[Slides](files/workshops/2026/vibe-coding-slides.pptx)
+[Script](files/workshops/2026/pilot.R)
 :::
 :::
 
 ::: {.course}
 **Data wrangling with R** [· January 2025]{.meta}
 
-Reshaping, merging, and cleaning real messy data, which is the unglamorous
-majority of any analysis and the part least often taught.
+Reshaping, merging, and cleaning messy data.
+
+::: {.entry-links}
+[Materials](files/workshops/2025/data-wrangling.Rmd)
+:::
 :::
 
 ::: {.course}
 **Plotting figures with R** [· January 2024]{.meta}
 
-Building publication-quality figures in ggplot2, including the parts that
-usually go wrong: legends, facets, fonts, and export settings that survive a
-journal's production process.
+Publication-quality figures in ggplot2, including legends, facets, fonts, and
+export settings that survive a journal's production process.
 
 ::: {.entry-links}
-[Day 1 script](files/workshops/2024/day1.R)
-[Figures lecture](files/workshops/2024/day2-figures.R)
-[Exercise](files/workshops/2024/day2-exercise.R)
-[Exercise answers](files/workshops/2024/day2-exercise-answers.R)
+[Slides](files/workshops/2024/figures-slides.pptx)
+[Script](files/workshops/2024/figures-lecture.R)
 :::
 :::
 
 ::: {.course}
 **Basic data analysis with R** [· January 2023]{.meta}
 
-A first course for students who had only ever used SPSS: projects, scripts,
-reproducibility, and a first pass through descriptives and regression.
+A first course for students who had only used SPSS: projects, scripts,
+reproducibility, descriptives, and regression.
 
 ::: {.entry-links}
 [R basics](files/workshops/2023/00-r-basics.R)
@@ -160,45 +143,30 @@ reproducibility, and a first pass through descriptives and regression.
 :::
 :::
 
-In development for the coming year: a workshop on the concepts underneath
-AI-assisted research, covering tokens, context windows, agents, and the command
-line, for researchers with no computing background.
+In development: a workshop on the concepts underneath AI-assisted research,
+covering tokens, context windows, agents, and the command line, for researchers
+with no computing background.
 
-::: {.note}
-**Datasets are deliberately not posted.** The workshop examples use participant
-data that is not mine to distribute. I am rebuilding the exercises on synthetic
-data so the scripts can be run end to end.
-
-**EDIT:** Two files would not copy out of OneDrive because they are stored
-online-only: the 2025 data-wrangling `.Rmd` and the 2024 tables lecture `.Rmd`.
-Right-click them in Finder, choose "Always Keep on This Device", and tell me;
-they will take a few seconds to add. The 2026 and 2024 slide decks are the same
-situation.
-:::
+Datasets are not posted. The examples use participant data that is not mine to
+distribute, and I am rebuilding the exercises on synthetic data.
 
 ## AI and computational methods
 
-I am an advanced *user and teacher* of computational methods rather than a
-methods developer, and I think that distinction is worth stating plainly. What
-I do is bring these tools into applied developmental research and teach other
-researchers to use them without losing rigour.
+I am an advanced user and teacher of computational methods rather than a methods
+developer. What I do is bring these tools into applied developmental research
+and teach other researchers to use them without losing rigour.
 
-- **Machine learning applied to real data.** Recurrent neural network models of
-  student learning trajectories, including feature-importance analyses,
-  compared against conventional growth models.
-- **Teaching AI-assisted analysis.** I ran our department's January 2026
-  workshop, and I am developing the concepts workshop described above.
-- **Verification as the discipline that matters.** The point I press hardest in
-  teaching: a generated number is a hypothesis until you have re-derived it from
-  source output. This is continuous with how I already work.
+- Recurrent neural network models of student learning trajectories, with
+  feature-importance analyses, compared against conventional growth models.
+- Teaching AI-assisted analysis, through the January 2026 workshop and the
+  concepts workshop in development.
+- Verification: a generated number is a hypothesis until it has been re-derived
+  from source output.
 
-## What the evaluations say, and what I do with them
+## Evaluations
 
-I would rather show this honestly than quote only the flattering numbers. Below
-is my first course as instructor of record.
-
-**HDF 315L, Research Methods, Fall 2025.** 7 of 9 students responded (78%),
-average attendance 86%.
+**HDF 315L, Research Methods, Fall 2025**, my first course as instructor of
+record. 7 of 9 students responded, average attendance 86%.
 
 ::: {.diagram}
 ```{=html}
@@ -252,53 +220,166 @@ average attendance 86%.
     <text x="430" y="280">3</text><text x="520" y="280">4</text>
     <text x="610" y="280">5</text>
   </g>
-  <text x="430" y="296" font-size="10" fill="#59606b" text-anchor="middle">mean rating · full 1 to 5 scale, not truncated · n = 7</text>
+  <text x="430" y="296" font-size="10" fill="#59606b" text-anchor="middle">mean rating · full 1 to 5 scale · n = 7</text>
 </svg>
 ```
-<figcaption>Every item sits above 3.8, but the spread is the informative part.
-The two lowest are engagement and the course as a whole, while the
-instructor-facing items are the highest.</figcaption>
+<figcaption>Engagement and the course overall are the two lowest items, while
+the instructor-facing items are the highest.</figcaption>
 :::
 
-### What I take from this
+Three things I would do differently, and will.
 
-This was my first time as instructor of record, and the pattern in the numbers
-points at course design rather than delivery. Three things I got wrong, and what
-I am changing.
+**Know the program setting.** HDF 315L is a lower-division course, so I designed
+it for lower-division students. Almost everyone who enrolled was a junior or
+senior, with one exception. That mismatch drove the pacing and the level of
+scaffolding.
 
-**I did not know the program setting well enough.** HDF 315L is a lower-division
-course, so I built it for lower-division students. Almost every student in the
-room was a junior or senior, with a single exception. That mismatch explains a
-lot: the pacing, the level of scaffolding, and probably the engagement score. I
-should have looked at who actually enrols before deciding what to assume.
+**Replace the group activities.** They work in the large lecture sections I had
+assisted. In a room of nine upper-level students they produced quiet compliance
+rather than discussion. I am moving to structured pair work and written-first
+protocols, where everyone commits to an answer before anyone speaks.
 
-**Group activities did not work.** I leaned on them because they work well in
-the large lecture sections I had been assisting. In a room of nine upper-level
-students they produced quiet compliance rather than discussion. Small-group
-technique does not scale down; it needs replacing, not shrinking. I am moving
-toward structured pair work and written-first protocols where everyone commits
-to an answer before anyone speaks.
+**Talk to students earlier.** I waited for questions and read a quiet room as an
+understanding room. A start-of-semester survey on background and goals, plus
+short mid-unit check-ins, replaces that inference.
 
-**I should have talked to students earlier.** I waited for questions and treated
-a quiet room as an understanding room. Next time I will use a start-of-semester
-survey on background and goals, and short mid-unit check-ins, so I am not
-inferring comprehension from silence.
+### What four years of assistantship feedback show
 
-### What the assistantships taught me
+Coding the open responses across appointments, four themes recur. Two are stable
+strengths. Two were real weaknesses that have largely closed.
 
-The evaluations across four years read differently depending on the room. In the
-large child development lectures the recurring theme was responsiveness and
-clarity of written feedback. In the graduate statistics sequence it was depth in
-R and the detail of feedback on assignments, which is the same strength doing
-different work.
+::: {.diagram}
+```{=html}
+<svg viewBox="0 0 640 246" role="img" aria-labelledby="qlt">
+  <title id="qlt">Prevalence of four themes in written student comments across six teaching assistant appointments</title>
 
-Two things to keep working on. One student found my grading somewhat harsh, and
-I would rather be exacting *and* visibly on the student's side; those are not in
-tension, but I had not made the second part legible. And while several students
-described the support as the most useful they had had, one reported getting
-little from me across a whole semester. Availability is not outreach. The
-students who need help most are the least likely to ask for it, and waiting for
-them to arrive is a choice with predictable results.
+  <g font-size="9.5" fill="#59606b" text-anchor="middle">
+    <text x="244" y="22">Fall 22</text><text x="316" y="22">Spr 24</text>
+    <text x="388" y="22">Spr 24</text><text x="460" y="22">Fall 24</text>
+    <text x="532" y="22">Spr 25</text><text x="604" y="22">Spr 26</text>
+  </g>
+  <g font-size="9" fill="#8a93a0" text-anchor="middle">
+    <text x="244" y="34">313</text><text x="316" y="34">313</text>
+    <text x="388" y="34">315L</text><text x="460" y="34">313</text>
+    <text x="532" y="34">380K</text><text x="604" y="34">380K</text>
+  </g>
+
+  <g font-size="10.5" fill="#0d1117" text-anchor="end">
+    <text x="200" y="63">Detailed written feedback</text>
+    <text x="200" y="99">Responsive and available</text>
+    <text x="200" y="135">Wanted more presence in class</text>
+    <text x="200" y="171">Grading felt harsh or uneven</text>
+  </g>
+
+  <!-- row 1: feedback -->
+  <g>
+    <rect x="210" y="44" width="68" height="26" rx="3" fill="#818cf8"/>
+    <rect x="282" y="44" width="68" height="26" rx="3" fill="#818cf8"/>
+    <rect x="354" y="44" width="68" height="26" rx="3" fill="#4338ca"/>
+    <rect x="426" y="44" width="68" height="26" rx="3" fill="#818cf8"/>
+    <rect x="498" y="44" width="68" height="26" rx="3" fill="#4338ca"/>
+    <rect x="570" y="44" width="68" height="26" rx="3" fill="#4338ca"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="238" cy="57" r="3.4"/><circle cx="250" cy="57" r="3.4"/>
+    <circle cx="310" cy="57" r="3.4"/><circle cx="322" cy="57" r="3.4"/>
+    <circle cx="376" cy="57" r="3.4"/><circle cx="388" cy="57" r="3.4"/><circle cx="400" cy="57" r="3.4"/>
+    <circle cx="454" cy="57" r="3.4"/><circle cx="466" cy="57" r="3.4"/>
+    <circle cx="520" cy="57" r="3.4"/><circle cx="532" cy="57" r="3.4"/><circle cx="544" cy="57" r="3.4"/>
+    <circle cx="592" cy="57" r="3.4"/><circle cx="604" cy="57" r="3.4"/><circle cx="616" cy="57" r="3.4"/>
+  </g>
+
+  <!-- row 2: responsive -->
+  <g>
+    <rect x="210" y="80" width="68" height="26" rx="3" fill="#818cf8"/>
+    <rect x="282" y="80" width="68" height="26" rx="3" fill="#818cf8"/>
+    <rect x="354" y="80" width="68" height="26" rx="3" fill="#818cf8"/>
+    <rect x="426" y="80" width="68" height="26" rx="3" fill="#4338ca"/>
+    <rect x="498" y="80" width="68" height="26" rx="3" fill="#4338ca"/>
+    <rect x="570" y="80" width="68" height="26" rx="3" fill="#4338ca"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="238" cy="93" r="3.4"/><circle cx="250" cy="93" r="3.4"/>
+    <circle cx="310" cy="93" r="3.4"/><circle cx="322" cy="93" r="3.4"/>
+    <circle cx="382" cy="93" r="3.4"/><circle cx="394" cy="93" r="3.4"/>
+    <circle cx="448" cy="93" r="3.4"/><circle cx="460" cy="93" r="3.4"/><circle cx="472" cy="93" r="3.4"/>
+    <circle cx="520" cy="93" r="3.4"/><circle cx="532" cy="93" r="3.4"/><circle cx="544" cy="93" r="3.4"/>
+    <circle cx="592" cy="93" r="3.4"/><circle cx="604" cy="93" r="3.4"/><circle cx="616" cy="93" r="3.4"/>
+  </g>
+
+  <!-- row 3: presence -->
+  <g>
+    <rect x="210" y="116" width="68" height="26" rx="3" fill="#4338ca"/>
+    <rect x="282" y="116" width="68" height="26" rx="3" fill="#818cf8"/>
+    <rect x="354" y="116" width="68" height="26" rx="3" fill="#818cf8"/>
+    <rect x="426" y="116" width="68" height="26" rx="3" fill="#e0e7ff"/>
+    <rect x="498" y="116" width="68" height="26" rx="3" fill="#f6f7fb" stroke="#e4e7ec"/>
+    <rect x="570" y="116" width="68" height="26" rx="3" fill="#e0e7ff"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="232" cy="129" r="3.4"/><circle cx="244" cy="129" r="3.4"/><circle cx="256" cy="129" r="3.4"/>
+    <circle cx="310" cy="129" r="3.4"/><circle cx="322" cy="129" r="3.4"/>
+    <circle cx="382" cy="129" r="3.4"/><circle cx="394" cy="129" r="3.4"/>
+  </g>
+  <g fill="#4338ca">
+    <circle cx="460" cy="129" r="3.4"/>
+    <circle cx="604" cy="129" r="3.4"/>
+  </g>
+
+  <!-- row 4: grading -->
+  <g>
+    <rect x="210" y="152" width="68" height="26" rx="3" fill="#e0e7ff"/>
+    <rect x="282" y="152" width="68" height="26" rx="3" fill="#818cf8"/>
+    <rect x="354" y="152" width="68" height="26" rx="3" fill="#818cf8"/>
+    <rect x="426" y="152" width="68" height="26" rx="3" fill="#f6f7fb" stroke="#e4e7ec"/>
+    <rect x="498" y="152" width="68" height="26" rx="3" fill="#f6f7fb" stroke="#e4e7ec"/>
+    <rect x="570" y="152" width="68" height="26" rx="3" fill="#e0e7ff"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="310" cy="165" r="3.4"/><circle cx="322" cy="165" r="3.4"/>
+    <circle cx="382" cy="165" r="3.4"/><circle cx="394" cy="165" r="3.4"/>
+  </g>
+  <g fill="#4338ca">
+    <circle cx="244" cy="165" r="3.4"/>
+    <circle cx="604" cy="165" r="3.4"/>
+  </g>
+
+  <!-- legend -->
+  <g font-size="9.5" fill="#59606b">
+    <rect x="210" y="200" width="20" height="13" rx="2" fill="#f6f7fb" stroke="#e4e7ec"/>
+    <text x="236" y="210">absent</text>
+    <rect x="288" y="200" width="20" height="13" rx="2" fill="#e0e7ff"/>
+    <text x="314" y="210">isolated</text>
+    <rect x="372" y="200" width="20" height="13" rx="2" fill="#818cf8"/>
+    <text x="398" y="210">recurring</text>
+    <rect x="462" y="200" width="20" height="13" rx="2" fill="#4338ca"/>
+    <text x="488" y="210">dominant</text>
+  </g>
+  <text x="210" y="234" font-size="9.5" fill="#8a93a0">themes coded from open-response comments across 305 respondents</text>
+</svg>
+```
+<figcaption>The two weaknesses were specific and fixable. Presence was the
+larger one: in the first large lecture, the single most common comment was that
+students had not realised the course had a teaching assistant.</figcaption>
+:::
+
+Feedback quality and responsiveness held across every appointment, from a
+220-student lecture to a six-student seminar. The two criticisms were
+concentrated early. Being visible in a large room is a skill I did not have in
+2022 and had to build deliberately: arriving before class, introducing myself,
+announcing office hours rather than posting them, and staying afterwards. By
+Fall 2024 the complaint had nearly disappeared and availability had become the
+most praised thing about my teaching.
+
+Grading followed the same pattern. Early comments described my marking as harsh
+and inconsistent with the instructor's. The fix was calibration rather than
+leniency: agreeing standards with the instructor in advance, marking against a
+rubric, and explaining what a deduction was for. Occasional comments still call
+me exacting, which I am comfortable with now that it is predictable.
+
+The one thing still open is reach. In every cohort a few students report little
+contact, while others describe the same semester as the most support they have
+had. Availability is not outreach.
 
 ## Invited talks
 
@@ -322,11 +403,4 @@ them to arrive is a choice with predictable results.
 I have supervised undergraduate research projects in the Perry and Benner labs,
 and trained graduate and undergraduate assistants in physiological data
 collection and preprocessing: RSA acquisition with Mindware, behavioural coding
-with Mangold Interact, and the cleaning pipelines that come after.
-
-::: {.note}
-**EDIT:** Your evaluation files also include a Spring 2025 TA appointment for
-NTR 306 (Fundamentals of Nutrition, about 2,000 students, web-based) that is not
-on your CV, so I left it off the chart to keep the two consistent. It is good
-evidence of range if you want it added to both.
-:::
+with Mangold Interact, and the cleaning pipelines that follow.

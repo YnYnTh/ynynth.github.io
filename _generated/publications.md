@@ -4,19 +4,19 @@
 <strong>Tang, Y.</strong>, Akinmola-Milone, T., Bryan, A., &amp; Perry, N. B. (2026). Emotion polyregulation in preschoolers: Links to negative affect and child adjustment. <em>Child Development</em>, <em>97</em>(4), 1399–1414. <a href="https://doi.org/10.1093/chidev/aacag052">https://doi.org/10.1093/chidev/aacag052</a>
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, Akinmola-Milone, T., Bryan, A., &amp; Perry, N. B. (2025b). Temporal variation in preschoolers’ respiratory sinus arrhythmia and the use of behavioural emotion regulation strategies. <em>Infant and Child Development</em>, <em>34</em>(5), e70060. <a href="https://doi.org/10.1002/icd.70060">https://doi.org/10.1002/icd.70060</a>
+<strong>Tang, Y.</strong>, Akinmola-Milone, T., Bryan, A., &amp; Perry, N. B. (2025a). Temporal variation in preschoolers’ respiratory sinus arrhythmia and the use of behavioural emotion regulation strategies. <em>Infant and Child Development</em>, <em>34</em>(5), e70060. <a href="https://doi.org/10.1002/icd.70060">https://doi.org/10.1002/icd.70060</a>
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, Perry, N., Ting, H., Zhou, N., Wu, D., &amp; Lin, X. (2024). Grandmother–grandchild physiological synchrony in <span>Chinese</span> three-generation families: Links with child emotion regulation. <em>Developmental Psychobiology</em>, <em>66</em>(5), e22498. <a href="https://doi.org/10.1002/dev.22498">https://doi.org/10.1002/dev.22498</a>
+<strong>Tang, Y.</strong>, Perry, N. B., He, T., Wu, D., Zhou, N., &amp; Lin, X. (2024). Grandmother–grandchild physiological synchrony in <span>Chinese</span> three-generation families: Links with child emotion regulation. <em>Developmental Psychobiology</em>, <em>66</em>(5), e22498. <a href="https://doi.org/10.1002/dev.22498">https://doi.org/10.1002/dev.22498</a>
 </div>
 <div class="entry">
 <strong>Tang, Y.</strong>, Lin, X., Yin, J., He, T., Ding, W., &amp; Cao, Z. (2023). Congruence and incongruence of mother-child attachment and grandmother-child attachment: Links with children’s subjective well-being [in <span>Chinese</span>]. <em>Psychological Development and Education</em>, (06), 859–868.
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, Shao, Y., He, T., Wang, Y., Hinshaw, S. W., &amp; Lin, X. (2022). Latent profiles of adolescents’ relationships with parents and siblings: Associations with emotional and behavioral responses during the <span>COVID-19</span> pandemic. <em>Current Psychology</em>, <em>42</em>, 31079–31090. <a href="https://doi.org/10.1007/s12144-022-03959-2">https://doi.org/10.1007/s12144-022-03959-2</a>
+<strong>Tang, Y.</strong>, Shao, Y., He, T., Wang, Y., Hinshaw, S. P., &amp; Lin, X. (2023). Latent profiles of adolescents’ relationships with parents and siblings: Associations with emotional and behavioral responses during the <span>COVID-19</span> pandemic. <em>Current Psychology</em>, <em>42</em>(35), 31079–31090. <a href="https://doi.org/10.1007/s12144-022-03959-2">https://doi.org/10.1007/s12144-022-03959-2</a>
 </div>
 <div class="entry">
-Zhang, W., <strong>Tang, Y.</strong>, Ting, H., &amp; Lin, X. (2023). Oppositional defiant disorder symptoms and multi-level family factors in <span>Chinese</span> migrant children: A network perspective. <em>Research on Child and Adolescent Psychopathology</em>, <em>51</em>, 1143–1161. <a href="https://doi.org/10.1007/s10802-023-01074-9">https://doi.org/10.1007/s10802-023-01074-9</a> <span class="cofirst">(co-first author)</span>
+Zhang, W., <strong>Tang, Y.</strong>, Wu, Q., Zhou, N., &amp; Lin, X. (2023). Oppositional defiant disorder symptoms and multi-level family factors in <span>Chinese</span> migrant children: A network perspective. <em>Research on Child and Adolescent Psychopathology</em>, <em>51</em>(8), 1143–1161. <a href="https://doi.org/10.1007/s10802-023-01074-9">https://doi.org/10.1007/s10802-023-01074-9</a> <span class="cofirst">(co-first author)</span>
 </div>
 
 ## Manuscripts under review
@@ -67,13 +67,13 @@ Zhou, Z., <strong>Tang, Y.</strong>, Han, S., &amp; Fingerman, K. (2026). <em>Sl
 <strong>Tang, Y.</strong>, Benner, A. D., Chen, S., &amp; Leon, A. J. (2026b, April). The associations between racial/ethnic discrimination and adolescents’ emotional dynamics. <em>SRA 2026 Biennial Meeting</em>.
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, Akinmola-Milone, O., Bryan, A., &amp; Perry, N. (2025a, May). Emotion polyregulation in preschoolers: Evidence from a frustration task. <em>2025 SRCD Biennial Meeting</em>.
+<strong>Tang, Y.</strong>, Akinmola-Milone, T., Bryan, A., &amp; Perry, N. B. (2025b, May). Emotion polyregulation in preschoolers: Evidence from a frustration task. <em>2025 SRCD Biennial Meeting</em>.
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, Perry, N., &amp; Bryan, A. (2024, June). Teacher-child physiological synchrony: Associations with preschooler’s observed behavior inside and outside of the classroom. <em>2024 National Research Conference on Early Childhood</em>.
+<strong>Tang, Y.</strong>, Perry, N. B., &amp; Bryan, A. (2024, June). Teacher-child physiological synchrony: Associations with preschooler’s observed behavior inside and outside of the classroom. <em>2024 National Research Conference on Early Childhood</em>.
 </div>
 <div class="entry">
-<strong>Tang, Y.</strong>, Ting, H., Perry, N., Zhou, N., Zhou, Q., &amp; Lin, X. (2023, March). Concurrent and lagged grandmother–child physiological synchrony across interaction contexts: Links with child emotion regulation. <em>2023 SRCD Biennial Meeting</em>.
+<strong>Tang, Y.</strong>, He, T., Perry, N. B., Zhou, N., Zhou, Q., &amp; Lin, X. (2023, March). Concurrent and lagged grandmother–child physiological synchrony across interaction contexts: Links with child emotion regulation. <em>2023 SRCD Biennial Meeting</em>.
 </div>
 <div class="entry">
 <strong>Tang, Y.</strong>, &amp; Lin, X. (2019a, June). Intergenerational transmission of mother’s and grandmother’s emotion regulation to child emotion regulation: A moderated mediation [in <span>Chinese</span>]. <em>The 15th Annual Academic Conference of the Developmental Psychology Committee of the <span>Chinese</span> Psychological Society</em>.
@@ -97,10 +97,10 @@ He, T., Zhang, W., <strong>Tang, Y.</strong>, Wu, Q., Xu, C., &amp; Lin, X. (202
 Perry, N. B., <strong>Tang, Y.</strong>, Akinmola-Milone, T., Dollar, J. M., &amp; Bryan, A. E. (2026). Context matters: Multi-informant assessment of preschoolers’ emotion regulation strategies across home, school, and the laboratory. <em>Early Childhood Research Quarterly</em>, <em>77</em>, 97–107. <a href="https://doi.org/10.1016/j.ecresq.2026.06.012">https://doi.org/10.1016/j.ecresq.2026.06.012</a>
 </div>
 <div class="entry">
-He, T., Wu, D., Jiang, Y., <strong>Tang, Y.</strong>, Zhou, Q., &amp; Lin, X. (2024). Coparenting relationship, parenting self-efficacy, and child adjustment in <span>Chinese</span> mother–grandmother coparenting families: Grandmother role difference. <em>Family Relations: An Interdisciplinary Journal of Applied Family Studies</em>, <em>73</em>, 1086–1106. <a href="https://doi.org/10.1111/fare.12928">https://doi.org/10.1111/fare.12928</a>
+He, T., Wu, D., Jiang, Y., <strong>Tang, Y.</strong>, Zhou, Q., Wu, Q., &amp; Lin, X. (2024). Coparenting relationship, parenting self-efficacy, and child adjustment in <span>Chinese</span> mother–grandmother coparenting families: Grandmother role difference. <em>Family Relations: An Interdisciplinary Journal of Applied Family Studies</em>, <em>73</em>, 1086–1106. <a href="https://doi.org/10.1111/fare.12928">https://doi.org/10.1111/fare.12928</a>
 </div>
 <div class="entry">
-He, T., Zhang, W., <strong>Tang, Y.</strong>, Hinshaw, S. W., Wu, Q., &amp; Lin, X. (2023). Unidirectional or bidirectional? Relation between parental responsiveness and emotion regulation in children with and without oppositional defiant disorder. <em>Research on Child and Adolescent Psychopathology</em>, <em>51</em>, 1163–1177. <a href="https://doi.org/10.1007/s10802-023-01051-2">https://doi.org/10.1007/s10802-023-01051-2</a>
+He, T., Zhang, W., <strong>Tang, Y.</strong>, Hinshaw, S. P., Wu, Q., &amp; Lin, X. (2023). Unidirectional or bidirectional? Relation between parental responsiveness and emotion regulation in children with and without oppositional defiant disorder. <em>Research on Child and Adolescent Psychopathology</em>, <em>51</em>(8), 1163–1177. <a href="https://doi.org/10.1007/s10802-023-01051-2">https://doi.org/10.1007/s10802-023-01051-2</a>
 </div>
 <div class="entry">
 Tan, Y., Lin, X., Chen, H., Xu, M., <strong>Tang, Y.</strong>, Gao, P., Ren, W., &amp; Zhang, D. (2023). Development of the panic response scale and the predicting factors of panic response during the <span>COVID-19</span> pandemic. <em>Psychology Research and Behavior Management</em>, <em>16</em>, 2883–2895. <a href="https://doi.org/10.2147/PRBM.S415240">https://doi.org/10.2147/PRBM.S415240</a>

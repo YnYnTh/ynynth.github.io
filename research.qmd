@@ -258,8 +258,3 @@ implications from sitting inside one dense group, and one that a simple count of
 friends cannot distinguish.</figcaption>
 :::
 
-::: {.note}
-**EDIT:** You said you'd revisit these four descriptions. Every paper cited on
-this page is one you led; collaborative work is listed on the
-[publications page](publications.qmd) instead.
-:::
