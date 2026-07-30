@@ -12,15 +12,14 @@ execute:
   freeze: auto
 
 website:
-  # EDIT: your name as you publish it
   title: "Yingying Tang"
-  description: "Personal academic website"
+  description: "Yingying Tang — doctoral candidate in Human Development and Family Sciences at UT Austin, studying emotion regulation, stress, and physiological health across family and peer contexts."
   # EDIT: replace USERNAME (and swap for your custom domain if you buy one)
   site-url: "https://USERNAME.github.io"
 
   # Off deliberately: the search widget bundles Algolia's autocomplete, which
   # carries a cdn.jsdelivr.net loader for its optional analytics module.
-  # Inert unless insights are enabled, but not worth the risk on a 5-page site.
+  # Inert unless insights are enabled, but not worth the risk on a small site.
   search: false
 
   navbar:
@@ -31,8 +30,8 @@ website:
         text: Research
       - href: publications.qmd
         text: Publications
-      - href: outreach.qmd
-        text: Outreach
+      - href: teaching.qmd
+        text: Teaching
       - href: projects.qmd
         text: Dead Ends
     right:
@@ -41,7 +40,8 @@ website:
         aria-label: GitHub
 
   page-footer:
-    center: "© 2026 Yingying Tang · Built with Quarto"
+    left: "© 2026 Yingying Tang"
+    right: "Built with Quarto · no third-party trackers"
 
 format:
   html:

@@ -2,63 +2,376 @@
 title: "Research"
 ---
 
+**I study how children and adolescents regulate emotion within family and peer
+systems, and how moment-to-moment regulatory dynamics become longer-term
+patterns of adaptation and physiological health.**
+
+Four areas organise the work. They are not separate projects so much as four
+views of one question: regulation is dynamic, it is physiological, it is
+learned in relationships, and it accumulates into health.
+
+## Biopsychosocial self-regulation
+
+Regulation is not a trait and not a single strategy. Within one frustrating
+episode a preschooler will try several things in sequence — distract, seek
+help, vent — while their parasympathetic activity shifts underneath. Measuring
+regulation *statically*, as a questionnaire score or a single observed
+strategy, has held the field back.
+
+My work measures it as it unfolds: **polyregulation** (how strategies combine),
+**temporal variation in respiratory sinus arrhythmia** across an episode, and
+the correspondence between the two.
+
+::: {.diagram}
+```{=html}
+<svg viewBox="0 0 640 216" role="img" aria-labelledby="d1t">
+  <title id="d1t">Within-episode regulation measured at three levels: context, behaviour, and physiology</title>
+
+  <!-- band backgrounds -->
+  <rect x="96" y="8"   width="528" height="52" fill="#f2f7fb"/>
+  <rect x="96" y="68"  width="528" height="60" fill="#e8f1f8"/>
+  <rect x="96" y="136" width="528" height="52" fill="#f2f7fb"/>
+
+  <!-- band labels -->
+  <text x="88" y="38"  text-anchor="end" font-size="12" font-weight="600" fill="#0072B2">Context</text>
+  <text x="88" y="102" text-anchor="end" font-size="12" font-weight="600" fill="#0072B2">Behaviour</text>
+  <text x="88" y="166" text-anchor="end" font-size="12" font-weight="600" fill="#0072B2">Physiology</text>
+
+  <!-- context boxes -->
+  <g font-size="11" fill="#23272c" text-anchor="middle">
+    <rect x="112" y="20" width="150" height="28" rx="4" fill="#fff" stroke="#0072B2" stroke-width="1"/>
+    <text x="187" y="38">Home</text>
+    <rect x="272" y="20" width="150" height="28" rx="4" fill="#fff" stroke="#0072B2" stroke-width="1"/>
+    <text x="347" y="38">School</text>
+    <rect x="432" y="20" width="176" height="28" rx="4" fill="#fff" stroke="#0072B2" stroke-width="1"/>
+    <text x="520" y="38">Laboratory</text>
+  </g>
+
+  <!-- behaviour: strategy onsets -->
+  <line x1="112" y1="112" x2="608" y2="112" stroke="#9fb8c9" stroke-width="1"/>
+  <g fill="#0072B2">
+    <circle cx="168" cy="112" r="5"/><circle cx="266" cy="112" r="5"/>
+    <circle cx="352" cy="112" r="5"/><circle cx="468" cy="112" r="5"/>
+    <circle cx="556" cy="112" r="5"/>
+  </g>
+  <g font-size="10" fill="#3f464c" text-anchor="middle">
+    <text x="168" y="90">distract</text>
+    <text x="266" y="90">help-seek</text>
+    <text x="352" y="90">vent</text>
+    <text x="468" y="90">distract</text>
+    <text x="556" y="90">reappraise</text>
+  </g>
+
+  <!-- physiology: RSA trace -->
+  <path d="M112 168 C 150 150, 178 184, 210 166 S 268 142, 300 170 S 360 186, 400 158 S 470 148, 508 174 S 570 180, 608 160"
+        fill="none" stroke="#0072B2" stroke-width="2.2"/>
+  <text x="616" y="150" font-size="10" fill="#0072B2">RSA</text>
+
+  <!-- time axis -->
+  <line x1="112" y1="200" x2="608" y2="200" stroke="#8a939b" stroke-width="1"/>
+  <polygon points="608,200 601,197 601,203" fill="#8a939b"/>
+  <text x="360" y="213" font-size="10" fill="#5b6167" text-anchor="middle">seconds to minutes within an episode</text>
+</svg>
+```
+<figcaption>Regulation observed simultaneously as context, behaviour, and
+physiology within a single episode. Strategies arrive in sequence rather than
+one at a time, and parasympathetic activity shifts alongside them — which is
+invisible to a single summary score.</figcaption>
+:::
+
+Anchor papers: polyregulation in *Child Development* (2026); RSA temporal
+variation in *Infant and Child Development* (2025).
+
+## Stress, adaptation, and resilience
+
+Social stressors — discrimination, socioeconomic risk, academic adversity —
+affect health through pathways that are visible in daily life before they are
+visible in disease. My work traces that route: from a stressor reported today,
+through the *shape* of a person's affect (how sticky it is, how variable), into
+physiological load, and eventually into health.
+
+Resilience enters as a moderator rather than an outcome: the same stressor does
+not produce the same affective signature in everyone.
+
+::: {.diagram}
+```{=html}
+<svg viewBox="0 0 640 208" role="img" aria-labelledby="d2t">
+  <title id="d2t">Pathway from daily stressors through affect dynamics and physiological load to health</title>
+
+  <defs>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#D55E00"/>
+    </marker>
+    <marker id="ar2g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7d868d"/>
+    </marker>
+  </defs>
+
+  <!-- main chain -->
+  <g text-anchor="middle">
+    <rect x="8"   y="76" width="128" height="56" rx="5" fill="#fdf1ea" stroke="#D55E00" stroke-width="1.4"/>
+    <text x="72"  y="99"  font-size="11.5" font-weight="600" fill="#8f3d12">Daily stressor</text>
+    <text x="72"  y="115" font-size="10" fill="#5b6167">discrimination,</text>
+    <text x="72"  y="127" font-size="10" fill="#5b6167">adversity, risk</text>
+
+    <rect x="176" y="76" width="132" height="56" rx="5" fill="#fdf1ea" stroke="#D55E00" stroke-width="1.4"/>
+    <text x="242" y="99"  font-size="11.5" font-weight="600" fill="#8f3d12">Affect dynamics</text>
+    <text x="242" y="115" font-size="10" fill="#5b6167">inertia, variability,</text>
+    <text x="242" y="127" font-size="10" fill="#5b6167">reactivity</text>
+
+    <rect x="348" y="76" width="132" height="56" rx="5" fill="#fdf1ea" stroke="#D55E00" stroke-width="1.4"/>
+    <text x="414" y="99"  font-size="11.5" font-weight="600" fill="#8f3d12">Physiological load</text>
+    <text x="414" y="115" font-size="10" fill="#5b6167">RSA, HRV,</text>
+    <text x="414" y="127" font-size="10" fill="#5b6167">allostatic load</text>
+
+    <rect x="520" y="76" width="112" height="56" rx="5" fill="#f4efe6" stroke="#8f3d12" stroke-width="1.4"/>
+    <text x="576" y="99"  font-size="11.5" font-weight="600" fill="#8f3d12">Health</text>
+    <text x="576" y="115" font-size="10" fill="#5b6167">internalizing,</text>
+    <text x="576" y="127" font-size="10" fill="#5b6167">wear-and-tear</text>
+  </g>
+
+  <g stroke="#D55E00" stroke-width="2" marker-end="url(#ar2)">
+    <line x1="138" y1="104" x2="170" y2="104"/>
+    <line x1="310" y1="104" x2="342" y2="104"/>
+    <line x1="482" y1="104" x2="514" y2="104"/>
+  </g>
+
+  <!-- resilience moderator -->
+  <rect x="196" y="8" width="260" height="30" rx="5" fill="#fff" stroke="#7d868d" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="326" y="28" font-size="11" font-weight="600" fill="#4b5257" text-anchor="middle">Resilience · coping flexibility</text>
+  <path d="M326 40 L326 62" stroke="#7d868d" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#ar2g)"/>
+
+  <!-- timescale -->
+  <line x1="8" y1="164" x2="632" y2="164" stroke="#c9c0b1" stroke-width="1"/>
+  <g font-size="10" fill="#5b6167">
+    <text x="8"   y="182">moments</text>
+    <text x="200" y="182">days (diary, EMA)</text>
+    <text x="392" y="182">months</text>
+    <text x="540" y="182">years</text>
+  </g>
+  <text x="8" y="200" font-size="10" fill="#8a7f6d">the same process, measured at four timescales</text>
+</svg>
+```
+<figcaption>Stressors do not act on health directly. They act on the shape of
+daily affect, which registers physiologically, which accumulates. Each arrow is
+measurable at a different timescale — the reason intensive longitudinal designs
+matter here.</figcaption>
+:::
+
+Anchor work: discrimination and emotion dynamics; resilience to socioeconomic
+risks (*IJBD*, in-principle acceptance); the ambulatory HRV strand.
+
+## Peer relations and friendship development
+
+My dissertation moves this question into the peer world. Adolescents sit in
+friendship structures that differ not just in *how many* friends they have but
+in how those friendships are organised — how diverse their cliques are, how
+stable, how overlapping. I ask whether that structure predicts physiological
+wear-and-tear, and whether friends who cope similarly amplify or buffer each
+other.
+
+::: {.diagram}
+```{=html}
+<svg viewBox="0 0 640 220" role="img" aria-labelledby="d3t">
+  <title id="d3t">Friendship network structure linked to coping similarity and physiological outcomes</title>
+
+  <defs>
+    <marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#009E73"/>
+    </marker>
+  </defs>
+
+  <!-- clique hulls -->
+  <ellipse cx="104" cy="86"  rx="72" ry="54" fill="#e6f6f0" stroke="#009E73" stroke-width="1" stroke-dasharray="4 3"/>
+  <ellipse cx="272" cy="140" rx="70" ry="50" fill="#e6f6f0" stroke="#009E73" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- edges -->
+  <g stroke="#79b8a4" stroke-width="1.5">
+    <line x1="70"  y1="58"  x2="118" y2="46"/>
+    <line x1="118" y1="46"  x2="146" y2="94"/>
+    <line x1="146" y1="94"  x2="78"  y2="112"/>
+    <line x1="78"  y1="112" x2="70"  y2="58"/>
+    <line x1="70"  y1="58"  x2="146" y2="94"/>
+    <line x1="146" y1="94"  x2="232" y2="124"/>
+    <line x1="232" y1="124" x2="286" y2="106"/>
+    <line x1="286" y1="106" x2="316" y2="152"/>
+    <line x1="316" y1="152" x2="256" y2="176"/>
+    <line x1="256" y1="176" x2="232" y2="124"/>
+    <line x1="286" y1="106" x2="256" y2="176"/>
+  </g>
+
+  <!-- nodes -->
+  <g fill="#009E73">
+    <circle cx="70"  cy="58"  r="8"/>
+    <circle cx="118" cy="46"  r="8"/>
+    <circle cx="78"  cy="112" r="8"/>
+    <circle cx="232" cy="124" r="8"/>
+    <circle cx="286" cy="106" r="8"/>
+    <circle cx="316" cy="152" r="8"/>
+    <circle cx="256" cy="176" r="8"/>
+  </g>
+  <!-- focal adolescent: bridges the two cliques -->
+  <circle cx="146" cy="94" r="12" fill="#fff" stroke="#006b4f" stroke-width="3"/>
+  <text x="146" y="72" font-size="10.5" font-weight="600" fill="#006b4f" text-anchor="middle">focal</text>
+
+  <text x="104" y="152" font-size="10" fill="#4b5257" text-anchor="middle">clique A</text>
+  <text x="272" y="200" font-size="10" fill="#4b5257" text-anchor="middle">clique B</text>
+
+  <!-- outcomes -->
+  <g text-anchor="middle">
+    <rect x="404" y="34" width="216" height="46" rx="5" fill="#fff" stroke="#009E73" stroke-width="1.4"/>
+    <text x="512" y="53" font-size="11.5" font-weight="600" fill="#006b4f">Structure</text>
+    <text x="512" y="70" font-size="10" fill="#5b6167">clique diversity, stability, bridging</text>
+
+    <rect x="404" y="96" width="216" height="46" rx="5" fill="#fff" stroke="#009E73" stroke-width="1.4"/>
+    <text x="512" y="115" font-size="11.5" font-weight="600" fill="#006b4f">Coping similarity</text>
+    <text x="512" y="132" font-size="10" fill="#5b6167">form vs. function among friends</text>
+
+    <rect x="404" y="158" width="216" height="46" rx="5" fill="#f4efe6" stroke="#8f3d12" stroke-width="1.4"/>
+    <text x="512" y="177" font-size="11.5" font-weight="600" fill="#8f3d12">Physiological wear-and-tear</text>
+    <text x="512" y="194" font-size="10" fill="#5b6167">and mental health</text>
+  </g>
+
+  <path d="M166 90 L398 58" stroke="#009E73" stroke-width="1.8" fill="none" marker-end="url(#ar3)"/>
+  <path d="M166 100 L398 116" stroke="#009E73" stroke-width="1.8" fill="none" marker-end="url(#ar3)"/>
+  <line x1="512" y1="142" x2="512" y2="152" stroke="#009E73" stroke-width="1.8" marker-end="url(#ar3)"/>
+</svg>
+```
+<figcaption>Friendship networks described structurally rather than by count. The
+focal adolescent here bridges two cliques — a position with different
+implications from sitting inside one dense group, and one that a "number of
+friends" measure cannot distinguish.</figcaption>
+:::
+
+## Family and intergenerational dynamics
+
+Regulation is learned somewhere. In Chinese three-generation households it is
+co-performed: grandmother, mother, and child regulate together, sometimes in
+physiological lockstep. I have shown grandmother–grandchild RSA synchrony in
+these families, and traced how coparenting quality and attachment congruence
+across two caregivers relate to what the child can do alone.
+
+::: {.diagram}
+```{=html}
+<svg viewBox="0 0 640 214" role="img" aria-labelledby="d4t">
+  <title id="d4t">Three-generation co-regulation with physiological synchrony between grandmother and child</title>
+
+  <defs>
+    <marker id="ar4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#CC79A7"/>
+    </marker>
+  </defs>
+
+  <!-- generations -->
+  <g text-anchor="middle">
+    <circle cx="86"  cy="62" r="34" fill="#fbeef4" stroke="#CC79A7" stroke-width="1.8"/>
+    <text x="86"  y="59" font-size="11" font-weight="600" fill="#8d4470">Grand-</text>
+    <text x="86"  y="73" font-size="11" font-weight="600" fill="#8d4470">mother</text>
+
+    <circle cx="264" cy="62" r="34" fill="#fbeef4" stroke="#CC79A7" stroke-width="1.8"/>
+    <text x="264" y="67" font-size="11" font-weight="600" fill="#8d4470">Mother</text>
+
+    <circle cx="175" cy="158" r="34" fill="#fbeef4" stroke="#CC79A7" stroke-width="1.8"/>
+    <text x="175" y="163" font-size="11" font-weight="600" fill="#8d4470">Child</text>
+  </g>
+
+  <!-- coparenting link -->
+  <line x1="120" y1="62" x2="230" y2="62" stroke="#CC79A7" stroke-width="2"/>
+  <text x="175" y="52" font-size="10" fill="#8d4470" text-anchor="middle">coparenting</text>
+
+  <!-- attachment / caregiving arrows, bidirectional -->
+  <path d="M104 94 L156 128" stroke="#CC79A7" stroke-width="1.8" fill="none" marker-end="url(#ar4)"/>
+  <path d="M246 94 L194 128" stroke="#CC79A7" stroke-width="1.8" fill="none" marker-end="url(#ar4)"/>
+  <text x="96"  y="128" font-size="9.5" fill="#5b6167" text-anchor="end">attachment</text>
+  <text x="256" y="128" font-size="9.5" fill="#5b6167">attachment</text>
+
+  <!-- synchrony traces -->
+  <g fill="none" stroke="#8d4470" stroke-width="1.8">
+    <path d="M330 66 C 348 50, 364 82, 382 62 S 416 44, 434 70 S 470 78, 488 56"/>
+    <path d="M330 122 C 348 108, 364 138, 382 118 S 416 100, 434 126 S 470 134, 488 112"/>
+  </g>
+  <text x="496" y="70"  font-size="10" fill="#8d4470">grandmother RSA</text>
+  <text x="496" y="126" font-size="10" fill="#8d4470">child RSA</text>
+  <g stroke="#c9a3b9" stroke-width="1" stroke-dasharray="3 3">
+    <line x1="352" y1="62"  x2="352" y2="118"/>
+    <line x1="404" y1="54"  x2="404" y2="110"/>
+    <line x1="456" y1="70"  x2="456" y2="126"/>
+  </g>
+  <text x="410" y="160" font-size="10.5" font-weight="600" fill="#8d4470" text-anchor="middle">physiological synchrony</text>
+  <text x="410" y="176" font-size="10" fill="#5b6167" text-anchor="middle">concurrent and lagged, varying by interaction context</text>
+</svg>
+```
+<figcaption>Co-regulation in three-generation families. The dashed verticals mark
+the coupling between grandmother and child parasympathetic activity — the
+mechanism by which regulation is transmitted before the child can do it alone.</figcaption>
+:::
+
+## The methods that recur
+
+More distinctive than any single topic is the combination of methods that
+travels across all four areas. Few developmental researchers pair physiology
+with intensive longitudinal modelling *and* person-centred methods.
+
+::: {.diagram}
+```{=html}
+<svg viewBox="0 0 640 172" role="img" aria-labelledby="d5t">
+  <title id="d5t">Four recurring methodological strands</title>
+  <g text-anchor="middle">
+    <rect x="4"   y="16" width="150" height="112" rx="6" fill="#fff" stroke="#12454f" stroke-width="1.5"/>
+    <text x="79"  y="42"  font-size="11.5" font-weight="600" fill="#12454f">Physiology</text>
+    <text x="79"  y="64"  font-size="10" fill="#5b6167">RSA in preschoolers</text>
+    <text x="79"  y="80"  font-size="10" fill="#5b6167">dyadic synchrony</text>
+    <text x="79"  y="96"  font-size="10" fill="#5b6167">ambulatory HRV</text>
+    <text x="79"  y="112" font-size="10" fill="#5b6167">allostatic load</text>
+
+    <rect x="166" y="16" width="150" height="112" rx="6" fill="#fff" stroke="#12454f" stroke-width="1.5"/>
+    <text x="241" y="42"  font-size="11.5" font-weight="600" fill="#12454f">Intensive longitudinal</text>
+    <text x="241" y="64"  font-size="10" fill="#5b6167">14-day diaries</text>
+    <text x="241" y="80"  font-size="10" fill="#5b6167">experience sampling</text>
+    <text x="241" y="96"  font-size="10" fill="#5b6167">moment-to-moment</text>
+    <text x="241" y="112" font-size="10" fill="#5b6167">episode coding</text>
+
+    <rect x="328" y="16" width="150" height="112" rx="6" fill="#fff" stroke="#12454f" stroke-width="1.5"/>
+    <text x="403" y="42"  font-size="11.5" font-weight="600" fill="#12454f">Within-person dynamics</text>
+    <text x="403" y="64"  font-size="10" fill="#5b6167">Bayesian DSEM</text>
+    <text x="403" y="80"  font-size="10" fill="#5b6167">random slopes as</text>
+    <text x="403" y="96"  font-size="10" fill="#5b6167">individual differences</text>
+    <text x="403" y="112" font-size="10" fill="#5b6167">Mplus</text>
+
+    <rect x="490" y="16" width="146" height="112" rx="6" fill="#fff" stroke="#12454f" stroke-width="1.5"/>
+    <text x="563" y="42"  font-size="11.5" font-weight="600" fill="#12454f">Person-centred</text>
+    <text x="563" y="64"  font-size="10" fill="#5b6167">latent profiles</text>
+    <text x="563" y="80"  font-size="10" fill="#5b6167">polyregulation</text>
+    <text x="563" y="96"  font-size="10" fill="#5b6167">network analysis of</text>
+    <text x="563" y="112" font-size="10" fill="#5b6167">family systems</text>
+  </g>
+  <text x="320" y="152" font-size="10.5" fill="#5b6167" text-anchor="middle">R · Mplus · Mindware · Mangold Interact · E-Prime · BioSemi · NIRSport2</text>
+</svg>
+```
+<figcaption>The methodological signature. Whichever substantive area leads, this
+combination is what the work has in common.</figcaption>
+:::
+
+## AI and computational methods in research practice
+
+I am an advanced *user and teacher* of computational methods rather than a
+methods developer, and I think that distinction is worth stating plainly. What
+I do is bring these tools into applied developmental research and teach other
+researchers to use them without losing rigour.
+
+- **Machine learning applied to real data.** Recurrent neural network models
+  of student trajectories, including feature-importance analyses, compared
+  against conventional growth models.
+- **Teaching AI-assisted analysis.** I ran our department's January 2026
+  workshop on AI-assisted data analysis, and I am developing a workshop on the
+  underlying concepts — tokens, context, agents, and the command line — for
+  researchers with no computing background.
+- **Verification as the discipline that matters.** The part I emphasise most in
+  teaching: a generated number is a hypothesis until you have re-derived it
+  from source output. This is continuous with how I already work.
+
 ::: {.note}
-**EDIT:** This page has two halves — a short statement of what you work on and
-why, then two or three "spotlights" that each tell the story of one finding in
-plain language. Spotlights are what non-specialists, search committees, and
-journalists actually read. Two good ones beat six thin ones.
+**EDIT:** Add links to the RNN work and workshop materials once they're public.
+The literature-review tool that came out of this line is written up honestly on
+the [dead ends](projects.qmd) page.
 :::
-
-## Interests
-
-My research asks **[EDIT: your driving question, one sentence]**. Three threads
-run through it:
-
-**[EDIT: Thread one — e.g. Daily processes in close relationships.]** Two or
-three sentences on the substantive question, why it matters, and what kind of
-data you bring to it.
-
-**[EDIT: Thread two — e.g. Measurement of within-person change.]** What is
-unresolved, and what your angle is.
-
-**[EDIT: Thread three — e.g. Methods for intensive longitudinal data.]** Keep
-each thread short enough that someone can read all three in under a minute.
-
-## Spotlights
-
-### [EDIT: A plain-language title, not the paper title]
-
-*[EDIT: One-line takeaway — the thing you'd want remembered.]*
-
-Two or three short paragraphs. Start with the puzzle, not the method. What did
-people believe before, what did you do, and what changed? Name the method
-once, in passing, and keep the jargon out — the interested reader who wants
-detail will click through to the paper.
-
-Close with the limitation you find most honest, or the question it opened up.
-A spotlight that admits what it does not settle reads as more credible, not less.
-
-::: {.entry-links}
-[Paper](publications.qmd) [Data & code](https://github.com/USERNAME/REPO)
-:::
-
-### [EDIT: Second spotlight title]
-
-*[EDIT: One-line takeaway.]*
-
-Same shape as above.
-
-::: {.entry-links}
-[Paper](publications.qmd) [Preprint](https://osf.io/XXXX)
-:::
-
-## Methods I work with
-
-Structural equation modelling · multilevel and dynamic SEM · intensive
-longitudinal and diary designs · mediation and moderation · missing-data
-diagnostics. Mostly in **R** and **Mplus**.
-
-Where a project involves analysis choices that others might reasonably make
-differently, I try to put the code and the sensitivity checks somewhere public.
-Anything available lives on [my GitHub](https://github.com/USERNAME) or is
-linked from the [publications](publications.qmd) page.
