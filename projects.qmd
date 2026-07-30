@@ -35,15 +35,41 @@ Baseline RSA and RSA reactivity per task.
 :::
 
 ::: {.field}
+[Analysis]{.k}
+
+Latent profile analysis on observed strategies at ages 2, 4, and 5, then
+logistic regression of profile membership on baseline vagal tone and vagal
+withdrawal, controlling for sex, race, and socioeconomic status.
+:::
+
+::: {.field}
+[Profiles]{.k}
+
+At age 2, three profiles (N = 421) separated almost entirely on
+self-stimulation: a group using none (46%), a group using some (32%), and a
+group using roughly twice as much (22%). Distraction and help-seeking were
+nearly identical across all three. At age 4, five profiles (N = 364) separated
+on distraction in the same way, from none (55%) through moderate (17% and 9%) to
+high (11%), plus one small group defined by unusually high help-seeking (7%).
+In both years the profiles were graded amounts of a single behaviour rather
+than distinct combinations of strategies.
+:::
+
+::: {.field}
 [Results]{.k}
 
-The profiles that emerged separated children mainly by *how much* they did,
-a high-strategy group and a low-strategy group, rather than by which
-combinations of strategy and physiology they used. That is close to what a
-single sum score would have told me, so the profile solution did not earn its
-extra complexity. The likely reason is that strategies were coded per task with
-short observation windows, which leaves little room for a child to show a
-distinctive pattern rather than simply more or less activity.
+Physiology did not predict which profile a child belonged to. At age 2 neither
+baseline vagal tone (B = 0.03, p = .77) nor vagal withdrawal during frustration
+(B = 0.14, p = .47) was associated with membership, and the same held at age 4
+(baseline B = 0.12, p = .52; withdrawal B = −0.32, p = .33). At age 5, vagal
+withdrawal was uncorrelated with every observed strategy: global regulation
+r = −.01 (p = .89), help-seeking r = .05 (p = .39), physical negative r = .01
+(p = .85), verbal negative r = .05 (p = .42), and resignation r = .02 (p = .70),
+with n between 256 and 258. The strategies were substantially related to each
+other (physical with verbal negative r = .49; verbal negative with global
+regulation r = −.60, both p &lt; .001) and baseline vagal tone was stable from
+ages 2 to 7 (.39 ≤ r ≤ .59, all p &lt; .001). Both systems behaved coherently on
+their own and had almost nothing to say to each other.
 :::
 
 ### Attention as a vulnerability factor
@@ -119,16 +145,7 @@ inertia across tasks and correlated it with the other early childhood measures
 available.
 :::
 
-::: {.field}
-[Results]{.k}
 
-The correlations were small and unsystematic. Inertia did not line up with
-observed regulation or behaviour problems in a way that would justify treating
-it as a meaningful individual difference in this sample. It may simply be that a
-construct developed for daily affect series does not transfer to a single lab
-visit, where there are far fewer observations per child and the timescale is set
-by the task rather than by the child.
-:::
 
 ### Profiles of RSA reactivity across emotion-eliciting contexts
 
@@ -144,13 +161,24 @@ self-regulation measures.
 :::
 
 ::: {.field}
-[Measures]{.k}
+[Analysis]{.k}
 
-Fear (jumping spider), frustration (toy in a box), and positive (bubbles) tasks
-at ages 2 and 4; positive surprise (snake) and frustration (candy) tasks at age
-5. A parallel question compared reactivity during mother-directed problem
-solving against child-independent tasks, as a way of watching co-regulation
-become independent regulation.
+Latent profile analysis of RSA withdrawal across four tasks at ages 7 and 10
+(emotion regulation, executive function, effortful control, and an interaction
+task), in Mplus 8.3 with FIML, outliers trimmed at 1.58 times the interquartile
+range. Profiles were then related to outcomes with the BCH approach,
+controlling for gender, race, and socioeconomic status.
+:::
+
+::: {.field}
+[Results]{.k}
+
+Profiles were recoverable but inert. At age 7 the fit statistics favoured more
+classes as they were added (BIC 1455 for two, 1405 for three, 1297 for four),
+with entropy between .70 and .77 and a four-class solution splitting 254
+children into groups of 17, 108, 24, and 105. The four-profile solution then
+showed no association with any outcome variable. Several alternative task
+combinations were tried at both ages, and the pattern did not change.
 :::
 
 ### A network of physiological regulation, self-regulation, and behaviour
@@ -168,13 +196,35 @@ outcome models.
 :::
 
 ::: {.field}
+[Analysis]{.k}
+
+Regularised partial-correlation networks (EBICglasso) over 14 nodes at ages 4,
+7, and 10, combining baseline vagal tone and vagal withdrawal with effortful
+control, emotion regulation, observed regulation, and the CBCL problem scales.
+N = 447.
+:::
+
+::: {.field}
+[Results]{.k}
+
+The behavioural side of the network was well connected and the physiological
+side was not. Networks were moderately dense overall (44 of 91 possible edges at
+age 4, 38 at age 7, 33 at age 10), with the strongest edges among the problem
+scales. The two physiology nodes sat almost apart from everything else, and
+increasingly so with age: 7 of their 33 possible cross-domain edges survived
+regularisation at age 4, 3 at age 7, and 1 at age 10, with the largest such edge
+falling from .09 to .01. A network of regulation that has physiology hanging off
+the edge of it is not the network the idea called for.
+:::
+
+::: {.field}
 [Why it stopped]{.k}
 
-The measures were not equivalent across waves. A network is only interpretable
-if a node means the same thing at each age, and in this study the regulation
-constructs were assessed with different instruments at different ages. Comparing
-networks across age would have confounded developmental change with change in
-measurement.
+Separately from the result, the measures were not equivalent across waves. A
+network is only interpretable across ages if a node means the same thing at
+each one, and here the regulation constructs were assessed with different
+instruments at different ages, which would have confounded developmental change
+with change in measurement.
 :::
 
 ### Physiological and behavioural regulation
@@ -219,8 +269,22 @@ a property of the dyad alone.
 ::: {.field}
 [Analysis]{.k}
 
-Dyadic models estimated with a Bayesian estimator, controlling for child age,
-gender, and race.
+Multilevel dyadic models in Mplus with Bayesian estimation, run in four
+specifications: concurrent and lagged coupling, each in both directions,
+child-to-teacher and teacher-to-child. Child age, gender, and race were
+controlled. 793 observations nested in 82 dyads.
+:::
+
+::: {.field}
+[Results]{.k}
+
+Communication did not predict coupling in any specification. The teacher-child
+verbal ratio was unrelated to concurrent child-to-teacher synchrony
+(b = 0.04, 95% CI [−0.11, 0.19]), to concurrent teacher-to-child synchrony
+(b = 0.00, 95% CI [−0.28, 0.26]), to lagged child-to-teacher synchrony
+(b = −0.13, 95% CI [−0.35, 0.07]), or to lagged teacher-to-child synchrony
+(b = 0.08, 95% CI [−0.11, 0.26]). Every credible interval comfortably contains
+zero.
 :::
 
 ### Bidirectional relations between peer relationships and emotion regulation
@@ -230,9 +294,44 @@ gender, and race.
 ::: {.field}
 [Idea]{.k}
 
-Whether peer relationship quality and emotion regulation predict each other over
-time, rather than one being prior to the other. Fitted as a cross-lagged panel
-model.
+Whether adverse peer experiences and self-regulation predict each other over
+time, rather than one being prior to the other. Two aspects of peer adversity,
+victimization and friend conflict and betrayal, against two facets of
+self-regulation, emotion regulation and resting RSA.
+:::
+
+::: {.field}
+[Participants]{.k}
+
+447 children from a three-cohort longitudinal study of social and emotional
+development, recruited through day care centres, a county health department, and
+a WIC programme, and screened at age 2 to oversample externalizing risk. 37%
+were identified as at risk at age 2. Cohorts did not differ in gender
+(χ² = 0.63, p = .73), race (χ² = 1.13, p = .57), or socioeconomic status at age
+2 (F = 0.53, p = .59). 350 families participated at age 7.
+:::
+
+::: {.field}
+[Measures]{.k}
+
+Peer victimization, friend conflict and betrayal, emotion regulation, and
+resting RSA at ages 7, 10, 15, and 17, with gender, race, and family
+socioeconomic status as covariates. Fitted as cross-lagged panel models.
+:::
+
+::: {.field}
+[Results]{.k}
+
+No bidirectional associations. The links ran in one direction only, from
+self-regulation to later peer adversity: adaptive emotion regulation at 7
+predicted less victimization and less friend conflict at 10, emotion regulation
+and resting RSA at 10 predicted less friend conflict at 15, and emotion
+regulation at 15 predicted less victimization at 17. Nothing ran the other way.
+Resting RSA was also uncorrelated with the primary variables throughout
+(.00 ≤ |r| ≤ .12, p ≥ .055), so the physiological side contributed almost
+nothing beyond that single path. The correlations that did hold were between
+the self-report measures: friend conflict with victimization (.15 ≤ r ≤ .25)
+and both with emotion regulation (−.31 ≤ r ≤ −.13).
 :::
 
 ### Developmental trajectory of social skills
