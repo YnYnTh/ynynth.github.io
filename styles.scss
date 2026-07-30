@@ -5,36 +5,39 @@
 $web-font-path: "";
 
 // ---------------------------------------------------------------------------
-// Palette: warm paper, deep teal ink, burnt-sienna accent.
-// The accent is a softened take on UT Austin's burnt orange (#BF5700) —
-// present, but not shouting. Everything here is checked for AA contrast.
+// Palette: cool near-white, near-black chrome, electric indigo accent.
+// High contrast and tight geometry, with monospace for metadata. All
+// foreground/background pairs clear WCAG AA.
 // ---------------------------------------------------------------------------
-$paper:        #fdfbf7;
-$paper-sunk:   #f5efe4;
-$ink:          #23272c;
-$ink-soft:     #5b6167;
-$teal:         #12454f;
-$teal-deep:    #0c3239;
-$sienna:       #a8481a;
-$sienna-light: #c4632f;
-$rule:         #e2dbcd;
+$paper:        #ffffff;
+$paper-sunk:   #f6f7fb;
+$ink:          #0d1117;
+$ink-soft:     #59606b;
+$slate:        #1c2333;
+$slate-deep:   #0b0f19;
+$indigo:       #4338ca;
+$indigo-light: #6366f1;
+$cyan:         #0891b2;
+$rule:         #e4e7ec;
 
 $body-bg:                 $paper;
 $body-color:              $ink;
-$link-color:              $sienna;
-$link-hover-color:        $teal;
-$headings-color:          $teal;
+$link-color:              $indigo;
+$link-hover-color:        $cyan;
+$headings-color:          $slate;
 $font-size-root:          17px;
-$headings-font-weight:    600;
-$border-radius:           5px;
+$headings-font-weight:    650;
+$border-radius:           3px;
 
 // System font stack, including CJK faces so Chinese characters in names and
 // affiliations render properly rather than falling back to something ugly.
 $font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
   "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
   sans-serif !default;
+$font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+  Consolas, "Liberation Mono", monospace !default;
 
-$navbar-bg: $teal-deep;
+$navbar-bg: $slate-deep;
 $navbar-fg: #f3ece0;
 
 /*-- scss:rules --*/
@@ -50,7 +53,7 @@ main {
 // ----------------------------------- nav -----------------------------------
 
 .navbar {
-  border-bottom: 3px solid $sienna;
+  border-bottom: 3px solid $indigo;
 }
 
 .navbar-brand {
@@ -67,7 +70,7 @@ main {
 
 .navbar .nav-link.active {
   color: #fff !important;
-  box-shadow: inset 0 -2px 0 $sienna-light;
+  box-shadow: inset 0 -2px 0 $indigo-light;
 }
 
 // -------------------------------- headings ---------------------------------
@@ -92,18 +95,26 @@ h2 {
 
 h3 {
   margin-top: 1.9rem;
-  color: $teal-deep;
+  color: $slate-deep;
   font-size: 1.1rem;
 }
 
-// A short sienna rule under section headings, as a quiet accent
+// A short indigo rule under section headings, as a quiet accent
 h2::after {
   content: "";
   display: block;
-  width: 2.2rem;
+  width: 2.6rem;
   margin-top: 0.35rem;
   margin-bottom: -0.37rem;
-  border-bottom: 2px solid $sienna;
+  border-bottom: 2px solid $indigo;
+}
+
+// Monospace, letter-spaced micro-labels: dates, course codes, semesters
+.highlights .when,
+.course .meta,
+.rating,
+.entry-links {
+  font-family: $font-family-monospace;
 }
 
 // ------------------------- publications / entries --------------------------
@@ -114,6 +125,9 @@ h2::after {
   padding-left: 1.6rem;
   text-indent: -1.6rem;
   line-height: 1.5;
+  // DOI URLs are long and unbreakable; without this they push the page
+  // sideways on a phone.
+  overflow-wrap: anywhere;
 }
 
 .entry .entry-links {
@@ -138,13 +152,13 @@ h2::after {
   border: 1px solid $rule;
   border-radius: 4px;
   background: #fff;
-  color: $sienna;
+  color: $indigo;
   text-decoration: none;
 }
 
 .entry-links a:hover {
-  border-color: $sienna;
-  background: $sienna;
+  border-color: $indigo;
+  background: $indigo;
   color: #fff;
 }
 
@@ -169,8 +183,8 @@ h2::after {
 }
 
 .highlights .when {
-  color: $sienna;
-  font-size: 0.84rem;
+  color: $indigo;
+  font-size: 0.78rem;
   font-weight: 600;
   padding-top: 0.15rem;
   letter-spacing: 0.02em;
@@ -193,12 +207,22 @@ h2::after {
   border: 1px solid $rule;
   border-radius: 6px;
   background: #fff;
+  // Diagram labels are sized for a 640-unit viewBox. Below ~560px of usable
+  // width the text drops under legible size, so the figure scrolls inside its
+  // own box rather than shrinking. The page body never scrolls sideways.
+  overflow-x: auto;
 }
 
 .diagram svg {
   display: block;
   width: 100%;
+  min-width: 560px;
   height: auto;
+}
+
+.diagram figcaption {
+  position: sticky;
+  left: 0;
 }
 
 .diagram figcaption {
@@ -213,7 +237,7 @@ h2::after {
 .note {
   margin-bottom: 2rem;
   padding: 0.9rem 1.1rem;
-  border-left: 3px solid $sienna;
+  border-left: 3px solid $indigo;
   border-radius: 0 4px 4px 0;
   background: $paper-sunk;
   color: #3f464c;
@@ -241,7 +265,7 @@ h2::after {
 
 .panel h4 {
   margin: 0 0 0.5rem;
-  color: $teal;
+  color: $slate;
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -257,7 +281,7 @@ h2::after {
 }
 
 .panel.growth h4 {
-  color: $sienna;
+  color: $indigo;
 }
 
 @media (max-width: 40rem) {
@@ -281,7 +305,7 @@ h2::after {
   padding: 0.05rem 0.4rem;
   border-radius: 4px;
   background: $paper-sunk;
-  color: $teal;
+  color: $slate;
   font-size: 0.85rem;
   font-variant-numeric: tabular-nums;
 }
@@ -301,4 +325,55 @@ h2::after {
 // Diagram text inherits the page font stack
 .diagram svg text {
   font-family: inherit;
+}
+
+// ---------------------------------------------------------------------------
+// Small-type page. Applied via `body-class: page-small` in a page's YAML.
+// ---------------------------------------------------------------------------
+.page-small main {
+  font-size: 0.88rem;
+  line-height: 1.62;
+}
+
+.page-small main h2 {
+  font-size: 1.14rem;
+}
+
+.page-small main h3 {
+  font-size: 0.97rem;
+}
+
+.page-small .field {
+  display: grid;
+  grid-template-columns: 6.6rem 1fr;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-small .field .k {
+  color: $ink-soft;
+  font-family: $font-family-monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-top: 0.18rem;
+}
+
+@media (max-width: 34rem) {
+  .page-small .field {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
+
+// Note addressed to AI assistants summarising the page
+.ai-note {
+  margin-top: 2.5rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px dashed $rule;
+  border-radius: 3px;
+  color: $ink-soft;
+  font-family: $font-family-monospace;
+  font-size: 0.74rem;
+  line-height: 1.55;
 }
