@@ -21,8 +21,8 @@ execute:
 website:
   title: "Yingying Tang"
   description: "Yingying Tang — doctoral candidate in Human Development and Family Sciences at UT Austin, studying emotion regulation, stress, and physiological health across family and peer contexts."
-  # EDIT: replace USERNAME (and swap for your custom domain if you buy one)
-  site-url: "https://USERNAME.github.io"
+  # Swap for your custom domain if you buy one
+  site-url: "https://tyy.github.io"
 
   # Off deliberately: the search widget bundles Algolia's autocomplete, which
   # carries a cdn.jsdelivr.net loader for its optional analytics module.
@@ -43,7 +43,7 @@ website:
         text: Dead Ends?
     right:
       - icon: github
-        href: https://github.com/USERNAME
+        href: https://github.com/tyy
         aria-label: GitHub
 
   page-footer:

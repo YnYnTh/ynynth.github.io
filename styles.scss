@@ -47,7 +47,7 @@ body {
 }
 
 main {
-  max-width: 48rem;
+  max-width: 53rem;
 }
 
 // ----------------------------------- nav -----------------------------------
@@ -95,8 +95,17 @@ h2 {
 
 h3 {
   margin-top: 1.9rem;
-  color: $slate-deep;
+  color: $indigo;
   font-size: 1.1rem;
+}
+
+strong {
+  color: $slate;
+  font-weight: 650;
+}
+
+em {
+  color: $slate;
 }
 
 // A short indigo rule under section headings, as a quiet accent
@@ -331,8 +340,9 @@ h2::after {
 // Small-type page. Applied via `body-class: page-small` in a page's YAML.
 // ---------------------------------------------------------------------------
 .page-small main {
-  font-size: 0.88rem;
-  line-height: 1.62;
+  max-width: 58rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .page-small main h2 {
@@ -345,13 +355,17 @@ h2::after {
 
 .page-small .field {
   display: grid;
-  grid-template-columns: 6.6rem 1fr;
-  gap: 0.8rem;
-  margin-bottom: 0.5rem;
+  grid-template-columns: 5.2rem 1fr;
+  gap: 0.9rem;
+  margin-bottom: 0.45rem;
+}
+
+.page-small .field > p {
+  margin: 0;
 }
 
 .page-small .field .k {
-  color: $ink-soft;
+  color: $indigo;
   font-family: $font-family-monospace;
   font-size: 0.74rem;
   letter-spacing: 0.04em;
@@ -376,4 +390,37 @@ h2::after {
   font-family: $font-family-monospace;
   font-size: 0.74rem;
   line-height: 1.55;
+}
+
+// Topic group header on the dead-ends page
+.topic {
+  margin-top: 2.6rem;
+  padding: 0.5rem 0.8rem;
+  border-left: 3px solid $indigo;
+  background: $paper-sunk;
+}
+
+.topic h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.12rem;
+}
+
+.topic h2::after {
+  display: none;
+}
+
+.topic p {
+  margin: 0.3rem 0 0;
+  color: $ink-soft;
+  font-size: 0.86rem;
+}
+
+// Status line under a dead-end heading
+.status {
+  color: $indigo;
+  font-family: $font-family-monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
 }

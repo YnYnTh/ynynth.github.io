@@ -19,24 +19,23 @@ about:
       href: https://www.researchgate.net/profile/XXXX
 ---
 
-I study how children and adolescents regulate emotion within family and peer
-systems, and how moment-to-moment regulatory dynamics become longer-term
-patterns of adaptation and physiological health.
+I study **how emotion regulation is constructed**: not as a skill that sits
+inside a child, but as something assembled across biology, relationships, and
+context, and across timescales from seconds to years.
 
-My work pairs physiological measurement (respiratory sinus arrhythmia, dyadic
-synchrony, ambulatory heart-rate variability) with intensive longitudinal
-designs such as 14-day diaries and experience sampling. Methodologically I work
-in within-person dynamics, person-centred models, and network approaches, mostly
-in **R** and **Mplus**.
+My work pairs **physiological measures of regulation** with **daily diary and
+other intensive longitudinal designs**, and I use methods that describe change
+and pattern within a person rather than only differences between people.
 
 I work with [Aprile Benner](https://liberalarts.utexas.edu/hdfs/) at UT Austin.
 Before this I earned an M.A. in Human Development and Family Sciences at UT
 Austin, and an M.A. in Developmental Psychology and a B.S. in Psychology at
 Beijing Normal University.
 
-I also teach research methods, both as instructor of record and as a teaching
-assistant across our undergraduate and graduate sequences, and I run an
-[annual R workshop](teaching.qmd) for graduate students in my department.
+I also **teach research methods**, both as instructor of record and as a
+teaching assistant across undergraduate research methods classes and graduate
+statistics classes, and I run an [annual R workshop](teaching.qmd) for graduate
+students in my department.
 
 ## Recent highlights
 

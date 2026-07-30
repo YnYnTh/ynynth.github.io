@@ -74,7 +74,7 @@ the script reads `key: value` pairs out of it. In a Zotero item's Extra box:
 ```
 pdf: files/tang-2026.pdf
 data: https://osf.io/abcde
-code: https://github.com/USERNAME/project
+code: https://github.com/tyy/project
 ```
 
 Recognised keys: `pdf`, `preprint`, `data`, `code`, `materials`, `supplement`,
@@ -95,12 +95,6 @@ Section names and order live in `SECTIONS` at the top of the script. Your name
 variants for bolding live in `MY_NAMES` just above it — **edit that if you
 publish under any other form of your name.**
 
-### A note on `(2026a)` / `(2026b)`
-
-APA disambiguates same-author, same-year works with letter suffixes, so the
-citation processor adds them. That's correct APA and matches what Zotero
-produces. With real data they only appear on genuine collisions.
-
 Publish:
 
 ```bash
@@ -112,11 +106,11 @@ The site rebuilds in about a minute. Watch progress on the repo's Actions tab.
 ## First-time setup
 
 1. Install Quarto: `brew install --cask quarto`
-2. Create a **public** GitHub repo named exactly `USERNAME.github.io`
-3. Replace `USERNAME` in `_quarto.yml`, `index.qmd`, `research.qmd`
+2. Create a **public** GitHub repo named exactly `tyy.github.io`
+3. Username `tyy` is already set throughout
 4. Push this folder to the repo
 5. Repo **Settings → Pages → Source: GitHub Actions**
-6. Site goes live at `https://USERNAME.github.io`
+6. Site goes live at `https://tyy.github.io`
 
 ## Adding a custom domain later
 
@@ -124,12 +118,12 @@ The site rebuilds in about a minute. Watch progress on the repo's Actions tab.
 2. DNS records at the registrar:
    - Four `A` records for the apex domain → `185.199.108.153`,
      `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - One `CNAME` for `www` → `USERNAME.github.io`
+   - One `CNAME` for `www` → `tyy.github.io`
 3. Repo **Settings → Pages → Custom domain**, enter it, wait for the DNS check,
    then tick **Enforce HTTPS** once the certificate is issued (a few minutes)
 4. Update `site-url` in `_quarto.yml`
 
-GitHub then 301-redirects `USERNAME.github.io` to the new domain, so old links
+GitHub then 301-redirects `tyy.github.io` to the new domain, so old links
 keep working. Certificates are free and auto-renewing.
 
 ## Keeping it accessible from mainland China
