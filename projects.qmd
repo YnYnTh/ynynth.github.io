@@ -174,29 +174,6 @@ networks across age would have confounded developmental change with change in
 measurement.
 :::
 
-::: {.topic}
-## Teacher and child physiological synchrony
-:::
-
-### Synchrony and teacher communication
-
-[Analysed. Drafted]{.status}
-
-::: {.field}
-[Idea]{.k}
-
-Whether the strength of teacher-child physiological coupling relates to how the
-teacher communicates during the interaction, rather than treating synchrony as
-a property of the dyad alone.
-:::
-
-::: {.field}
-[Analysis]{.k}
-
-Dyadic models estimated with a Bayesian estimator, controlling for child age,
-gender, and race.
-:::
-
 ### Physiological and behavioural regulation
 
 [Analysed with GIMME. Did not converge on a usable solution]{.status}
@@ -218,6 +195,29 @@ Here there was too little of one: the paths that replicated across dyads were
 few, and most of what the models recovered was individual-specific. A method
 built to handle heterogeneity can still be defeated by it, and that is what
 happened.
+:::
+
+::: {.topic}
+## Teacher and child physiological synchrony
+:::
+
+### Synchrony and teacher communication
+
+[Analysed. Drafted]{.status}
+
+::: {.field}
+[Idea]{.k}
+
+Whether the strength of teacher-child physiological coupling relates to how the
+teacher communicates during the interaction, rather than treating synchrony as
+a property of the dyad alone.
+:::
+
+::: {.field}
+[Analysis]{.k}
+
+Dyadic models estimated with a Bayesian estimator, controlling for child age,
+gender, and race.
 :::
 
 ::: {.topic}
