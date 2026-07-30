@@ -10,7 +10,7 @@ to years.
 Regulation is **coordinated**, using many strategies across many domains rather
 than one strategy in one domain. It is **co-regulated**, happening between
 people and not only inside the child. And **context is foreground**, not
-background. Those three claims organise the four areas below.
+background. Those three claims organize the four areas below.
 
 ## Biopsychosocial self-regulation
 
@@ -29,7 +29,7 @@ when the underlying process does not.
 ::: {.diagram}
 ```{=html}
 <svg viewBox="0 0 640 252" role="img" aria-labelledby="d1t">
-  <title id="d1t">Within-episode regulation measured as context, behaviour, and physiology, studied across three developmental periods</title>
+  <title id="d1t">Within-episode regulation measured as context, behavior, and physiology, studied across three developmental periods</title>
 
   <!-- developmental periods -->
   <g text-anchor="middle">
@@ -46,7 +46,7 @@ when the underlying process does not.
   <rect x="96" y="100" width="512" height="56" fill="#e9eefb"/>
   <rect x="96" y="164" width="512" height="48" fill="#f4f7fc"/>
   <text x="88" y="72"  text-anchor="end" font-size="11.5" font-weight="600" fill="#4338ca">Context</text>
-  <text x="88" y="132" text-anchor="end" font-size="11.5" font-weight="600" fill="#4338ca">Behaviour</text>
+  <text x="88" y="132" text-anchor="end" font-size="11.5" font-weight="600" fill="#4338ca">Behavior</text>
   <text x="88" y="192" text-anchor="end" font-size="11.5" font-weight="600" fill="#4338ca">Physiology</text>
 
   <g font-size="11" fill="#0d1117" text-anchor="middle">
@@ -128,7 +128,7 @@ it cannot be treated as a fixed trait.
     <rect x="8" y="42" width="140" height="54" rx="3" fill="#f6f7fb" stroke="#8a93a0" stroke-width="1.4"/>
     <text x="78" y="62" font-size="11" font-weight="600" fill="#1c2333">Chronic context</text>
     <text x="78" y="78" font-size="9.5" fill="#59606b">socioeconomic risk,</text>
-    <text x="78" y="90" font-size="9.5" fill="#59606b">neighbourhood</text>
+    <text x="78" y="90" font-size="9.5" fill="#59606b">neighborhood</text>
 
     <rect x="8" y="118" width="140" height="54" rx="3" fill="#f6f7fb" stroke="#8a93a0" stroke-width="1.4"/>
     <text x="78" y="138" font-size="11" font-weight="600" fill="#1c2333">Daily events</text>
@@ -345,7 +345,7 @@ similarly amplify or buffer each other, and whether it is similarity in the
 
     <rect x="366" y="164" width="264" height="52" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
     <text x="500" y="183" font-size="10.5" font-weight="700" fill="#075985">Physiological wear-and-tear,</text>
-    <text x="500" y="197" font-size="10.5" font-weight="700" fill="#075985">health behaviours,</text>
+    <text x="500" y="197" font-size="10.5" font-weight="700" fill="#075985">health behaviors,</text>
     <text x="500" y="211" font-size="10.5" font-weight="700" fill="#075985">and mental health</text>
   </g>
 

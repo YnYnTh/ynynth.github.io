@@ -317,7 +317,7 @@ only understands once they have attempted it and got something back.
 What students wanted depended more on the size of the room than on anything I
 changed about myself. In a lecture hall of two hundred they wanted a teaching
 assistant who was visibly there and easy to find. In a seminar of six they
-wanted worked examples and more depth. The same behaviour reads as attentive in
+wanted worked examples and more depth. The same behavior reads as attentive in
 one room and invisible in the other, and I did not see that early on.
 
 What stayed constant is the part I care most about. In every appointment,
@@ -370,5 +370,5 @@ research forum. I also supervise undergraduates in the
 [MOSAIC Lab](https://sites.utexas.edu/mosaiclab/).
 
 I train graduate and undergraduate assistants in physiological data collection
-and preprocessing: RSA acquisition with Mindware, behavioural coding with
+and preprocessing: RSA acquisition with Mindware, behavioral coding with
 Mangold Interact, and the cleaning pipelines that follow.

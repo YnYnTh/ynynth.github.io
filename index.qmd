@@ -25,7 +25,7 @@ and teachers; and within a wider social context, across timescales from seconds
 to years.
 
 My work spans **laboratory measures of physiological regulation and observed
-behaviour**, **multi-informant surveys**, and **daily diary and other intensive
+behavior**, **multi-informant surveys**, and **daily diary and other intensive
 longitudinal designs**. I work in **R**, **Mplus**, **SPSS**, and **Stata**.
 
 I work with [Aprile Benner](https://liberalarts.utexas.edu/hdfs/) at UT Austin.
