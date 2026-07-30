@@ -6,6 +6,13 @@ project:
   pre-render:
     - _scripts/build_publications.py
 
+  # Only the top-level pages are documents. Anything under files/ is a download
+  # (workshop scripts, PDFs); without this Quarto tries to render .Rmd scripts
+  # as pages and would execute their code.
+  render:
+    - "*.qmd"
+    - "!files/"
+
 # Frozen computations: if you ever add {r} chunks, Quarto renders them locally
 # and CI reuses the cached results. Keeps GitHub Actions fast and R-free.
 execute:

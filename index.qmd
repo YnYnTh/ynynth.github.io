@@ -3,11 +3,10 @@ title: "Yingying Tang"
 subtitle: "Doctoral Candidate · Human Development and Family Sciences · The University of Texas at Austin"
 about:
   template: trestles
-  # PHOTO: save a square headshot as images/profile.jpg, then uncomment the
-  # two lines below. Around 600×600 px is plenty; keep it under ~200 KB so it
-  # loads quickly on slow connections.
-  # image: images/profile.jpg
-  # image-shape: rounded
+  # Resized to 800x600 and 97 KB so it loads quickly on slow connections.
+  # Replace images/profile.jpg to change it; keep it under ~200 KB.
+  image: images/profile.jpg
+  image-shape: rounded
   links:
     - icon: envelope
       text: Email
@@ -18,20 +17,14 @@ about:
     - icon: journal-text
       text: ResearchGate
       href: https://www.researchgate.net/profile/XXXX
-    - icon: github
-      text: GitHub
-      href: https://github.com/USERNAME
-    - icon: file-earmark-text
-      text: CV
-      href: files/cv.pdf
 ---
 
 I study how children and adolescents regulate emotion within family and peer
 systems, and how moment-to-moment regulatory dynamics become longer-term
 patterns of adaptation and physiological health.
 
-My work pairs physiological measurement — respiratory sinus arrhythmia, dyadic
-synchrony, ambulatory heart-rate variability — with intensive longitudinal
+My work pairs physiological measurement (respiratory sinus arrhythmia, dyadic
+synchrony, ambulatory heart-rate variability) with intensive longitudinal
 designs such as 14-day diaries and experience sampling. Methodologically I work
 in within-person dynamics, person-centred models, and network approaches, mostly
 in **R** and **Mplus**.
@@ -41,30 +34,27 @@ Before this I earned an M.A. in Human Development and Family Sciences at UT
 Austin, and an M.A. in Developmental Psychology and a B.S. in Psychology at
 Beijing Normal University.
 
-I also teach statistics — a [research methods course as instructor of
-record](teaching.qmd), graduate SEM and statistics as a TA, and an annual R
-workshop series for graduate students in my department.
+I also teach research methods, both as instructor of record and as a teaching
+assistant across our undergraduate and graduate sequences, and I run an
+[annual R workshop](teaching.qmd) for graduate students in my department.
 
 ## Recent highlights
 
 ::: {.highlights}
-- [Jul 2026]{.when} Awarded the **Outstanding Graduate Research Fellowship**, UT Austin Graduate School ($53,000, 2026–2027)
-- [Jun 2026]{.when} Poster at the **ISSBD Biennial Meeting** in Incheon, South Korea — cumulative and immediate academic adversity and adolescent internalizing symptoms
-- [Jun 2026]{.when} *Context matters: Multi-informant assessment of preschoolers' emotion regulation strategies* published in **Early Childhood Research Quarterly**
-- [Apr 2026]{.when} Poster at the **SRA Biennial Meeting** in Toronto — racial/ethnic discrimination and adolescents' emotional dynamics
-- [Spring 2026]{.when} Teaching assistant for **Structural Equation Modeling** (HDF 380K.4), our department's advanced graduate methods course
-- [Jan 2026]{.when} Led the departmental statistics workshop on **AI-assisted data analysis: vibe coding with Positron**
-- [2026]{.when} *Emotion polyregulation in preschoolers: Links to negative affect and child adjustment* accepted at **Child Development**
-- [Fall 2025]{.when} **Instructor of record** for HDF 315L, Research Methods in Human Development and Family Sciences
-- [Aug 2025]{.when} Completed my **M.A.** at UT Austin — *Emotion polyregulation in preschoolers: Evidence from frustration tasks*
-- [Summer 2025]{.when} Awarded the **Margaret Dunlap Thompson Endowed Presidential Graduate Fellowship**
+- [Jun 2026]{.when} Presented a poster at the ISSBD Biennial Meeting in Incheon, South Korea, on how emotion dynamics link academic adversity to adolescent internalizing symptoms
+- [Jun 2026]{.when} Our paper on assessing preschoolers' emotion regulation across home, school, and the lab came out in *Early Childhood Research Quarterly*
+- [Apr 2026]{.when} My paper on emotion polyregulation in preschoolers was published in *Child Development*
+- [Apr 2026]{.when} Presented at the SRA Biennial Meeting in Toronto on racial and ethnic discrimination and adolescents' emotional dynamics
+- [Jan 2026]{.when} Ran our department's graduate statistics workshop on using AI assistants for data analysis
+- [Fall 2025]{.when} Received the Outstanding Graduate Research Fellowship from the UT Austin Graduate School for 2026 to 2027
+- [Fall 2025]{.when} Taught my first course as instructor of record, HDF 315L Research Methods
+- [Aug 2025]{.when} Finished my M.A. at UT Austin, on emotion polyregulation in preschoolers
 :::
 
 ::: {.note}
-**EDIT:** Add your Google Scholar and ResearchGate IDs and your GitHub username
-in the header above, drop `files/cv.pdf` into the repo, and add
-`images/profile.jpg` for the photo. Trim this highlights list whenever it grows
-past about ten items — the point is recency, not completeness.
+**EDIT:** Add your Google Scholar and ResearchGate IDs in the header above, and
+`images/profile.jpg` for the photo. Trim this list whenever it grows past about
+ten items; the point is recency, not completeness.
 :::
 
 ## Contact
