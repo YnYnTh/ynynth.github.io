@@ -53,8 +53,11 @@ distinctive pattern rather than simply more or less activity.
 ::: {.field}
 [Idea]{.k}
 
-Whether attentional difficulty acts as a vulnerability that amplifies the effect
-of social risk on behaviour problems, specified as a moderated mediation.
+Whether *better* attentional ability acts as a risk factor rather than a
+protective one in adverse contexts. Attending closely to a hostile or
+unpredictable environment means taking more of it in, so the children best able
+to sustain attention may be the ones most affected by social risk. Specified as
+a moderated mediation.
 :::
 
 ::: {.field}
