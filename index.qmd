@@ -28,7 +28,7 @@ My work spans **laboratory measures of physiological regulation and observed
 behavior**, **multi-informant surveys**, and **daily diary and other intensive
 longitudinal designs**. I work in **R**, **Mplus**, **SPSS**, and **Stata**.
 
-I work with [Aprile Benner](https://liberalarts.utexas.edu/hdfs/) at UT Austin.
+I work with [Dr. Aprile Benner](https://liberalarts.utexas.edu/hdfs/) at UT Austin.
 Before this I earned an M.A. in Human Development and Family Sciences at UT
 Austin, and an M.A. in Developmental Psychology and a B.S. in Psychology at
 Beijing Normal University.
