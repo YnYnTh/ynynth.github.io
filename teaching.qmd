@@ -315,11 +315,9 @@ out the written feedback on their assignments and how quickly and patiently I
 answered questions, and in the graduate statistics sections most suggested no
 changes at all.
 
-Grading took longer to calibrate, for structural reasons. I did my own
-undergraduate degree outside the United States, and graduate statistics work and
-undergraduate observation coding are not the same object: one is marked against
-a defined answer, the other is a first attempt where the mark is mostly a
-teaching signal.
+Grading took longer to calibrate. I did my own undergraduate degree outside the
+United States, and I had to learn how much a mark is a judgment against a
+defined answer and how much it is a teaching signal on a first attempt.
 
 The open question I find most interesting is reach. Some students never come to
 office hours and never email. The ones who do come say the support is worth
