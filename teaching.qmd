@@ -160,15 +160,15 @@ record. 7 of 9 students responded, average attendance 86%.
 
 ::: {.diagram}
 ```{=html}
-<svg viewBox="0 0 640 302" role="img" aria-labelledby="evt">
+<svg viewBox="0 0 640 276" role="img" aria-labelledby="evt">
   <title id="evt">Course evaluation item means for HDF 315L, Fall 2025, on a one-to-five scale</title>
   <g stroke="#e4e7ec" stroke-width="1">
-    <line x1="250" y1="18" x2="250" y2="258"/>
-    <line x1="340" y1="18" x2="340" y2="258"/>
-    <line x1="430" y1="18" x2="430" y2="258"/>
-    <line x1="610" y1="18" x2="610" y2="258"/>
+    <line x1="250" y1="18" x2="250" y2="232"/>
+    <line x1="340" y1="18" x2="340" y2="232"/>
+    <line x1="430" y1="18" x2="430" y2="232"/>
+    <line x1="610" y1="18" x2="610" y2="232"/>
   </g>
-  <line x1="520" y1="18" x2="520" y2="258" stroke="#a9b1bd" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="520" y1="18" x2="520" y2="232" stroke="#a9b1bd" stroke-width="1" stroke-dasharray="3 3"/>
   <g font-size="11" fill="#0d1117" text-anchor="end">
     <text x="236" y="34">Fostered an inclusive environment</text>
     <text x="236" y="61">Objectives and expectations clear</text>
@@ -178,43 +178,34 @@ record. 7 of 9 students responded, average attendance 86%.
     <text x="236" y="169">Checked for understanding</text>
     <text x="236" y="196">Concepts effectively explained</text>
     <text x="236" y="223">Techniques kept me engaged</text>
-    <text x="236" y="250">Overall, this course</text>
   </g>
   <g stroke="#eef0f4" stroke-width="6" stroke-linecap="round">
     <line x1="250" y1="30" x2="584" y2="30"/><line x1="250" y1="57" x2="571" y2="57"/>
     <line x1="250" y1="84" x2="559" y2="84"/><line x1="250" y1="111" x2="559" y2="111"/>
     <line x1="250" y1="138" x2="559" y2="138"/><line x1="250" y1="165" x2="559" y2="165"/>
     <line x1="250" y1="192" x2="546" y2="192"/><line x1="250" y1="219" x2="533" y2="219"/>
-    <line x1="250" y1="246" x2="507" y2="246"/>
   </g>
   <g fill="#4338ca">
     <circle cx="584" cy="30" r="6.5"/><circle cx="571" cy="57" r="6.5"/>
     <circle cx="559" cy="84" r="6.5"/><circle cx="559" cy="111" r="6.5"/>
     <circle cx="559" cy="138" r="6.5"/><circle cx="559" cy="165" r="6.5"/>
-  </g>
-  <circle cx="546" cy="192" r="6.5" fill="#818cf8"/>
-  <g fill="#0891b2">
-    <circle cx="533" cy="219" r="6.5"/><circle cx="507" cy="246" r="6.5"/>
+    <circle cx="546" cy="192" r="6.5"/><circle cx="533" cy="219" r="6.5"/>
   </g>
   <g font-size="10.5" fill="#3f464c">
     <text x="596" y="34">4.71</text><text x="583" y="61">4.57</text>
     <text x="571" y="88">4.43</text><text x="571" y="115">4.43</text>
     <text x="571" y="142">4.43</text><text x="571" y="169">4.43</text>
-    <text x="558" y="196" fill="#6366f1">4.29</text>
-    <text x="545" y="223" fill="#0891b2" font-weight="600">4.14</text>
-    <text x="519" y="250" fill="#0891b2" font-weight="600">3.86</text>
+    <text x="558" y="196">4.29</text><text x="545" y="223">4.14</text>
   </g>
-  <line x1="250" y1="266" x2="610" y2="266" stroke="#9aa2ad" stroke-width="1"/>
+  <line x1="250" y1="240" x2="610" y2="240" stroke="#9aa2ad" stroke-width="1"/>
   <g font-size="10" fill="#59606b" text-anchor="middle">
-    <text x="250" y="280">1</text><text x="340" y="280">2</text>
-    <text x="430" y="280">3</text><text x="520" y="280">4</text>
-    <text x="610" y="280">5</text>
+    <text x="250" y="254">1</text><text x="340" y="254">2</text>
+    <text x="430" y="254">3</text><text x="520" y="254">4</text>
+    <text x="610" y="254">5</text>
   </g>
-  <text x="430" y="296" font-size="10" fill="#59606b" text-anchor="middle">mean rating · full 1 to 5 scale · n = 7</text>
+  <text x="430" y="270" font-size="10" fill="#59606b" text-anchor="middle">mean rating · full 1 to 5 scale · n = 7</text>
 </svg>
 ```
-<figcaption>Engagement and the course overall are the two lowest items, while
-the instructor-facing items are the highest.</figcaption>
 :::
 
 Three things I would do differently if I taught this course again.
@@ -307,7 +298,7 @@ only understands once they have attempted it and got something back.
   </g>
 
   <rect x="8" y="232" width="624" height="62" rx="4" fill="#eef0fb" stroke="#4338ca" stroke-width="1.4"/>
-  <text x="24" y="254" font-size="11" font-weight="700" fill="#312e81">Praised in all six appointments, from 220 students to 6</text>
+  <text x="24" y="254" font-size="11" font-weight="700" fill="#312e81">Praised in all six appointments</text>
   <text x="24" y="272" font-size="10" fill="#3f464c">Written feedback that explained the reasoning · Depth in R and statistics · Patience and availability</text>
   <text x="24" y="287" font-size="9.5" fill="#59606b">In the graduate statistics sections, most respondents suggested no changes at all</text>
 </svg>
@@ -315,30 +306,25 @@ only understands once they have attempted it and got something back.
 :::
 
 What students wanted depended more on the size of the room than on anything I
-changed about myself. In a lecture hall of two hundred they wanted a teaching
-assistant who was visibly there and easy to find. In a seminar of six they
-wanted worked examples and more depth. The same behavior reads as attentive in
-one room and invisible in the other, and I did not see that early on.
+changed. A hall of two hundred wanted a teaching assistant who was visibly
+there; a seminar of six wanted worked examples and more depth. The same behavior
+reads as attentive in one room and invisible in the other.
 
-What stayed constant is the part I care most about. In every appointment,
-students singled out the written feedback on their assignments and how quickly
-and patiently I answered questions. In the graduate statistics sections that was
-close to unanimous, and most respondents had no changes to suggest at all.
+What stayed constant matters more to me. In every appointment students singled
+out the written feedback on their assignments and how quickly and patiently I
+answered questions, and in the graduate statistics sections most suggested no
+changes at all.
 
-Grading took longer to calibrate, and the reason was structural rather than
-personal. I did my own undergraduate degree outside the United States, and I was
-applying a standard learned in one system to undergraduates in another. Graduate
-statistics assignments and undergraduate observation coding are also not the
-same object: one is marked against a defined answer, the other is a first
-attempt at a skill where the mark is mostly a teaching signal. Learning where a
-course sits on that scale, and how much of it is local convention, took teaching
-in enough different settings to see the contrast.
+Grading took longer to calibrate, for structural reasons. I did my own
+undergraduate degree outside the United States, and graduate statistics work and
+undergraduate observation coding are not the same object: one is marked against
+a defined answer, the other is a first attempt where the mark is mostly a
+teaching signal.
 
-The open question I find most interesting is reach. In every class some students
-never come to office hours and never email, and I would like to know what would
-bring them in, or whether they simply need less than others do. It is a good
-problem to have: the students who do come say the support is worth seeking out,
-so the question is not whether the help is useful but how to widen the door.
+The open question I find most interesting is reach. Some students never come to
+office hours and never email. The ones who do come say the support is worth
+seeking out, so the question is not whether the help is useful but how to widen
+the door.
 
 ## Invited talks
 
