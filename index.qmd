@@ -41,6 +41,7 @@ students in my department.
 ## Recent highlights
 
 ::: {.highlights}
+- [Aug 2026]{.when} Attended the joint EADP/EARA/SRA Summer School in the Netherlands
 - [Jun 2026]{.when} Presented a poster at the ISSBD Biennial Meeting in Incheon, South Korea, on how emotion dynamics link academic adversity to adolescent internalizing symptoms
 - [Jun 2026]{.when} Our paper on assessing preschoolers' emotion regulation across home, school, and the lab came out in *Early Childhood Research Quarterly*
 - [Apr 2026]{.when} My paper on emotion polyregulation in preschoolers was published in *Child Development*
