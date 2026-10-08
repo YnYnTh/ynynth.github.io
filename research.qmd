@@ -1,289 +1,45 @@
 ---
 title: "Research"
+resources:
+  - assets/figures.js
+include-after-body:
+  text: |
+    <script src="assets/figures.js"></script>
 ---
 
-I study **how emotion regulation is constructed**: assembled within the child
-from physiology, strategy, and goals; between people, with caregivers, peers,
-and teachers; and within a wider social context, across timescales from seconds
-to years.
+Effective emotion regulation depends on developmental stage, measurement, and
+context. My research examines regulation as a dynamic process unfolding across
+behavior, physiology, and social relationships. Across these areas, a central
+question guides my work: When, how, and under what conditions does regulation
+support adaptation and well-being?
 
-Regulation is **coordinated**, using many strategies across many domains rather
-than one strategy in one domain. It is **co-regulated**, happening between
-people and not only inside the child. And **context is foreground**, not
-background. Those three claims organize the three areas below.
+## Biopsychosocial Self-Regulation
 
-## Biopsychosocial self-regulation
+Emotion regulation involves interconnected behavioral and physiological
+processes. By examining these processes in real time, my research investigates
+how regulatory patterns vary across development, measurement approaches, and
+contexts. The same regulatory pattern can have different implications depending
+on when, how, and in whom it is assessed.
 
-Regulation is not a trait and not a single strategy. Within one frustrating
-episode a preschooler will try several things in sequence, distracting, seeking
-help, then venting, while their parasympathetic activity shifts underneath.
-Measuring regulation *statically*, as a questionnaire score or a single observed
-strategy, has held the field back.
+{{< include _partials/research/fig-unfold.md >}}
 
-My work measures it as it unfolds: **polyregulation**, how strategies combine,
-and **temporal variation in respiratory sinus arrhythmia** across an episode. I
-follow the same question across **preschool, middle childhood, and
-adolescence**, because what counts as skilled regulation changes with age even
-when the underlying process does not.
+## Stress, Adaptation, and Resilience
 
-::: {.diagram}
-```{=html}
-<svg viewBox="0 0 640 252" role="img" aria-labelledby="d1t">
-  <title id="d1t">Within-episode regulation measured as context, behavior, and physiology, studied across three developmental periods</title>
+How adolescents cope with stress shapes their emotional and physical health. My
+research examines how coping strategies, individual resilience, and family
+resources influence adaptation. Effective coping depends on the fit between
+coping responses, stressor demands, and available resources.
 
-  <!-- developmental periods -->
-  <g text-anchor="middle">
-    <rect x="112" y="6" width="160" height="24" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1"/>
-    <text x="192" y="22" font-size="10.5" font-weight="600" fill="#312e81">Preschool</text>
-    <rect x="280" y="6" width="160" height="24" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1"/>
-    <text x="360" y="22" font-size="10.5" font-weight="600" fill="#312e81">Middle childhood</text>
-    <rect x="448" y="6" width="160" height="24" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1"/>
-    <text x="528" y="22" font-size="10.5" font-weight="600" fill="#312e81">Adolescence</text>
-  </g>
-  <text x="104" y="22" text-anchor="end" font-size="10" fill="#59606b">studied in</text>
+{{< include _partials/research/fig-stress.md >}}
 
-  <rect x="96" y="44"  width="512" height="48" fill="#f4f7fc"/>
-  <rect x="96" y="100" width="512" height="56" fill="#e9eefb"/>
-  <rect x="96" y="164" width="512" height="48" fill="#f4f7fc"/>
-  <text x="88" y="72"  text-anchor="end" font-size="11.5" font-weight="600" fill="#4338ca">Context</text>
-  <text x="88" y="132" text-anchor="end" font-size="11.5" font-weight="600" fill="#4338ca">Behavior</text>
-  <text x="88" y="192" text-anchor="end" font-size="11.5" font-weight="600" fill="#4338ca">Physiology</text>
+## Family and Intergenerational Dynamics
 
-  <g font-size="11" fill="#0d1117" text-anchor="middle">
-    <rect x="112" y="54" width="152" height="28" rx="3" fill="#fff" stroke="#4338ca" stroke-width="1"/>
-    <text x="188" y="72">Home</text>
-    <rect x="276" y="54" width="152" height="28" rx="3" fill="#fff" stroke="#4338ca" stroke-width="1"/>
-    <text x="352" y="72">School</text>
-    <rect x="440" y="54" width="168" height="28" rx="3" fill="#fff" stroke="#4338ca" stroke-width="1"/>
-    <text x="524" y="72">Laboratory</text>
-  </g>
+Children develop regulatory capacities within interconnected family
+relationships. My research examines how fathers, grandmothers, and broader
+family dynamics shape regulation and adjustment. Physiological synchrony can
+support or undermine regulation depending on the interaction context,
+highlighting the importance of family relationships in children’s development.
 
-  <line x1="112" y1="140" x2="604" y2="140" stroke="#a5b4e8" stroke-width="1"/>
-  <g fill="#4338ca">
-    <circle cx="168" cy="140" r="5"/><circle cx="264" cy="140" r="5"/>
-    <circle cx="350" cy="140" r="5"/><circle cx="466" cy="140" r="5"/>
-    <circle cx="554" cy="140" r="5"/>
-  </g>
-  <g font-size="10" fill="#3f464c" text-anchor="middle">
-    <text x="168" y="120">distract</text>
-    <text x="264" y="120">help-seek</text>
-    <text x="350" y="120">vent</text>
-    <text x="466" y="120">distract</text>
-    <text x="554" y="120">reappraise</text>
-  </g>
+{{< include _partials/research/fig-synchrony.md >}}
 
-  <path d="M112 194 C 150 176, 178 210, 210 192 S 268 168, 300 196 S 360 212, 400 184 S 470 174, 508 200 S 570 206, 604 186"
-        fill="none" stroke="#4338ca" stroke-width="2.2"/>
-  <text x="612" y="176" font-size="10" fill="#4338ca">RSA</text>
-
-  <line x1="112" y1="228" x2="604" y2="228" stroke="#8a939b" stroke-width="1"/>
-  <polygon points="604,228 597,225 597,231" fill="#8a939b"/>
-  <text x="358" y="243" font-size="10" fill="#59606b" text-anchor="middle">seconds to minutes within one episode</text>
-</svg>
-```
-:::
-
-Papers: [polyregulation in *Child Development*](https://doi.org/10.1093/chidev/aacag052)
-and [temporal variation in RSA in *Infant and Child Development*](https://doi.org/10.1002/icd.70060).
-
-## Stress, adaptation, and resilience
-
-Social stressors affect health through pathways that are visible in daily life
-before they are visible in disease. The stressors themselves sit at different
-levels: **chronic context** such as socioeconomic risk operates on a different
-timescale from **daily events** such as a discriminatory encounter or an exam.
-
-Emotion regulation and physiological regulation are **parallel systems**, not a
-sequence. Affect dynamics and cardiac regulation are two readings of the same
-adaptive process, coupled to each other but neither reducible to the other.
-
-**Resilience appears twice.** It moderates how a stressor translates into a
-regulatory signature, and it is itself an outcome of that process, which is why
-it cannot be treated as a fixed trait.
-
-::: {.diagram}
-```{=html}
-<svg viewBox="0 0 640 320" role="img" aria-labelledby="d2t">
-  <title id="d2t">Stressors at two levels acting on parallel emotional and physiological regulation systems, with resilience as both moderator and outcome</title>
-  <defs>
-    <marker id="aS" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#4338ca"/>
-    </marker>
-    <marker id="aG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#0891b2"/>
-    </marker>
-    <marker id="aB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#8a93a0"/>
-    </marker>
-  </defs>
-
-  <g font-size="10" fill="#59606b" text-anchor="middle">
-    <text x="78" y="26">STRESSORS</text>
-    <text x="298" y="26">REGULATION</text>
-    <text x="540" y="26">OUTCOMES</text>
-  </g>
-
-  <!-- stressors, two distinct levels -->
-  <g text-anchor="middle">
-    <rect x="8" y="42" width="140" height="54" rx="3" fill="#f6f7fb" stroke="#8a93a0" stroke-width="1.4"/>
-    <text x="78" y="62" font-size="11" font-weight="600" fill="#1c2333">Chronic context</text>
-    <text x="78" y="78" font-size="9.5" fill="#59606b">socioeconomic risk,</text>
-    <text x="78" y="90" font-size="9.5" fill="#59606b">neighborhood</text>
-
-    <rect x="8" y="118" width="140" height="54" rx="3" fill="#f6f7fb" stroke="#8a93a0" stroke-width="1.4"/>
-    <text x="78" y="138" font-size="11" font-weight="600" fill="#1c2333">Daily events</text>
-    <text x="78" y="154" font-size="9.5" fill="#59606b">discrimination,</text>
-    <text x="78" y="166" font-size="9.5" fill="#59606b">academic demands</text>
-  </g>
-
-  <!-- parallel regulation systems, identical geometry -->
-  <g text-anchor="middle">
-    <rect x="214" y="42" width="170" height="54" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1.6"/>
-    <text x="299" y="62" font-size="11" font-weight="600" fill="#312e81">Emotion regulation</text>
-    <text x="299" y="78" font-size="9.5" fill="#59606b">intensity, instability,</text>
-    <text x="299" y="90" font-size="9.5" fill="#59606b">inertia, differentiation</text>
-
-    <rect x="214" y="118" width="170" height="54" rx="3" fill="#eef0fb" stroke="#4338ca" stroke-width="1.6"/>
-    <text x="299" y="138" font-size="11" font-weight="600" fill="#312e81">Physiological regulation</text>
-    <text x="299" y="154" font-size="9.5" fill="#59606b">RSA, heart-rate</text>
-    <text x="299" y="166" font-size="9.5" fill="#59606b">variability</text>
-  </g>
-  <!-- coupling between the two systems -->
-  <path d="M299 100 L299 112" stroke="#4338ca" stroke-width="1.6" marker-end="url(#aS)"/>
-  <path d="M291 112 L291 100" stroke="#4338ca" stroke-width="1.6" marker-end="url(#aS)"/>
-  <text x="316" y="110" font-size="9" fill="#4338ca">coupled</text>
-
-  <!-- outcomes -->
-  <g text-anchor="middle">
-    <rect x="450" y="42" width="182" height="54" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
-    <text x="541" y="62" font-size="11" font-weight="600" fill="#075985">Health</text>
-    <text x="541" y="78" font-size="9.5" fill="#59606b">internalizing symptoms,</text>
-    <text x="541" y="90" font-size="9.5" fill="#59606b">allostatic load</text>
-
-    <rect x="450" y="118" width="182" height="54" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
-    <text x="541" y="138" font-size="11" font-weight="600" fill="#075985">Resilience</text>
-    <text x="541" y="154" font-size="9.5" fill="#59606b">an outcome of the</text>
-    <text x="541" y="166" font-size="9.5" fill="#59606b">same process</text>
-  </g>
-
-  <!-- stressor to regulation -->
-  <g stroke="#4338ca" stroke-width="1.8" marker-end="url(#aS)">
-    <line x1="150" y1="69"  x2="208" y2="69"/>
-    <line x1="150" y1="145" x2="208" y2="145"/>
-  </g>
-  <line x1="150" y1="80"  x2="208" y2="134" stroke="#a5b4e8" stroke-width="1.2" marker-end="url(#aS)"/>
-  <line x1="150" y1="134" x2="208" y2="80"  stroke="#a5b4e8" stroke-width="1.2" marker-end="url(#aS)"/>
-
-  <!-- regulation to outcomes -->
-  <g stroke="#0891b2" stroke-width="1.8" marker-end="url(#aG)">
-    <line x1="386" y1="69"  x2="444" y2="69"/>
-    <line x1="386" y1="145" x2="444" y2="145"/>
-  </g>
-  <line x1="386" y1="80"  x2="444" y2="134" stroke="#8fd0de" stroke-width="1.2" marker-end="url(#aG)"/>
-  <line x1="386" y1="134" x2="444" y2="80"  stroke="#8fd0de" stroke-width="1.2" marker-end="url(#aG)"/>
-
-  <!-- resilience as moderator: dashed feedback onto the stressor-to-regulation paths -->
-  <path d="M541 174 L541 208 L179 208 L179 158"
-        fill="none" stroke="#8a93a0" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#aB)"/>
-  <path d="M179 208 L179 84" fill="none" stroke="#8a93a0" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#aB)"/>
-  <text x="360" y="202" font-size="9.5" font-weight="600" fill="#5b6472" text-anchor="middle">resilience also moderates these paths</text>
-
-  <!-- timescales, on their own axis -->
-  <line x1="8" y1="252" x2="632" y2="252" stroke="#d5d9e0" stroke-width="1"/>
-  <text x="8" y="246" font-size="9.5" font-weight="600" fill="#59606b">TIMESCALE</text>
-  <line x1="8" y1="278" x2="632" y2="278" stroke="#9aa2ad" stroke-width="1"/>
-  <polygon points="632,278 625,275 625,281" fill="#9aa2ad"/>
-  <g fill="#4338ca">
-    <circle cx="60" cy="278" r="4"/><circle cx="230" cy="278" r="4"/>
-    <circle cx="410" cy="278" r="4"/><circle cx="570" cy="278" r="4"/>
-  </g>
-  <g font-size="9.5" fill="#59606b" text-anchor="middle">
-    <text x="60"  y="296">moments</text>
-    <text x="230" y="296">days</text>
-    <text x="410" y="296">months</text>
-    <text x="570" y="296">years</text>
-  </g>
-  <g font-size="9" fill="#8a93a0" text-anchor="middle">
-    <text x="60"  y="308">episode</text>
-    <text x="230" y="308">daily diary</text>
-    <text x="410" y="308">annual survey</text>
-    <text x="570" y="308">accumulation</text>
-  </g>
-</svg>
-```
-:::
-
-## Family and intergenerational dynamics
-
-**Regulation is learned from interactions.** In Chinese three-generation
-households it is co-performed: grandmother, mother, and child regulate together,
-sometimes in physiological lockstep. The relationship and the physiology are not
-separate stories. How securely a child is attached to each caregiver is part of
-what determines whether their bodies couple during a difficult moment, and that
-coupling is the mechanism through which regulation transfers.
-
-::: {.diagram}
-```{=html}
-<svg viewBox="0 0 640 250" role="img" aria-labelledby="d4t">
-  <title id="d4t">Attachment to two caregivers shapes physiological synchrony, which transfers regulation to the child</title>
-  <defs>
-    <marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#4338ca"/>
-    </marker>
-    <marker id="a4c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#0891b2"/>
-    </marker>
-  </defs>
-
-  <g text-anchor="middle">
-    <circle cx="70"  cy="54" r="32" fill="#eef0fb" stroke="#4338ca" stroke-width="1.8"/>
-    <text x="70"  y="51" font-size="10.5" font-weight="600" fill="#312e81">Grand-</text>
-    <text x="70"  y="65" font-size="10.5" font-weight="600" fill="#312e81">mother</text>
-    <circle cx="228" cy="54" r="32" fill="#eef0fb" stroke="#4338ca" stroke-width="1.8"/>
-    <text x="228" y="59" font-size="10.5" font-weight="600" fill="#312e81">Mother</text>
-    <circle cx="149" cy="158" r="32" fill="#eef0fb" stroke="#4338ca" stroke-width="1.8"/>
-    <text x="149" y="163" font-size="10.5" font-weight="600" fill="#312e81">Child</text>
-  </g>
-
-  <line x1="104" y1="54" x2="194" y2="54" stroke="#4338ca" stroke-width="2"/>
-  <text x="149" y="44" font-size="9.5" fill="#312e81" text-anchor="middle">coparenting</text>
-
-  <path d="M86 84 L128 130"  stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a4)"/>
-  <path d="M212 84 L170 130" stroke="#4338ca" stroke-width="1.8" fill="none" marker-end="url(#a4)"/>
-  <text x="60"  y="112" font-size="9.5" fill="#4338ca" text-anchor="end">attachment</text>
-  <text x="238" y="112" font-size="9.5" fill="#4338ca" text-anchor="start">attachment</text>
-
-  <!-- attachment quality feeds the strength of synchrony; routed below the labels -->
-  <path d="M149 194 C 210 220, 268 206, 300 176"
-        fill="none" stroke="#4338ca" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#a4)"/>
-  <text x="224" y="232" font-size="9.5" font-weight="600" fill="#4338ca" text-anchor="middle">attachment quality shapes coupling</text>
-
-  <g fill="none" stroke="#0891b2" stroke-width="1.8">
-    <path d="M312 60 C 330 44, 346 76, 364 56 S 398 38, 416 64 S 452 72, 470 50"/>
-    <path d="M312 116 C 330 102, 346 132, 364 112 S 398 94, 416 120 S 452 128, 470 106"/>
-  </g>
-  <text x="478" y="64"  font-size="9.5" fill="#075985">grandmother RSA</text>
-  <text x="478" y="120" font-size="9.5" fill="#075985">child RSA</text>
-  <g stroke="#8fd0de" stroke-width="1" stroke-dasharray="3 3">
-    <line x1="334" y1="56"  x2="334" y2="112"/>
-    <line x1="386" y1="48"  x2="386" y2="104"/>
-    <line x1="438" y1="64"  x2="438" y2="120"/>
-  </g>
-  <text x="392" y="150" font-size="10.5" font-weight="600" fill="#075985" text-anchor="middle">physiological synchrony</text>
-
-  <!-- synchrony transfers regulation -->
-  <g text-anchor="middle">
-    <rect x="300" y="180" width="188" height="46" rx="3" fill="#e6f6fa" stroke="#0891b2" stroke-width="1.6"/>
-    <text x="394" y="199" font-size="11" font-weight="600" fill="#075985">Child emotion regulation</text>
-    <text x="394" y="215" font-size="9.5" fill="#59606b">what the child can do alone</text>
-  </g>
-  <path d="M392 158 L392 174" stroke="#0891b2" stroke-width="1.8" marker-end="url(#a4c)"/>
-  <path d="M181 152 C 232 146, 262 172, 296 190" fill="none" stroke="#8fd0de" stroke-width="1.4" marker-end="url(#a4c)"/>
-</svg>
-```
-:::
-
-Papers: [grandmother and grandchild synchrony in *Developmental Psychobiology*](https://doi.org/10.1002/dev.22498);
-attachment congruence in *Psychological Development and Education* (2023);
-[latent profiles of relationships with parents and siblings](https://doi.org/10.1007/s12144-022-03959-2);
-and [a network analysis of family factors](https://doi.org/10.1007/s10802-023-01074-9).
+{{< include _partials/research/fig-network.md >}}

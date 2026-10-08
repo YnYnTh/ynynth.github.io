@@ -5,40 +5,53 @@
 $web-font-path: "";
 
 // ---------------------------------------------------------------------------
-// Palette: cool near-white, near-black chrome, electric indigo accent.
-// High contrast and tight geometry, with monospace for metadata. All
-// foreground/background pairs clear WCAG AA.
+// Palette taken from the saturated parts of her own photographs: golden-hour
+// amber, cobalt sky, water teal, roof red, on pure white with near-black ink.
+// ($moss is the text-safe dark amber: 5:1 on white. The old variable names
+// stay so every existing rule picks up the new colors.)
 // ---------------------------------------------------------------------------
-$paper:        #ffffff;
-$paper-sunk:   #f6f7fb;
-$ink:          #0d1117;
-$ink-soft:     #59606b;
-$slate:        #1c2333;
-$slate-deep:   #0b0f19;
-$indigo:       #4338ca;
-$indigo-light: #6366f1;
-$cyan:         #0891b2;
-$rule:         #e4e7ec;
+$paper:       #ffffff;
+$paper-sunk:  #f4f5f7;
+$paper-light: #ffffff;
+$ink:         #0a0a0a;
+$ink-soft:    #4b5160;
+$moss:        #a85a08;
+$moss-dark:   #7a4106;
+$sage:        #f6c78a;
+$lake:        #3b5fc4;
+$rule:        #e7e9ee;
+$highlight:   #fc9833;
+$amber:       #fc9833;
+$tint-blue:   #5f9fb4;
+$tint-teal:   #b3c8e0;
+$tint-amber:  #fc9833;
+$tint-red:    #ee9879;
+$wash-gold:   #feead6;
+$wash-sky:    #e8eff7;
 
 $body-bg:                 $paper;
 $body-color:              $ink;
-$link-color:              $indigo;
-$link-hover-color:        $cyan;
-$headings-color:          $slate;
+$link-color:              $moss;
+$link-hover-color:        $ink;
+$headings-color:          $ink;
 $font-size-root:          17px;
-$headings-font-weight:    650;
+$headings-font-weight:    700;
 $border-radius:           3px;
 
-// System font stack, including CJK faces so Chinese characters in names and
-// affiliations render properly rather than falling back to something ugly.
-$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-  "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
-  sans-serif !default;
+// Inter for text, Bricolage Grotesque for names and headings (see $display).
+// Both are self-hosted: assets/fonts/fonts.css, linked from _quarto.yml.
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC",
+  "Hiragino Sans GB", "Microsoft YaHei", sans-serif !default;
+$display: "Bricolage Grotesque", "Inter", -apple-system, "Segoe UI", Arial,
+  sans-serif;
 $font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo,
   Consolas, "Liberation Mono", monospace !default;
 
-$navbar-bg: $slate-deep;
-$navbar-fg: #f3ece0;
+$navbar-bg: $paper;
+$navbar-fg: $ink-soft;
+$navbar-hl: $ink;
+$footer-bg: $paper;
 
 /*-- scss:rules --*/
 
@@ -53,77 +66,111 @@ main {
 // ----------------------------------- nav -----------------------------------
 
 .navbar {
-  border-bottom: 3px solid $indigo;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 0;
+  box-shadow: none;
 }
 
-.navbar-brand {
+.navbar-brand,
+.navbar-title {
+  color: $ink !important;
+  font-family: $display;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+// Page links are the same tinted pills as on the front page.
+.navbar .navbar-nav .nav-link {
+  margin: 0.15rem 0 0.15rem 0.5rem;
+  padding: 0.42rem 0.9rem !important;
+  border-radius: 999px;
+  color: $ink !important;
+  font-size: 0.86rem;
   font-weight: 600;
-  letter-spacing: 0.01em;
-}
+  transition: transform 0.2s, background-color 0.2s;
 
-.navbar .nav-link {
   &:hover,
   &:focus {
-    color: #fff !important;
+    transform: translateY(-1px);
   }
 }
 
-.navbar .nav-link.active {
+.navbar .navbar-nav .nav-item:nth-child(1) .nav-link { background: $paper-sunk; }
+.navbar .navbar-nav .nav-item:nth-child(2) .nav-link { background: $tint-blue; }
+.navbar .navbar-nav .nav-item:nth-child(3) .nav-link { background: $tint-teal; }
+.navbar .navbar-nav .nav-item:nth-child(4) .nav-link { background: $tint-amber; }
+.navbar .navbar-nav .nav-item:nth-child(5) .nav-link { background: $tint-red; }
+.navbar .navbar-nav .nav-item:nth-child(6) .nav-link { background: none; }
+
+.navbar .navbar-nav .nav-link.active {
+  background: $ink !important;
   color: #fff !important;
-  box-shadow: inset 0 -2px 0 $indigo-light;
+  box-shadow: none;
 }
 
 // -------------------------------- headings ---------------------------------
 
 h1,
-h2,
-h3 {
-  letter-spacing: -0.012em;
+h2 {
+  font-family: $display;
+  letter-spacing: -0.025em;
 }
 
 h1.title {
-  margin-bottom: 0.15rem;
+  margin: 2.2rem 0 0.4rem;
+  font-size: clamp(2.8rem, 6.4vw, 5.2rem);
+  font-weight: 780;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
 }
 
 h2 {
-  margin-top: 2.5rem;
+  margin-top: 3.4rem;
   margin-bottom: 1rem;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid $rule;
-  font-size: 1.42rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  line-height: 1.1;
 }
 
 h3 {
-  margin-top: 1.9rem;
-  color: $indigo;
-  font-size: 1.1rem;
+  margin-top: 2rem;
+  color: $ink;
+  font-size: 1.12rem;
+  letter-spacing: -0.01em;
+}
+
+// Text links: ink with an amber underline, as on the front page.
+main a:not(.btn):not(.nav-link) {
+  color: $ink;
+  text-decoration-color: $amber;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+main a:not(.btn):not(.nav-link):hover {
+  color: $moss;
 }
 
 strong {
-  color: $slate;
-  font-weight: 650;
+  color: $ink;
+  font-weight: 600;
 }
 
 em {
-  color: $slate;
+  color: $ink;
 }
 
-// A short indigo rule under section headings, as a quiet accent
-h2::after {
-  content: "";
-  display: block;
-  width: 2.6rem;
-  margin-top: 0.35rem;
-  margin-bottom: -0.37rem;
-  border-bottom: 2px solid $indigo;
-}
+// No rule under section headings any more: size and space do the work.
 
 // Monospace, letter-spaced micro-labels: dates, course codes, semesters
 .highlights .when,
 .course .meta,
 .rating,
 .entry-links {
-  font-family: $font-family-monospace;
+  font-feature-settings: "tnum";
 }
 
 // ------------------------- publications / entries --------------------------
@@ -160,31 +207,35 @@ h2::after {
   padding: 0.05rem 0.45rem;
   border: 1px solid $rule;
   border-radius: 4px;
-  background: #fff;
-  color: $indigo;
+  background: $paper-light;
+  color: $moss;
   text-decoration: none;
 }
 
 .entry-links a:hover {
-  border-color: $indigo;
-  background: $indigo;
-  color: #fff;
+  border-color: $moss;
+  background: $moss;
+  color: $paper-light;
 }
 
 // -------------------------- recent highlights feed -------------------------
 
-.highlights {
+.highlights ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+// The date hangs in a left gutter. Not a grid: in a grid, an italic journal
+// name inside the text became its own cell and dropped under the date.
 .highlights li {
-  display: grid;
-  grid-template-columns: 6.5rem 1fr;
-  gap: 0.9rem;
-  padding: 0.6rem 0;
+  position: relative;
+  padding: 0.65rem 0 0.65rem 7.4rem;
   border-bottom: 1px solid $rule;
+}
+
+.highlights li:first-child {
+  padding-top: 0;
 }
 
 .highlights li:last-child {
@@ -192,18 +243,28 @@ h2::after {
 }
 
 .highlights .when {
-  color: $indigo;
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding-top: 0.15rem;
-  letter-spacing: 0.02em;
+  position: absolute;
+  top: 0.85rem;
+  left: 0;
+  color: $ink-soft;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.highlights li:first-child .when {
+  top: 0.2rem;
 }
 
 @media (max-width: 34rem) {
   .highlights li {
-    grid-template-columns: 1fr;
-    gap: 0.15rem;
+    padding-left: 0;
+  }
+
+  .highlights .when {
+    position: static;
+    display: block;
+    margin-bottom: 0.15rem;
   }
 }
 
@@ -215,7 +276,7 @@ h2::after {
   padding: 1rem 1.1rem;
   border: 1px solid $rule;
   border-radius: 6px;
-  background: #fff;
+  background: $paper-light;
   // Diagram labels are sized for a 640-unit viewBox. Below ~560px of usable
   // width the text drops under legible size, so the figure scrolls inside its
   // own box rather than shrinking. The page body never scrolls sideways.
@@ -246,10 +307,10 @@ h2::after {
 .note {
   margin-bottom: 2rem;
   padding: 0.9rem 1.1rem;
-  border-left: 3px solid $indigo;
+  border-left: 3px solid $moss;
   border-radius: 0 4px 4px 0;
   background: $paper-sunk;
-  color: #3f464c;
+  color: #3e4641;
   font-size: 0.95rem;
 }
 
@@ -269,12 +330,12 @@ h2::after {
   padding: 0.9rem 1.05rem;
   border: 1px solid $rule;
   border-radius: 6px;
-  background: #fff;
+  background: $paper-light;
 }
 
 .panel h4 {
   margin: 0 0 0.5rem;
-  color: $slate;
+  color: $ink;
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -290,7 +351,7 @@ h2::after {
 }
 
 .panel.growth h4 {
-  color: $indigo;
+  color: $moss;
 }
 
 @media (max-width: 40rem) {
@@ -314,7 +375,7 @@ h2::after {
   padding: 0.05rem 0.4rem;
   border-radius: 4px;
   background: $paper-sunk;
-  color: $slate;
+  color: $ink;
   font-size: 0.85rem;
   font-variant-numeric: tabular-nums;
 }
@@ -337,7 +398,7 @@ h2::after {
 }
 
 // ---------------------------------------------------------------------------
-// Small-type page. Applied via `body-class: page-small` in a page's YAML.
+// Small-type page. Applied via `body-classes: page-small` in a page's YAML.
 // ---------------------------------------------------------------------------
 .page-small main {
   max-width: 58rem;
@@ -372,7 +433,7 @@ h2::after {
 }
 
 .page-small .field .k {
-  color: $indigo;
+  color: $moss;
   font-family: $font-family-monospace;
   font-size: 0.74rem;
   letter-spacing: 0.04em;
@@ -403,7 +464,7 @@ h2::after {
 .topic {
   margin-top: 2.6rem;
   padding: 0.5rem 0.8rem;
-  border-left: 3px solid $indigo;
+  border-left: 3px solid $moss;
   background: $paper-sunk;
 }
 
@@ -426,8 +487,1011 @@ h2::after {
 
 // Status line under a dead-end heading
 .status {
-  color: $indigo;
+  color: $moss;
   font-family: $font-family-monospace;
   font-size: 0.76rem;
   letter-spacing: 0.02em;
 }
+
+// ---------------------------------------------------------------------------
+// Home page. index.qmd uses `page-layout: custom`, so these classes set the
+// whole layout: a type-led first screen, a full-width photograph, then short
+// labeled sections.
+// ---------------------------------------------------------------------------
+
+.wrap {
+  width: 100%;
+  max-width: 76rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.hero {
+  padding-top: clamp(2.6rem, 9vh, 6.5rem);
+  padding-bottom: 1rem;
+}
+
+.kicker {
+  margin-bottom: 1.8rem;
+  color: $ink-soft;
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.statement {
+  max-width: 12.5em;
+  text-wrap: balance;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: $ink;
+  font-size: clamp(2.35rem, 6.6vw, 5.6rem);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.statement::after {
+  display: none;
+}
+
+// The highlighter: one stroke behind one word, drawn left to right on load.
+.hl {
+  margin: 0 -0.05em;
+  padding: 0 0.05em;
+  background-image: linear-gradient($highlight, $highlight);
+  background-repeat: no-repeat;
+  background-position: 0 72%;
+  background-size: 100% 62%;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  animation: hl-sweep 0.9s cubic-bezier(0.6, 0, 0.2, 1) 0.45s both;
+}
+
+@keyframes hl-sweep {
+  from {
+    background-size: 0% 62%;
+  }
+}
+
+.statement-sub {
+  max-width: 37rem;
+  margin: 1.7rem 0 0;
+  color: $ink-soft;
+  font-size: clamp(1.02rem, 1.5vw, 1.2rem);
+  line-height: 1.5;
+}
+
+// Signal figure: the SVG is drawn by assets/signal.js at the figure's size.
+.signal {
+  position: relative;
+  height: clamp(150px, 23vh, 220px);
+  margin: 3.4rem 0 0;
+}
+
+.signal svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.sig-band {
+  fill: $highlight;
+  opacity: 0.32;
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: band-sweep 0.9s cubic-bezier(0.6, 0, 0.2, 1) 1.1s both;
+}
+
+@keyframes band-sweep {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+.sig-line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sig-line-a {
+  stroke: $ink;
+  stroke-width: 1.6;
+}
+
+.sig-line-b {
+  stroke: $moss;
+  stroke-opacity: 0.75;
+  stroke-width: 1.4;
+}
+
+.sig-dots circle {
+  fill: $ink;
+}
+
+.sig-name,
+.sig-phases,
+.sig-scales {
+  color: $ink-soft;
+  font-family: $font-family-monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sig-name {
+  position: absolute;
+  left: 0;
+}
+
+.sig-name-a {
+  top: -0.6rem;
+}
+
+.sig-name-b {
+  top: 46%;
+  color: $moss;
+}
+
+.sig-phases {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding-top: 0.7rem;
+  text-align: center;
+}
+
+.sig-scales {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  gap: 1.4rem;
+  padding-top: 0.7rem;
+}
+
+.sig-scales span {
+  padding: 0 0.15em;
+  transition: color 0.4s, background-color 0.4s;
+}
+
+.sig-scales span.on {
+  background: $highlight;
+  color: $ink;
+}
+
+.signal[data-mode="timescales"] {
+  .sig-name,
+  .sig-phases {
+    display: none;
+  }
+
+  .sig-scales {
+    display: flex;
+  }
+}
+
+.home-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.8rem;
+  margin: 4.6rem 0 0;
+  font-size: 0.95rem;
+}
+
+.home-links a {
+  border-bottom: 1px solid $rule;
+  color: $ink;
+  text-decoration: none;
+}
+
+.home-links a:hover {
+  border-bottom-color: $ink;
+}
+
+// Full-width photograph between the first screen and the sections.
+.photo-band {
+  margin: 4.5rem 0 0;
+}
+
+.photo-band img,
+.photo-slot {
+  display: block;
+  width: 100%;
+  height: clamp(260px, 62vh, 640px);
+  object-fit: cover;
+}
+
+.photo-slot {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(180deg, #e3e5de 0%, #d5dbd1 55%, #c3ccbf 100%);
+  color: $ink-soft;
+  font-family: $font-family-monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.home-section {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  gap: 2.5rem;
+  padding-top: 3.4rem;
+  padding-bottom: 3.4rem;
+  border-top: 1px solid $rule;
+}
+
+.photo-band + .home-section {
+  border-top: 0;
+}
+
+.sec-label {
+  color: $ink-soft;
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sec-label p {
+  margin: 0.25rem 0 0;
+}
+
+.sec-label img.portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.1rem;
+  border-radius: 3px;
+}
+
+.sec-body {
+  max-width: 44rem;
+}
+
+.sec-body p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 48rem) {
+  .wrap {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .home-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .sec-label img.portrait {
+    max-width: 16rem;
+  }
+
+  .photo-slot {
+    padding: 0.8rem 1rem;
+  }
+
+  .home-links {
+    margin-top: 4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hl,
+  .sig-band {
+    animation: none;
+  }
+}
+
+.no-motion .hl,
+.no-motion .sig-band {
+  animation: none;
+}
+
+// ---------------------------------------------------------------------------
+// Inner pages in the front-page style: rounded cards, soft depth, pill tags.
+// ---------------------------------------------------------------------------
+body {
+  line-height: 1.7;
+}
+
+.diagram {
+  padding: 1.2rem 1.3rem;
+  border: 1px solid $rule;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 30px 60px -44px rgba(17, 20, 24, 0.4);
+}
+
+.entry-links a {
+  border: 0;
+  border-radius: 999px;
+  background: $tint-amber;
+  color: $ink;
+  font-weight: 600;
+}
+
+.entry-links a:hover {
+  background: $ink;
+  color: #fff;
+}
+
+.topic {
+  border-left: 0;
+  border-radius: 14px;
+  background: $wash-gold;
+}
+
+.note {
+  border-left-color: $amber;
+  border-radius: 0 12px 12px 0;
+}
+
+.panel {
+  border-radius: 16px;
+}
+
+.rating {
+  border-radius: 999px;
+  background: $wash-sky;
+}
+
+.nav-footer {
+  border-top: 1px solid $rule;
+}
+
+// Dead Ends? labels in the page's own type instead of a typewriter face.
+.page-small .field .k,
+.status {
+  font-family: inherit;
+  font-weight: 650;
+}
+
+// Labels and text share a first baseline, whatever their sizes.
+.page-small .field {
+  align-items: baseline;
+}
+
+.page-small .field .k {
+  padding-top: 0;
+  line-height: 1.6;
+}
+
+// ---------------------------------------------------------------------------
+// Interactive research figures (research.qmd, assets/figures.js): hover or
+// tap a part to read what it shows; buttons switch the compared condition.
+// ---------------------------------------------------------------------------
+.ifig {
+  margin: 1.8rem 0 0.8rem;
+  padding: 1.3rem 1.4rem 1.2rem;
+  border: 1px solid $rule;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 30px 60px -44px rgba(10, 10, 10, 0.35);
+}
+
+.ifig-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 1rem;
+}
+
+.ifig-title {
+  color: $ink;
+  font-family: $display;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ifig-tag {
+  padding: 0.12rem 0.6rem;
+  border-radius: 999px;
+  background: $paper-sunk;
+  color: $ink-soft;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.ifig-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+}
+
+.ifig-sub {
+  margin: 0 0 0.55rem;
+  font-size: 0.88rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.ifig .term {
+  border-bottom: 2px dotted $amber;
+  cursor: help;
+}
+
+.ifig .term:hover,
+.ifig .term:focus,
+.ifig .term.is-hot {
+  background: $wash-gold;
+  outline: none;
+}
+
+.ifig-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.5rem;
+}
+
+.ifig-btns button {
+  padding: 0.28rem 0.75rem;
+  border: 0;
+  border-radius: 999px;
+  background: $paper-sunk;
+  color: $ink;
+  font: 600 0.78rem/1.3 $font-family-sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.ifig-btns button[aria-pressed="true"] {
+  background: $ink;
+  color: #fff;
+}
+
+.ifig svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.ifig svg text {
+  fill: $ink-soft;
+  font-family: $font-family-sans-serif;
+  font-size: 10.5px;
+}
+
+.ifig svg .lab-teal { fill: #2f6f80; }
+
+.ifig .ax { stroke: $rule; stroke-width: 1; }
+.ifig .onset { stroke: $ink-soft; stroke-width: 1; stroke-dasharray: 3 3; }
+
+.ifig .line {
+  fill: none;
+  stroke: $ink;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: opacity 0.4s;
+}
+
+.ifig .line.blue { stroke: #437b8e; }
+.ifig .line.amber { stroke: #e0851c; }
+.ifig .line.teal { stroke: #5f9fb4; }
+.ifig .line.red { stroke: #cc403c; }
+.ifig .line.grey { stroke: #9aa0ab; }
+
+.ifig .hit {
+  fill: transparent;
+  cursor: pointer;
+  transition: fill 0.2s;
+}
+
+.ifig .hit:hover,
+.ifig .hit:focus,
+.ifig .hit.is-hot {
+  fill: rgba(252, 152, 51, 0.14);
+  outline: none;
+}
+
+.ifig .hitline {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 16;
+  cursor: pointer;
+}
+
+.ifig .hitline:focus { outline: none; }
+
+.ifig .ring {
+  fill: #fff;
+  stroke: $rule;
+  stroke-width: 1.2;
+  cursor: pointer;
+  transition: fill 0.2s;
+}
+
+.ifig .ring:hover,
+.ifig .ring:focus,
+.ifig .ring.is-hot {
+  fill: $wash-gold;
+  outline: none;
+}
+
+.ifig .u-dot {
+  fill: #e0851c;
+  stroke: #fff;
+  stroke-width: 2.5;
+}
+
+.ifig-range {
+  width: 100%;
+  margin-top: 0.4rem;
+  accent-color: #e0851c;
+}
+
+.ifig-out {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+.ifig-out span {
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+}
+
+.ifig .out-coop { background: $tint-teal; }
+.ifig .out-conf { background: $tint-red; }
+
+.ifig-explain {
+  min-height: 3.4em;
+  margin: 1.1rem 0 0;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  background: $paper-sunk;
+  color: $ink;
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+
+// Axis titles, gridlines, and marks for the figures redrawn from the papers.
+.ifig .ax-t { fill: $ink; font-weight: 600; }
+.ifig .grid { stroke: #f0f1f4; stroke-width: 1; }
+.ifig .onset-t { font-size: 9.5px; }
+.ifig .line.dash { stroke-dasharray: 6 4; }
+.ifig .band { stroke: none; opacity: 0.17; }
+.ifig .band.blue { fill: #437b8e; }
+.ifig .band.amber { fill: #e0851c; }
+.ifig .band.ink { fill: #9aa0ab; opacity: 0.25; }
+.ifig .sig { fill: $ink; font-size: 9.5px; font-weight: 700; }
+.ifig .pt { fill: $ink; fill-opacity: 0.5; }
+.ifig .key text { font-size: 9.5px; }
+.ifig .lab-red { fill: #b43a35; }
+.ifig .mini-t { fill: $ink; font-weight: 600; }
+
+// Moving along the RSA curve shows the predicted value at that second.
+.ifig .scrub-dot { fill: $ink; stroke: #fff; stroke-width: 2; pointer-events: none; visibility: hidden; }
+.ifig .scrub-dot.on { visibility: visible; }
+.ifig .scrub-txt { fill: $ink; font-weight: 650; pointer-events: none; }
+
+.ifig .zone {
+  fill: rgba(252, 152, 51, 0.12);
+  cursor: pointer;
+  transition: fill 0.2s;
+}
+
+.ifig .zone:hover,
+.ifig .zone:focus,
+.ifig .zone.is-hot {
+  fill: rgba(252, 152, 51, 0.26);
+  outline: none;
+}
+
+.ifig .zone-t { font-size: 9.5px; }
+
+.ifig .bar-g { cursor: pointer; outline: none; }
+.ifig .bar { stroke: transparent; stroke-width: 2; transition: stroke 0.2s; }
+.ifig .bar-g:hover .bar,
+.ifig .bar-g:focus .bar,
+.ifig .bar-g.is-hot .bar { stroke: $ink; }
+.ifig .whisk { stroke: $ink; stroke-width: 1.4; }
+.ifig .bar.poly { fill: #fc9833; }
+.ifig .bar.mono { fill: #dfe2e8; }
+.ifig .brace { fill: none; stroke: $ink-soft; stroke-width: 1.2; }
+.ifig .brace-t { fill: $ink; font-weight: 650; }
+.ifig .mean { fill: #e0851c; stroke: #fff; stroke-width: 2; }
+.ifig .trend { fill: none; stroke: #e0851c; stroke-width: 1.4; stroke-dasharray: 3 4; }
+.ifig .pt-g { cursor: pointer; outline: none; }
+.ifig .pt-g:hover .mean,
+.ifig .pt-g:focus .mean,
+.ifig .pt-g.is-hot .mean { stroke: $ink; }
+.ifig .end-l { font-size: 9.5px; font-weight: 600; transition: opacity 0.25s; }
+
+// Fans: one line per level of the moderator.
+.ifig .fan { fill: none; stroke-linecap: round; }
+.ifig .fan.sig { stroke-width: 2.4; }
+.ifig .fan.ns { stroke-width: 1.6; stroke-dasharray: 5 4; opacity: 0.8; }
+.ifig .fan-note { font-size: 9.5px; }
+
+.ifig .lab-blue { fill: #2f6f80; }
+.ifig .val { fill: $ink; font-weight: 650; }
+.ifig .pct { font-size: 9.5px; }
+
+// Synchrony: epochs and the direction of the link, drawn as moving dashes.
+.ifig .ep.g { fill: #fc9833; }
+.ifig .ep.c { fill: #5f9fb4; }
+.ifig .lane { fill: $ink; font-weight: 600; }
+.ifig .mode { fill: $ink; font-weight: 650; }
+.ifig .arr-head { fill: $ink; }
+
+.ifig .arrow {
+  fill: none;
+  stroke: $ink;
+  stroke-width: 1.4;
+  stroke-dasharray: 4 3;
+  animation: ifig-flow 1.1s linear infinite;
+}
+
+@keyframes ifig-flow { to { stroke-dashoffset: -14; } }
+
+.ifig-src {
+  margin: 0.45rem 0 0;
+  color: $ink-soft;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+// Buttons switch which group is visible. Hidden groups take no pointer or
+// keyboard focus; hidden captions and sliders take no space.
+.ifig .s-g {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s;
+}
+
+.ifig p.s-g,
+.ifig input.s-g,
+.ifig div.s-g {
+  display: none;
+}
+
+.ifig[data-res="res"] div.r-res { display: flex; }
+.ifig .ifig-btns-sub button { font-size: 0.74rem; }
+
+.ifig[data-strat="distraction"] .s-distraction,
+.ifig[data-strat="help"] .s-help,
+.ifig[data-strat="venting"] .s-venting,
+.ifig[data-poly="desc"] .p-desc,
+.ifig[data-poly="age"] .p-age,
+.ifig[data-poly="out"] .p-out,
+.ifig[data-res="res"][data-disc="peer"] .q-peer,
+.ifig[data-res="res"][data-disc="inst"] .q-inst,
+.ifig[data-cope="day"] .c-day,
+.ifig[data-cope="year"] .c-year,
+.ifig[data-res="family"] .r-family,
+.ifig[data-res="res"] .r-res,
+.ifig[data-task="draw"] .t-draw,
+.ifig[data-task="conflict"] .t-conflict,
+.ifig[data-task="draw"][data-out="coping"] .d-draw-coping,
+.ifig[data-task="draw"][data-out="inhibition"] .d-draw-inhibition,
+.ifig[data-task="conflict"][data-out="coping"] .d-conflict-coping,
+.ifig[data-task="conflict"][data-out="inhibition"] .d-conflict-inhibition {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ifig[data-cope="day"] p.c-day,
+.ifig[data-cope="year"] p.c-year,
+.ifig[data-cope="year"] input.c-year,
+.ifig[data-res="family"] p.r-family,
+.ifig[data-res="res"] p.r-res {
+  display: block;
+}
+
+// Family network (Research on Child and Adolescent Psychopathology, 2023).
+.ifig-net .ifig-btns { margin-bottom: 0.6rem; }
+.ifig .e { stroke: $ink; transition: stroke-opacity 0.25s, stroke 0.25s; }
+
+.ifig .nd {
+  stroke: #fff;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+
+.ifig .nd:focus { outline: none; stroke: $ink; }
+.ifig .nd.lv-sym { fill: #ee9879; }
+.ifig .nd.lv-sys { fill: #fc9833; }
+.ifig .nd.lv-dya { fill: #b3c8e0; }
+.ifig .nd.lv-ind { fill: #5f9fb4; }
+.ifig .nd.lv-cov { fill: #dfe2e8; }
+.ifig .nd.key { stroke: $ink; stroke-width: 2.4; }
+.ifig .net-key .nd.key { fill: #fff; }
+.ifig .net-key text { font-size: 10px; }
+
+.ifig .nl {
+  fill: $ink;
+  font-size: 10px;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+
+.ifig[data-level="sys"] .e:not(.lv-sys),
+.ifig[data-level="dya"] .e:not(.lv-dya),
+.ifig[data-level="ind"] .e:not(.lv-ind),
+.ifig[data-level="sym"] .e:not(.lv-sym) {
+  stroke-opacity: 0.03 !important;
+}
+
+.ifig[data-level="sys"] :is(.nd, .nl):not(.lv-sys):not(.lv-sym),
+.ifig[data-level="dya"] :is(.nd, .nl):not(.lv-dya):not(.lv-sym),
+.ifig[data-level="ind"] :is(.nd, .nl):not(.lv-ind):not(.lv-sym),
+.ifig[data-level="sym"] :is(.nd, .nl):not(.lv-sym) {
+  opacity: 0.28;
+}
+
+.ifig .net-key :is(.nd, .nl) { opacity: 1 !important; }
+
+// Pointing at a circle keeps only its own lines and neighbors.
+.ifig .net.hov .e:not(.on) { stroke-opacity: 0.03 !important; }
+.ifig .net.hov .e.on { stroke: #e0851c; stroke-opacity: 0.95 !important; }
+.ifig .net.hov :is(.nodes .nd, .labels .nl):not(.on) { opacity: 0.22; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ifig .arrow { animation: none; }
+  .ifig .s-g,
+  .ifig .line,
+  .ifig .e,
+  .ifig .nd,
+  .ifig .nl { transition: none; }
+}
+
+.ifig-head { flex-wrap: wrap; }
+.ifig-tag { white-space: nowrap; }
+
+@media (max-width: 44rem) {
+  .ifig-grid { grid-template-columns: 1fr; }
+  .ifig { padding: 1.1rem 1rem 1rem; }
+
+  // On a phone the network scrolls sideways inside its card, so labels stay legible.
+  .net-wrap { overflow-x: auto; margin: 0 -0.4rem; }
+  .net-wrap svg { min-width: 600px; }
+}
+
+// ---------------------------------------------------------------------------
+// Teaching page: cards instead of long lists.
+// ---------------------------------------------------------------------------
+.t-intro {
+  max-width: 44rem;
+  color: $ink;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.t-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.t-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.t-card {
+  padding: 1.15rem 1.25rem;
+  border: 1px solid $rule;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 20px 40px -34px rgba(10, 10, 10, 0.35);
+}
+
+.t-card p {
+  margin: 0 0 0.6rem;
+}
+
+.t-card p:last-child {
+  margin-bottom: 0;
+}
+
+.t-card ul {
+  margin: 0 0 0.9rem;
+  padding: 0;
+  list-style: none;
+}
+
+.t-card li {
+  padding: 0.5rem 0;
+  border-top: 1px solid $rule;
+  line-height: 1.45;
+}
+
+.t-card li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.t-card .meta {
+  display: block;
+  margin-top: 0.15rem;
+  color: $ink-soft;
+  font-size: 0.86rem;
+}
+
+.t-kicker {
+  display: inline-block;
+  margin-bottom: 0.2rem;
+  padding: 0.14rem 0.65rem;
+  border-radius: 999px;
+  background: $paper-sunk;
+  color: $ink;
+  font-size: 0.74rem;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.t-kicker.k-teal { background: $tint-blue; }
+.t-kicker.k-sky { background: $tint-teal; }
+.t-kicker.k-gold { background: $tint-amber; }
+.t-kicker.k-peach { background: $tint-red; }
+.t-kicker.k-sage { background: #8baf7b; }
+
+.t-feature {
+  grid-column: 1 / -1;
+  border-color: transparent;
+  background: $wash-gold;
+}
+
+.t-feature strong {
+  display: block;
+  font-family: $display;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.t-dashed {
+  border-style: dashed;
+  background: transparent;
+  box-shadow: none;
+}
+
+.t-num {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: #e0851c;
+  font-family: $display;
+  font-size: 1.7rem;
+  font-weight: 780;
+  line-height: 1;
+}
+
+.t-three .t-card {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.t-note {
+  margin: -0.4rem 0 1rem;
+  color: $ink-soft;
+  font-size: 0.88rem;
+}
+
+// Talks, community teaching, mentoring: stacked, label on the left.
+.t-grid.t-more {
+  grid-template-columns: 1fr;
+  margin-top: 2.6rem;
+}
+
+.t-more .t-card {
+  display: grid;
+  grid-template-columns: 10.5rem minmax(0, 1fr);
+  column-gap: 1.2rem;
+  align-items: start;
+}
+
+.t-more .t-card > :first-child {
+  grid-row: 1 / span 6;
+  margin: 0;
+}
+
+.t-more .t-card > :not(:first-child) {
+  grid-column: 2;
+}
+
+@media (max-width: 44rem) {
+  .t-more .t-card { display: block; }
+  .t-more .t-card > :first-child { margin-bottom: 0.6rem; }
+}
+
+// Evaluations card (teaching.qmd): HDF 315L items on top, TA appointments below.
+.ifig-eval .ifig-sub-2 {
+  margin-top: 1.4rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid $rule;
+}
+
+.ifig .ior { cursor: pointer; outline: none; }
+.ifig .ior-hit { fill: transparent; }
+.ifig .ior:hover .ior-hit,
+.ifig .ior:focus .ior-hit,
+.ifig .ior.is-hot .ior-hit { fill: rgba(252, 152, 51, 0.1); }
+.ifig .ior-l { fill: $ink; font-size: 11px; }
+.ifig .ior-track { stroke: #eef0f3; stroke-width: 6; stroke-linecap: round; }
+.ifig .ior-dot { fill: $ink; stroke: #fff; stroke-width: 2; }
+.ifig .ior-v { fill: $ink-soft; font-size: 10.5px; }
+
+// Teaching assistant figure (teaching.qmd): one circle per appointment.
+.ifig-ta svg { margin-top: 0.2rem; }
+.ifig .ta { cursor: pointer; outline: none; }
+
+.ifig .ta circle {
+  stroke: #fff;
+  stroke-width: 2;
+  transition: stroke 0.2s;
+}
+
+.ifig .ta.capped circle {
+  stroke: $ink-soft;
+  stroke-width: 1.2;
+  stroke-dasharray: 4 3;
+}
+
+.ifig .ta:hover circle,
+.ifig .ta:focus circle,
+.ifig .ta.is-hot circle {
+  stroke: $ink;
+  stroke-width: 2.4;
+  stroke-dasharray: none;
+}
+
+.ifig .ta-l { fill: $ink; font-size: 10px; font-weight: 600; pointer-events: none; }
+.ifig .ta-note { font-size: 9.5px; }
+.ifig .ta-key text { font-size: 10px; }
+.ifig .ta-own { cursor: pointer; outline: none; }
+.ifig .ta-own path { fill: $ink; }
+.ifig .ta-own text { font-size: 9.5px; }
+
+@media (max-width: 44rem) {
+  .t-grid,
+  .t-three {
+    grid-template-columns: 1fr;
+  }
+}
+
+// The three "would do differently" points: one wide card each, number on the left.
+.t-steps {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.t-steps .t-card {
+  display: grid;
+  grid-template-columns: 3.4rem minmax(0, 1fr);
+  column-gap: 0.4rem;
+  align-items: start;
+}
+
+.t-steps .t-card > p {
+  margin: 0;
+}
+

@@ -1,59 +1,92 @@
 ---
-title: "Yingying Tang"
-subtitle: "Doctoral Candidate · Human Development and Family Sciences · The University of Texas at Austin"
-about:
-  template: trestles
-  # Resized to 800x600 and 97 KB so it loads quickly on slow connections.
-  # Replace images/profile.jpg to change it; keep it under ~200 KB.
-  image: images/profile.jpg
-  image-shape: rounded
-  links:
-    - icon: envelope
-      text: Email
-      href: mailto:yingyingtang@utexas.edu
-    - icon: mortarboard
-      text: Google Scholar
-      href: https://scholar.google.com/citations?user=FKmNCvwAAAAJ
-    - icon: journal-text
-      text: ResearchGate
-      href: https://www.researchgate.net/profile/Yingying-Tang-3
+pagetitle: "Yingying Tang"
+page-layout: custom
+body-classes: home
+css: assets/home.css
+resources:
+  - assets/home.js
+  - images/home/
+include-after-body:
+  text: |
+    <script src="assets/home.js"></script>
 ---
 
-I study **how emotion regulation is constructed**: assembled within the child
-from physiology, strategy, and goals; between people, with caregivers, peers,
-and teachers; and within a wider social context, across timescales from seconds
-to years.
+```{=html}
+<div id="hp">
 
-My work spans **laboratory measures of physiological regulation and observed
-behavior**, **multi-informant surveys**, and **daily diary and other intensive
-longitudinal designs**. I work in **R**, **Mplus**, **SPSS**, and **Stata**.
+<header class="hero-ts">
+  <div class="ts-bar">
+    <span class="ts-brand">Yingying Tang</span>
+    <nav aria-label="Contact"><a class="pill dark" href="mailto:yingyingtang@utexas.edu">Email</a></nav>
+  </div>
+  <div class="ts-grid">
+    <div>
+      <p class="ts-kicker"><i></i>On the job market</p>
+      <h1 class="ts-h1"><span class="wd"><span>Yingying</span></span><span class="wd"><span>Tang</span></span></h1>
+      <p class="ts-lede">Human Development and Family Sciences at <em>The University of Texas at Austin</em>.</p>
+      <div class="ts-cta"><a class="pill dark" href="mailto:yingyingtang@utexas.edu">Email</a><a class="pill" href="https://scholar.google.com/citations?user=FKmNCvwAAAAJ">Google Scholar</a><a class="pill" href="https://www.researchgate.net/profile/Yingying-Tang-3">ResearchGate</a></div>
+    </div>
+    <div class="ts-visual">
+      <nav class="chips" aria-label="Pages">
+        <a class="chip" href="research.html">Research</a>
+        <a class="chip" href="publications.html">Publications</a>
+        <a class="chip" href="teaching.html">Teaching</a>
+        <a class="chip" href="projects.html">Dead Ends?</a>
+      </nav>
+      <div class="ts-card" aria-hidden="true">
+        <svg aria-hidden="true" focusable="false"><rect class="band"/><path class="ln-a"/><path class="ln-b"/></svg>
+      </div>
+    </div>
+  </div>
+</header>
 
-I work with [Dr. Aprile Benner](https://liberalarts.utexas.edu/hdfs/) at UT Austin.
-Before this I earned an M.A. in Human Development and Family Sciences at UT
-Austin, and an M.A. in Developmental Psychology and a B.S. in Psychology at
-Beijing Normal University.
+<section class="about scatter" aria-label="About">
+  <p class="label sc-label" data-reveal>About</p>
+  <p class="ab-lead sc-lead" data-reveal>I study how <strong>emotion regulation</strong> unfolds from moment to moment, how the family system shapes it, and when regulation under stress promotes health.</p>
+  <figure class="sc-ph sc-tower" data-reveal data-speed="-0.06"><img src="images/home/photo-2535.jpg" alt="" loading="lazy"></figure>
+  <figure class="sc-ph sc-portrait" data-reveal data-speed="0.04"><img src="images/profile.jpg" alt="Yingying Tang"></figure>
+  <div class="sc-card sc-c1" data-reveal data-speed="-0.02"><p>My work spans <strong>laboratory measures of physiological regulation and observed behavior</strong>, <strong>multi-informant surveys</strong>, and <strong>daily diary and other intensive longitudinal designs</strong>.</p></div>
+  <div class="sc-tags" data-reveal data-speed="0.07" aria-label="Software"><span>R</span><span>Mplus</span><span>SPSS</span><span>Stata</span><span>MATLAB</span></div>
+  <figure class="sc-ph sc-mtn" data-reveal data-speed="0.09"><img src="images/home/photo-2375.jpg" alt="" loading="lazy"></figure>
+  <div class="sc-card sc-c2" data-reveal data-speed="0.03"><p>I work with <a href="https://liberalarts.utexas.edu/hdfs/">Dr. Aprile Benner</a> at UT Austin. Before this I earned an M.A. in Developmental Psychology and a B.S. in Psychology at Beijing Normal University.</p></div>
+  <figure class="sc-ph sc-snow" data-reveal data-speed="-0.05"><img src="images/home/photo-5707.jpg" alt="" loading="lazy"></figure>
+  <div class="sc-card sc-c3" data-reveal data-speed="-0.03"><p>I also <strong>teach research methods</strong>, both as instructor of record and as a teaching assistant across undergraduate research methods classes and graduate statistics classes, and I run an <a href="teaching.html">annual R workshop</a> for graduate students in my department.</p></div>
+  <p class="links sc-links" data-reveal data-speed="0.02"><a href="mailto:yingyingtang@utexas.edu">Email</a><a href="https://scholar.google.com/citations?user=FKmNCvwAAAAJ">Google Scholar</a><a href="https://www.researchgate.net/profile/Yingying-Tang-3">ResearchGate</a></p>
+</section>
 
-I also **teach research methods**, both as instructor of record and as a
-teaching assistant across undergraduate research methods classes and graduate
-statistics classes, and I run an [annual R workshop](teaching.qmd) for graduate
-students in my department.
+<section class="news" aria-labelledby="news-title">
+  <div class="news-side" data-reveal>
+    <h2 class="news-title" id="news-title">Recent highlights</h2>
+    <figure class="news-photo"><img src="images/home/photo-7523.jpg" alt="" loading="lazy"></figure>
+  </div>
+  <div class="years">
+    <div class="year" data-reveal>
+      <h3>2026</h3>
+      <ul>
+        <li><time>Aug</time><span>Attended the joint EADP/EARA/SRA Summer School in the Netherlands</span></li>
+        <li><time>Jun</time><span>Presented a poster at the ISSBD Biennial Meeting in Incheon, South Korea, on how emotion dynamics link academic adversity to adolescent internalizing symptoms</span></li>
+        <li><time>Jun</time><span>Our paper on assessing preschoolers’ emotion regulation across home, school, and the lab came out in <em>Early Childhood Research Quarterly</em></span></li>
+        <li><time>Apr</time><span>My paper on emotion polyregulation in preschoolers was published in <em>Child Development</em></span></li>
+        <li><time>Apr</time><span>Presented at the SRA Biennial Meeting in Toronto on racial and ethnic discrimination and adolescents’ emotional dynamics</span></li>
+        <li><time>Jan</time><span>Ran our department’s graduate statistics workshop on using AI assistants for data analysis</span></li>
+      </ul>
+    </div>
+    <div class="year" data-reveal>
+      <h3>2025</h3>
+      <ul>
+        <li><time>Fall</time><span>Received the Outstanding Graduate Research Fellowship from the UT Austin Graduate School for 2026 to 2027</span></li>
+        <li><time>Fall</time><span>Taught my first course as instructor of record, HDF 315L Research Methods</span></li>
+        <li><time>Aug</time><span>Finished my M.A. at UT Austin, on emotion polyregulation in preschoolers</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-## Recent highlights
+<section class="reach" data-reveal aria-label="Contact">
+  <p class="label">Contact</p>
+  <a class="mail" href="mailto:yingyingtang@utexas.edu">yingyingtang@utexas.edu</a>
+  <p class="addr">Department of Human Development and Family Sciences<br>The University of Texas at Austin, Austin, TX</p>
+</section>
 
-::: {.highlights}
-- [Aug 2026]{.when} Attended the joint EADP/EARA/SRA Summer School in the Netherlands
-- [Jun 2026]{.when} Presented a poster at the ISSBD Biennial Meeting in Incheon, South Korea, on how emotion dynamics link academic adversity to adolescent internalizing symptoms
-- [Jun 2026]{.when} Our paper on assessing preschoolers' emotion regulation across home, school, and the lab came out in *Early Childhood Research Quarterly*
-- [Apr 2026]{.when} My paper on emotion polyregulation in preschoolers was published in *Child Development*
-- [Apr 2026]{.when} Presented at the SRA Biennial Meeting in Toronto on racial and ethnic discrimination and adolescents' emotional dynamics
-- [Jan 2026]{.when} Ran our department's graduate statistics workshop on using AI assistants for data analysis
-- [Fall 2025]{.when} Received the Outstanding Graduate Research Fellowship from the UT Austin Graduate School for 2026 to 2027
-- [Fall 2025]{.when} Taught my first course as instructor of record, HDF 315L Research Methods
-- [Aug 2025]{.when} Finished my M.A. at UT Austin, on emotion polyregulation in preschoolers
-:::
-
-## Contact
-
-[yingyingtang@utexas.edu](mailto:yingyingtang@utexas.edu)\
-Department of Human Development and Family Sciences\
-The University of Texas at Austin, Austin, TX
+</div>
+```

@@ -1,110 +1,67 @@
 ---
 title: "Teaching"
+resources:
+  - assets/figures.js
+include-after-body:
+  text: |
+    <script src="assets/figures.js"></script>
 ---
 
+::: {.t-intro}
 I teach research methods and statistics, as instructor of record, as a graduate
 teaching assistant across our undergraduate and graduate sequences, and through
 an annual R workshop series for graduate students.
+:::
 
 ## Courses
 
-### As instructor of record
+::: {.t-grid .t-courses}
 
-::: {.course}
-**HDF 315L, Research Methods in Human Development and Family Sciences**\
+::: {.t-card .t-feature}
+[As instructor of record]{.t-kicker}
+
+**HDF 315L, Research Methods in Human Development and Family Sciences**
+
 [The University of Texas at Austin · Fall 2025]{.meta}
 :::
 
-### As graduate teaching assistant
+::: {.t-card}
+[As graduate teaching assistant · Human Development and Family Sciences, UT Austin]{.t-kicker .k-teal}
 
-*Department of Human Development and Family Sciences, UT Austin*
-
-::: {.course}
-**HDF 380K.4, Structural Equation Modeling** [· Spring 2026]{.meta}\
-**HDF 380K.2, Foundational Statistics and Nonstandard Models** [· Spring 2025, Spring 2026]{.meta}\
-**HDF 315L, Research Methods in Human Development and Family Sciences** [· Spring 2024, Summer 2024]{.meta}\
-**HDF 313 / 113L, Child Development** [· Fall 2022, Spring 2024, Fall 2024]{.meta}
+- **HDF 380K.4, Structural Equation Modeling** [Spring 2026]{.meta}
+- **HDF 380K.2, Foundational Statistics and Nonstandard Models** [Spring 2025, Spring 2026]{.meta}
+- **HDF 315L, Research Methods in Human Development and Family Sciences** [Spring 2024, Summer 2024]{.meta}
+- **HDF 313 / 113L, Child Development** [Fall 2022, Spring 2024, Fall 2024]{.meta}
 :::
 
-*Department of Nutritional Sciences, UT Austin*
+::: {.t-card}
+[Department of Nutritional Sciences, UT Austin]{.t-kicker .k-sky}
 
-::: {.course}
-**NTR 306, Fundamentals of Nutrition** [· web-based, about 2,000 students · Spring 2025]{.meta}
+- **NTR 306, Fundamentals of Nutrition** [web-based, about 2,000 students · Spring 2025]{.meta}
+
+[School of Psychology, Beijing Normal University]{.t-kicker .k-sage}
+
+- **Psychopathology** [graduate · Fall 2020]{.meta}
+- **Abnormal Psychology** [undergraduate · Fall 2019]{.meta}
 :::
 
-*School of Psychology, Beijing Normal University*
-
-::: {.course}
-**Psychopathology** [· graduate · Fall 2020]{.meta}\
-**Abnormal Psychology** [· undergraduate · Fall 2019]{.meta}
 :::
 
-## Trajectory
+## Evaluations
 
-::: {.diagram}
-```{=html}
-<svg viewBox="0 0 640 268" role="img" aria-labelledby="tat">
-  <title id="tat">Teaching appointments by level and role from Fall 2022 to Spring 2026</title>
-  <g stroke="#e4e7ec" stroke-width="1">
-    <line x1="168" y1="32"  x2="632" y2="32"/>
-    <line x1="168" y1="76"  x2="632" y2="76"/>
-    <line x1="168" y1="120" x2="632" y2="120"/>
-    <line x1="168" y1="164" x2="632" y2="164"/>
-    <line x1="168" y1="208" x2="632" y2="208"/>
-  </g>
-  <g font-size="10.5" fill="#1c2333" text-anchor="end">
-    <text x="158" y="29">Instructor of record</text>
-    <text x="158" y="73">Advanced graduate</text>
-    <text x="158" y="117">Graduate statistics</text>
-    <text x="158" y="161">Undergraduate methods</text>
-    <text x="158" y="205">Undergraduate lecture</text>
-  </g>
-  <g fill="#4338ca">
-    <circle cx="176" cy="208" r="5.5"/>
-    <circle cx="250" cy="208" r="5.5"/><circle cx="250" cy="164" r="5.5"/>
-    <circle cx="324" cy="164" r="5.5"/>
-    <circle cx="398" cy="208" r="5.5"/>
-    <circle cx="472" cy="120" r="5.5"/><circle cx="472" cy="208" r="5.5"/>
-    <circle cx="620" cy="120" r="5.5"/><circle cx="620" cy="76" r="5.5"/>
-  </g>
-  <circle cx="546" cy="32" r="8" fill="#fff" stroke="#4338ca" stroke-width="3.5"/>
-  <g font-size="9" fill="#59606b" text-anchor="middle">
-    <text x="176" y="224">HDF 313</text>
-    <text x="250" y="224">HDF 313</text>
-    <text x="250" y="152">HDF 315L</text>
-    <text x="324" y="152">HDF 315L</text>
-    <text x="398" y="224">HDF 313</text>
-    <text x="472" y="108">HDF 380K.2</text>
-    <text x="472" y="224">NTR 306</text>
-    <text x="620" y="108">380K.2</text>
-    <text x="620" y="64">380K.4</text>
-  </g>
-  <text x="546" y="18" font-size="9.5" font-weight="600" fill="#4338ca" text-anchor="middle">HDF 315L, my own course</text>
-  <line x1="168" y1="238" x2="632" y2="238" stroke="#9aa2ad" stroke-width="1"/>
-  <g font-size="9.5" fill="#59606b" text-anchor="middle">
-    <text x="176" y="252">Fall 22</text>
-    <text x="250" y="252">Spr 24</text>
-    <text x="324" y="252">Sum 24</text>
-    <text x="398" y="252">Fall 24</text>
-    <text x="472" y="252">Spr 25</text>
-    <text x="546" y="252">Fall 25</text>
-    <text x="620" y="252">Spr 26</text>
-  </g>
-</svg>
-```
-:::
+{{< include _partials/teaching/fig-evaluations.md >}}
 
 ## Statistics workshops for graduate students
 
 Annual workshops for graduate students in Human Development and Family Sciences
 at UT Austin, run through the departmental statistics committee.
 
-::: {.course}
-**AI-assisted data analysis: Vibe coding with Positron** [· January 2026]{.meta}
+::: {.t-grid .t-workshops}
 
-Working with an AI assistant inside a real analysis project: what it is good
-at, where it fails silently, and the verification habits that make it safe on
-research code.
+::: {.t-card}
+[January 2026]{.t-kicker .k-gold}
+
+**AI-assisted data analysis: Vibe coding with Positron**
 
 ::: {.entry-links}
 [Slides](files/workshops/2026/vibe-coding-slides.pptx)
@@ -112,21 +69,20 @@ research code.
 :::
 :::
 
-::: {.course}
-**Data wrangling with R** [· January 2025]{.meta}
+::: {.t-card}
+[January 2025]{.t-kicker .k-teal}
 
-Reshaping, merging, and cleaning messy data.
+**Data wrangling with R**
 
 ::: {.entry-links}
 [Script](files/workshops/2025/data-wrangling.Rmd)
 :::
 :::
 
-::: {.course}
-**Plotting figures with R** [· January 2024]{.meta}
+::: {.t-card}
+[January 2024]{.t-kicker .k-sky}
 
-Publication-quality figures in ggplot2, including legends, facets, fonts, and
-export settings that survive a journal's production process.
+**Plotting figures with R**
 
 ::: {.entry-links}
 [Slides](files/workshops/2024/figures-slides.pptx)
@@ -134,11 +90,10 @@ export settings that survive a journal's production process.
 :::
 :::
 
-::: {.course}
-**Basic data analysis with R** [· January 2023]{.meta}
+::: {.t-card}
+[January 2023]{.t-kicker .k-peach}
 
-A first course for students who had only used SPSS: projects, scripts,
-reproducibility, descriptives, and regression.
+**Basic data analysis with R**
 
 ::: {.entry-links}
 [R basics](files/workshops/2023/00-r-basics.R)
@@ -146,188 +101,24 @@ reproducibility, descriptives, and regression.
 :::
 :::
 
-In development: a workshop on the concepts underneath AI-assisted research,
-covering tokens, context windows, agents, and the command line, for researchers
-with no computing background.
+::: {.t-card .t-dashed}
+[In development]{.t-kicker}
 
+**The concepts underneath AI-assisted research**
+:::
+
+:::
+
+::: {.t-note}
 Datasets are not posted. The examples use participant data that is not mine to
 distribute, and I am rebuilding the exercises on synthetic data.
-
-## Evaluations
-
-**HDF 315L, Research Methods, Fall 2025**, my first course as instructor of
-record. 7 of 9 students responded, average attendance 86%.
-
-::: {.diagram}
-```{=html}
-<svg viewBox="0 0 640 276" role="img" aria-labelledby="evt">
-  <title id="evt">Course evaluation item means for HDF 315L, Fall 2025, on a one-to-five scale</title>
-  <g stroke="#e4e7ec" stroke-width="1">
-    <line x1="250" y1="18" x2="250" y2="232"/>
-    <line x1="340" y1="18" x2="340" y2="232"/>
-    <line x1="430" y1="18" x2="430" y2="232"/>
-    <line x1="610" y1="18" x2="610" y2="232"/>
-  </g>
-  <line x1="520" y1="18" x2="520" y2="232" stroke="#a9b1bd" stroke-width="1" stroke-dasharray="3 3"/>
-  <g font-size="11" fill="#0d1117" text-anchor="end">
-    <text x="236" y="34">Fostered an inclusive environment</text>
-    <text x="236" y="61">Objectives and expectations clear</text>
-    <text x="236" y="88">Overall, this instructor</text>
-    <text x="236" y="115">Gained deeper understanding</text>
-    <text x="236" y="142">Course was well organized</text>
-    <text x="236" y="169">Checked for understanding</text>
-    <text x="236" y="196">Concepts effectively explained</text>
-    <text x="236" y="223">Techniques kept me engaged</text>
-  </g>
-  <g stroke="#eef0f4" stroke-width="6" stroke-linecap="round">
-    <line x1="250" y1="30" x2="584" y2="30"/><line x1="250" y1="57" x2="571" y2="57"/>
-    <line x1="250" y1="84" x2="559" y2="84"/><line x1="250" y1="111" x2="559" y2="111"/>
-    <line x1="250" y1="138" x2="559" y2="138"/><line x1="250" y1="165" x2="559" y2="165"/>
-    <line x1="250" y1="192" x2="546" y2="192"/><line x1="250" y1="219" x2="533" y2="219"/>
-  </g>
-  <g fill="#4338ca">
-    <circle cx="584" cy="30" r="6.5"/><circle cx="571" cy="57" r="6.5"/>
-    <circle cx="559" cy="84" r="6.5"/><circle cx="559" cy="111" r="6.5"/>
-    <circle cx="559" cy="138" r="6.5"/><circle cx="559" cy="165" r="6.5"/>
-    <circle cx="546" cy="192" r="6.5"/><circle cx="533" cy="219" r="6.5"/>
-  </g>
-  <g font-size="10.5" fill="#3f464c">
-    <text x="596" y="34">4.71</text><text x="583" y="61">4.57</text>
-    <text x="571" y="88">4.43</text><text x="571" y="115">4.43</text>
-    <text x="571" y="142">4.43</text><text x="571" y="169">4.43</text>
-    <text x="558" y="196">4.29</text><text x="545" y="223">4.14</text>
-  </g>
-  <line x1="250" y1="240" x2="610" y2="240" stroke="#9aa2ad" stroke-width="1"/>
-  <g font-size="10" fill="#59606b" text-anchor="middle">
-    <text x="250" y="254">1</text><text x="340" y="254">2</text>
-    <text x="430" y="254">3</text><text x="520" y="254">4</text>
-    <text x="610" y="254">5</text>
-  </g>
-  <text x="430" y="270" font-size="10" fill="#59606b" text-anchor="middle">mean rating · full 1 to 5 scale · n = 7</text>
-</svg>
-```
 :::
-
-Three things I would do differently if I taught this course again.
-
-**Understand the program setting better.** HDF 315L is a lower-division course, so I designed
-it for lower-division students. Almost everyone who enrolled was a junior or
-senior, with one exception. That mismatch drove the pacing and the amount of
-scaffolding.
-
-**Match the activity to the room.** I used group activities because they had
-worked in the large child development lectures I assisted, where a group of four
-is a way of making a hall of two hundred feel small. In a room of nine
-upper-level students the same activity does the opposite: there is nothing to
-break down, and asking students to turn to a group they are already sitting with
-produced polite agreement rather than argument. What I have not settled is what replaces it: whether a
-small room runs better on individual written commitment before discussion, on
-pairs rather than groups, or on something else entirely.
-
-**Set expectations at the start, not along the way.** Most of what students
-praise about my teaching happens after they are already confused. I am still
-working out how much of that can be moved earlier: how much of an assignment's
-expectations can usefully be written down in advance, and how much a student
-only understands once they have attempted it and got something back.
-
-## An overview of TA experiences
-
-::: {.diagram}
-```{=html}
-<svg viewBox="0 0 640 306" role="img" aria-labelledby="qlt">
-  <title id="qlt">Across six teaching assistant appointments students consistently praised feedback quality, while what they asked for varied with class size</title>
-
-  <g font-size="9" fill="#8a93a0">
-    <text x="116" y="26">CLASS SIZE</text>
-    <text x="300" y="26">WHAT STUDENTS PRAISED</text>
-    <text x="462" y="26">WHAT THEY ASKED FOR</text>
-  </g>
-
-  <g font-size="10.5" fill="#0d1117" text-anchor="end">
-    <text x="104" y="58">Fall 2022</text>
-    <text x="104" y="94">Spring 2024</text>
-    <text x="104" y="130">Fall 2024</text>
-    <text x="104" y="166">Spring 2025</text>
-    <text x="104" y="202">Spring 2026</text>
-  </g>
-  <g font-size="8.5" fill="#a0a7b2" text-anchor="end">
-    <text x="104" y="68">HDF 313</text>
-    <text x="104" y="104">313 and 315L</text>
-    <text x="104" y="140">HDF 313</text>
-    <text x="104" y="176">HDF 380K.2</text>
-    <text x="104" y="212">380K.2 and .4</text>
-  </g>
-
-  <g fill="#c7d2fe">
-    <rect x="116" y="46" width="150" height="12" rx="2"/>
-    <rect x="116" y="82" width="111" height="12" rx="2"/>
-    <rect x="116" y="118" width="106" height="12" rx="2"/>
-    <rect x="116" y="154" width="28"  height="12" rx="2"/>
-    <rect x="116" y="190" width="45"  height="12" rx="2"/>
-  </g>
-  <g font-size="9" fill="#59606b">
-    <text x="270" y="56">220</text>
-    <text x="231" y="92">120</text>
-    <text x="226" y="128">111</text>
-    <text x="148" y="164">8</text>
-    <text x="165" y="200">6 and 14</text>
-  </g>
-
-  <!-- the constant: feedback praised in every single appointment -->
-  <g fill="#4338ca">
-    <rect x="300" y="44" width="150" height="17" rx="8"/>
-    <rect x="300" y="80" width="150" height="17" rx="8"/>
-    <rect x="300" y="116" width="150" height="17" rx="8"/>
-    <rect x="300" y="152" width="150" height="17" rx="8"/>
-    <rect x="300" y="188" width="150" height="17" rx="8"/>
-  </g>
-  <g font-size="8.5" font-weight="600" fill="#ffffff" text-anchor="middle">
-    <text x="375" y="56">prompt, specific feedback</text>
-    <text x="375" y="92">explained what went wrong</text>
-    <text x="375" y="128">stayed after class to help</text>
-    <text x="375" y="164">clear stats explanations</text>
-    <text x="375" y="200">deep R help, encouraging</text>
-  </g>
-
-  <g font-size="9.5" fill="#8a93a0">
-    <text x="462" y="56">more visible presence</text>
-    <text x="462" y="92">clearer grading expectations</text>
-    <text x="462" y="128">more visible presence</text>
-    <text x="462" y="164">no changes suggested</text>
-    <text x="462" y="200">more worked examples</text>
-  </g>
-
-  <rect x="8" y="232" width="624" height="62" rx="4" fill="#eef0fb" stroke="#4338ca" stroke-width="1.4"/>
-  <text x="24" y="254" font-size="11" font-weight="700" fill="#312e81">Praised in all six appointments</text>
-  <text x="24" y="272" font-size="10" fill="#3f464c">Written feedback that explained the reasoning · Depth in R and statistics · Patience and availability</text>
-  <text x="24" y="287" font-size="9.5" fill="#59606b">In the graduate statistics sections, most respondents suggested no changes at all</text>
-</svg>
-```
-:::
-
-What students wanted depended more on the size of the room than on anything I
-changed. A hall of two hundred wanted a teaching assistant who was visibly
-there; a seminar of six wanted worked examples and more depth. The same behavior
-reads as attentive in one room and invisible in the other.
-
-What stayed constant matters more to me. In every appointment students singled
-out the written feedback on their assignments and how quickly and patiently I
-answered questions, and in the graduate statistics sections most suggested no
-changes at all.
-
-Grading took longer to calibrate. I did my own undergraduate degree outside the
-United States, and I had to learn how much a mark is a judgment against a
-defined answer and how much it is a teaching signal on a first attempt.
-
-The open question I find most interesting is reach. Some students never come to
-office hours and never email. The ones who do come say the support is worth
-seeking out, so the question is not whether the help is useful but how to widen
-the door.
 
 ## Invited talks
 
-::: {.course}
-**Introduction to Group Iterative Multiple Model Estimation (GIMME)**\
+::: {.t-card}
+**Introduction to Group Iterative Multiple Model Estimation (GIMME)**
+
 [Beijing Forestry University · May 2024]{.meta}
 
 ::: {.entry-links}
@@ -338,16 +129,19 @@ the door.
 
 ## Community teaching
 
-::: {.course}
-**Aid Education Program "Linhaibeiyu"**, co-leader and teacher\
+::: {.t-card}
+**Aid Education Program "Linhaibeiyu"**, co-leader and teacher
+
 [Hailin, Heilongjiang, China · Summer 2018]{.meta}
 
-**Art Dream**, non-profit educational institution, teacher\
+**Art Dream**, non-profit educational institution, teacher
+
 [Beijing, China · Spring 2018]{.meta}
 :::
 
 ## Mentoring
 
+::: {.t-card}
 In the [BSEC Lab](https://hdfs.utexas.edu/directory/nicole-perry) I supervised
 an undergraduate through to a presentation at the university's undergraduate
 research forum. I also supervise undergraduates in the
@@ -356,3 +150,4 @@ research forum. I also supervise undergraduates in the
 I train graduate and undergraduate assistants in physiological data collection
 and preprocessing: RSA acquisition with Mindware, behavioral coding with
 Mangold Interact, and the cleaning pipelines that follow.
+:::
